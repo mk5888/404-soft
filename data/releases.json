@@ -2997,20 +2997,20 @@
     "mirrored": false
   },
   "xpipe": {
-    "version": "24.10",
-    "released": "2026-10-29",
+    "version": "24.11",
+    "released": "2026-11-14",
     "verified": "2026-11-14",
-    "release_url": "https://github.com/xpipe-io/xpipe/releases/tag/24.10",
-    "changelog": "## Changes\n\n- Docker and Podman containers now show how long they have been running or how long ago they exited,\n  along with their health status if a health check is configured. The uptime is now automatically adjusted,\n  so it doesn't need an explicit refresh anymore.\n- Docker compose services now also show their uptime and health status\n- The available shells scan is no longer preselected in the scan dialog, and the SSH config scan is only preselected for the local machine\n- The Claude Code MCP setup command in the settings now also shows how to add the server for all directories\n\n## Fixes\n\n- Fix Docker containers not showing the standard system information like other connections\n- Fix the daemon connection failures when external API requests are enabled on macOS\n- Fix special characters in file paths being mangled for pure SFTP connections\n- Fix dragging a category onto itself or one of its subcategories causing errors\n- Fix old <v24 categories without a saved order not being reorderable relative to each other (this might reorder categories from old vaults once)\n- Fix categories with an empty name breaking the MCP tools\n- Fix various NullPointers\n\n\n## Downloads\n\nYou can find all downloadable artifacts below attached to this release. For installation instructions, see the [installation guide](https://docs.xpipe.io/guide/installation).\n\nAll artifacts are signed by [Christopher Schnick (BBDA 885A DD3E 0AD0)](https://xpipe.io/signatures/0xDD3E0AD0.asc)\n",
+    "release_url": "https://github.com/xpipe-io/xpipe/releases/tag/24.11",
+    "changelog": "- Fix startup being slow with many multi identities\n- Fix multi identities being moved to a different category when not all of their identities are accessible\n- Fix shell sessions and tunnels occasionally being stopped or restarted incorrectly when used from multiple places at the same time\n- Fix local Windows shells breaking when the PATH contains quotes or is very long\n- Fix the file browser overview flickering while loading\n- Fix the window opening with a broken size when no proper monitor information is available\n- Fix Proxmox webtop deployments being allowed on PVE 9.0, which does not support OCI containers yet\n- Fix various NullPointers and small synchronization issues\n\n\n## Downloads\n\nYou can find all downloadable artifacts below attached to this release. For installation instructions, see the [installation guide](https://docs.xpipe.io/guide/installation).\n\nAll artifacts are signed by [Christopher Schnick (BBDA 885A DD3E 0AD0)](https://xpipe.io/signatures/0xDD3E0AD0.asc)\n",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "xpipe-portable-windows-x86_64.zip",
-        "size": 163123529,
-        "sha256": "16991b0553a6821ce275087721e1ed4b1ace948dfeeb95974342029c6b97f86f",
-        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.10/xpipe-portable-windows-x86_64.zip",
+        "size": 163147314,
+        "sha256": "23ad2f8ca6d675d7ae5ceaa40d7dcf64ce35fc7041a8a9a7991a846f7d5833d5",
+        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.11/xpipe-portable-windows-x86_64.zip",
         "mirrors": []
       },
       {
@@ -3018,9 +3018,9 @@
         "platform": "Windows",
         "portable": false,
         "file": "xpipe-installer-windows-arm64.msi",
-        "size": 105938944,
-        "sha256": "3761148abbd483dd80f81d956ee95c238918eae1183d90af691257bba227b49d",
-        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.10/xpipe-installer-windows-arm64.msi",
+        "size": 105947136,
+        "sha256": "1f5cdedb49d1dc0bb8f15406a672790f007e6b0f6312034790a9cdd4ef33a217",
+        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.11/xpipe-installer-windows-arm64.msi",
         "mirrors": []
       }
     ],
@@ -6252,50 +6252,50 @@
     "mirrored": false
   },
   "throne": {
-    "version": "1.4.1",
-    "released": "2026-11-06",
+    "version": "1.4.2",
+    "released": "2026-11-14",
     "verified": "2026-11-14",
-    "release_url": "https://github.com/throneproj/Throne/releases/tag/1.4.1",
-    "changelog": "### Join [Throne's Telegram channel](https://t.me/ThroneProj) for announcements and community support\n\n* Fix macOS Tun mode\n* Fix invalid giometry of the main window\n* Fix XHTTP Extra field parsing\n\n\n**Download based on your OS:**\n\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe\"><img src=\"https://img.shields.io/badge/Setup-Universal-0078D4.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-2B88D8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-arm64.zip\"><img src=\"https://img.shields.io/badge/Portable-ARM64-5AA9E6.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windowslegacy64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64%20legacy-6B7F95.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows32.zip\"><img src=\"https://img.shields.io/badge/Portable-x86-94A3B8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Apple%20Silicon-000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64-00A9E0.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macoslegacy-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64%20(legacy)-7FCDEB.svg?logo=apple\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Debian / Ubuntu</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64.deb\"><img src=\"https://img.shields.io/badge/DEB-x64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-x64%20system%20Qt-C94F65.svg?logo=debian\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64%20system%20Qt-C94F65.svg?logo=debian\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Fedora / openSUSE</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64%20system%20Qt-51A2DA.svg?logo=fedora\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64%20system%20Qt-51A2DA.svg?logo=fedora\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Linux (portable)</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-x64-F84E29.svg?logo=linux\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-ARM64-F89A29.svg?logo=linux\"></a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n> **Setup** picks the right build for your Windows version and CPU; **legacy** builds are for Windows 7 / 8. **system Qt** packages use the Qt libraries installed on your system and ar",
+    "release_url": "https://github.com/throneproj/Throne/releases/tag/1.4.2",
+    "changelog": "* Add Tor as an egress option **1**\n* Add Rule Tester and a program picker for process rules\n* Add profile pinning\n* Add QUIC Opener **2**\n* Allow multiple DNS servers, queried in parallel\n* Allow an auto selector inside a chain and add hop-by-hop chain testing\n* Add Service Check (experimental) **3**\n* Add DPI evasion settings scan (experimental) **4**\n* Add subscription profile filters (experimental)\n* Add priority tiers and passive scoring to the auto selector (experimental)\n* Run only the core as administrator on Windows **5**\n* Reorganize the settings dialogs\n* Improve subscription updates and Clash import\n* Improve WireGuard handshake DPI resistance\n* Rework Juicity and TrustTunnel for better compatibility\n* Remove the Tailscale state directory option **6**\n* Update sing-box and Mieru\n* Fixes and Improvements\n\n**1**:\nRouting Settings > Egress > Tor sends traffic through the Tor network after the selected server and opens `.onion` sites. Tor binary is downloaded from the Tor Project when you first enable it.\n\n**2**:\nFound in a profile's Advanced settings. It sends a decoy packet before each new UDP flow, so networks that block QUIC by its first packet let MASQUE, Hysteria2 and TUIC through.\n\n**3**:\nService Check, in the profile context menu, tests which services (ChatGPT, Gemini, Netflix, YouTube Premium, ...) work through a profile and what kind of IP it exits from.\n\n**4**:\nScan DPI evasion settings, in the profile context menu, tests variations of a profile's anti-DPI settings on your network and lets you apply the one that works best.\n\n**5**:\nTun mode and the kill switch now ask once to Grant Privileges, after which Throne itself no longer needs to run as administrator.\n\n**6**:\nTailscale profiles now keep their state in a fixed folder, so they need to log in once more after updating.\n\n\n**Download based on your OS:**\n\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-windows-universal-installer.exe\"><img src=\"https://img.shields.io/badge/Setup-Universal-0078D4.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-windows64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-2B88D8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-windows-arm64.zip\"><img src=\"https://img.shields.io/badge/Portable-ARM64-5AA9E6.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-windowslegacy64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64%20legacy-6B7F95.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-windows32.zip\"><img src=\"https://img.shields.io/badge/Portable-x86-94A3B8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-macos-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Apple%20Silicon-000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-macos-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64-00A9E0.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-macoslegacy-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64%20(legacy)-7FCDEB.svg?logo=apple\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Debian / Ubuntu</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-debian-amd64.deb\"><img src=\"https://img.shields.io/badge/DEB-x64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-debian-amd64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-x64%20system%20Qt-C94F65.svg?logo=debian\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-debian-arm64.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-debian-arm64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64%20system%20Qt-C94F65.svg?logo=debian\"></a>\n            </td>\n        </tr>",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "Throne-1.4.1-windows64.zip",
-        "size": 57680457,
-        "sha256": "c0fb62af75fd6a100a216c019b167a3bd924ebdc059b2bbbe68a684702293890",
-        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip",
+        "file": "Throne-1.4.2-windows64.zip",
+        "size": 58556319,
+        "sha256": "9bd8d0f660c55b2c195baa69ed7d67c6857b6a929ea576d64d1cf12ef4b55459",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-windows64.zip",
         "mirrors": []
       },
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Throne-1.4.1-windows-universal-installer.exe",
-        "size": 154532497,
-        "sha256": "1f0d27b38abcb0dbe89408fa194cf96279ef259c8008be311db94bd66fc9c26a",
-        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe",
+        "file": "Throne-1.4.2-windows-universal-installer.exe",
+        "size": 156847120,
+        "sha256": "f77a0f87ec936c0f8ef862be4ed1f58ba3e23f52c4d34bc21c5677433eca6ab5",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-windows-universal-installer.exe",
         "mirrors": []
       },
       {
         "label": "macOS Apple 芯片 · ZIP",
         "platform": "macOS",
         "portable": false,
-        "file": "Throne-1.4.1-macos-arm64.zip",
-        "size": 67630267,
-        "sha256": "50766e6563878810c8a43f1e42ae9a79c94c9e2e57122e48a57427d745bcc755",
-        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-arm64.zip",
+        "file": "Throne-1.4.2-macos-arm64.zip",
+        "size": 68531617,
+        "sha256": "c56b99af9153e09ad152b42cfd2975027a097a364ddc65f66f8ea6c4476f4c0d",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-macos-arm64.zip",
         "mirrors": []
       },
       {
         "label": "macOS Intel · ZIP",
         "platform": "macOS",
         "portable": false,
-        "file": "Throne-1.4.1-macos-amd64.zip",
-        "size": 72103696,
-        "sha256": "9980a1b8b27e39c184f0e49ca3e51392f39fc1f90a1c93411c90c673748366ac",
-        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-amd64.zip",
+        "file": "Throne-1.4.2-macos-amd64.zip",
+        "size": 73104449,
+        "sha256": "b7ef9f8a2a0c8b8f798ae03bb76479ce2f24f835e0ee440a6beaa3e9ed2df938",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.2/Throne-1.4.2-macos-amd64.zip",
         "mirrors": []
       }
     ],
