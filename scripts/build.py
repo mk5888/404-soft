@@ -3,7 +3,7 @@
 
 环境变量：
   BASE_PATH  站点子路径。GitHub Pages 项目站填 "/404-soft"，自定义域名或 Cloudflare Pages 留空。
-  SITE_URL   站点完整地址（用于 sitemap），例：https://six997.github.io/404-soft
+  SITE_URL   站点完整地址（用于 sitemap），例：https://soft.896404.xyz
 """
 import datetime
 import html
@@ -17,7 +17,7 @@ DIST = os.path.join(ROOT, "dist")
 BASE = (os.getenv("BASE_PATH") or "").rstrip("/")
 SITE_URL = (os.getenv("SITE_URL") or "").rstrip("/")
 SITE = "404绿色软件库"
-SLOGAN = "只收录官方下载入口，每个文件都附 SHA-256 校验。"
+SLOGAN = "只收录官方下载入口，官方提供校验值的文件都附 SHA-256。"
 PLATFORMS = ["Windows", "macOS", "Linux", "Android", "iOS"]
 
 e = html.escape
@@ -94,7 +94,7 @@ def in_cat(i, k):
     return i["category"] == k or (k == "mac" and "macOS" in i.get("platforms", []))
 
 
-def layout(title, body, desc=SLOGAN, active=""):
+def layout(title, body, desc=SLOGAN, active="", path="/"):
     cats = load("categories.json", {})
     nav = "".join(
         f'<a href="{url("/category/" + k + "/")}" class="{"on" if active == k else ""}">{e(v)}</a>'
@@ -108,7 +108,18 @@ def layout(title, body, desc=SLOGAN, active=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
+<meta name="theme-color" content="#16a34a">
+{f'<link rel="canonical" href="{e(SITE_URL + path)}">' if SITE_URL else ''}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{SITE}">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(desc)}">
+{f'<meta property="og:image" content="{SITE_URL}/static/og.png">' if SITE_URL else ''}
+{f'<meta property="og:url" content="{e(SITE_URL + path)}">' if SITE_URL else ''}
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{url('/favicon.ico')}" sizes="48x48">
 <link rel="icon" href="{url('/static/favicon.svg')}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{url('/static/apple-touch-icon.png')}">
 <link rel="stylesheet" href="{url('/static/style.css')}">
 <script>document.documentElement.dataset.theme=localStorage.theme||"";window.BASE="{BASE}";</script>
 </head>
@@ -241,7 +252,7 @@ def page_category(key, name, items, releases, cats):
   </section>
   {sidebar(items, releases, cats)}
 </div>"""
-    return layout(f"{name} · {SITE}", body, f"{name}类软件官方下载", key)
+    return layout(f"{name} · {SITE}", body, f"{name}类软件官方下载", key, f"/category/{key}/")
 
 
 def page_detail(item, rel, items, releases, cats):
@@ -263,7 +274,7 @@ def page_detail(item, rel, items, releases, cats):
         sha = d.get("sha256", "")
         shabox = f'<button class="sha" data-sha="{sha}" title="点击复制 SHA-256">SHA-256 <code>{sha[:12]}…{sha[-6:]}</code></button>' if sha else ""
         rows.append(f"""<li class="dl">
-  <div class="dl-info"><strong>{e(d['label'])}{' <span class="plat green">绿色免安装</span>' if d.get('portable') else ''}</strong><span>{e(d['file'])}{' · ' + human_size(d['size']) if d.get('size') else ''}</span>{shabox}</div>
+  <div class="dl-info"><strong>{e(d['label'])}{' <span class="plat green">绿色免安装</span>' if d.get('portable') else ''}</strong><span>{e(d['file'])}{' · ' + human_size(d['size']) if d.get('size') else ''}</span>{shabox or '<span class="sha none">官方未提供 SHA-256</span>'}</div>
   <div class="dl-btns"><a class="btn" href="{e(d['official'])}" target="_blank" rel="noopener">官方下载</a>{mbtn}</div>
 </li>""")
     dl_page = e(item.get("download_page") or item.get("homepage", ""))
@@ -306,7 +317,7 @@ def page_detail(item, rel, items, releases, cats):
     {ad("detail-mid")}
     <section class="panel" id="download">
       <h2>下载地址</h2>
-      <p class="note">官方下载直接指向软件作者的发布地址；网盘镜像为同一文件的转存，下载后可用 SHA-256 核对。</p>
+      <p class="note">官方下载直接指向软件作者的发布地址；网盘镜像为同一文件的转存，下载后可用 SHA-256 核对（官方未提供校验值的文件除外）。</p>
       <ul class="dl-list">{downloads}</ul>
     </section>
     {f'<section class="panel prose"><h2>使用提示</h2><ul>{tips}</ul></section>' if tips else ''}
@@ -315,7 +326,7 @@ def page_detail(item, rel, items, releases, cats):
   </article>
   {sidebar(items, releases, cats)}
 </div>"""
-    return layout(f"{item['name']} {rel.get('version', '')} 官方下载 · {SITE}", body, item["summary"], item["category"])
+    return layout(f"{item['name']} {rel.get('version', '')} 官方下载 · {SITE}", body, item["summary"], item["category"], f"/software/{item['slug']}/")
 
 
 def page_about(items, releases, cats):
@@ -339,7 +350,7 @@ def page_about(items, releases, cats):
   </article>
   {sidebar(items, releases, cats)}
 </div>"""
-    return layout(f"关于与规范 · {SITE}", body)
+    return layout(f"关于与规范 · {SITE}", body, path="/about/")
 
 
 def write(path, content):
@@ -366,6 +377,7 @@ def main():
 
     shutil.rmtree(DIST, ignore_errors=True)
     shutil.copytree(os.path.join(ROOT, "static"), os.path.join(DIST, "static"))
+    shutil.copy(os.path.join(ROOT, "static", "favicon.ico"), os.path.join(DIST, "favicon.ico"))
     if os.path.isdir(os.path.join(ROOT, "assets")):
         shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(DIST, "assets"))
     shutil.copy(os.path.join(ROOT, "data", "ads.json"), os.path.join(DIST, "ads.json"))
