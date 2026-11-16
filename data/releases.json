@@ -7433,16 +7433,6 @@
     ],
     "mirrored": false
   },
-  "tigervnc": {
-    "version": "1.16.2",
-    "released": "2026-03-26",
-    "verified": "2026-11-16",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TigerVNC/TigerVNC/1.16.2",
-    "changelog": "",
-    "downloads": [],
-    "mirrored": false,
-    "source": "winget"
-  },
   "ultravnc": {
     "version": "1.8.3.2",
     "released": "2026-11-04",
