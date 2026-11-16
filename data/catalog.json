@@ -11306,5 +11306,603 @@
       "macOS"
     ],
     "icon": "/static/icons/clash-apple.png"
+  },
+  {
+    "slug": "scribus",
+    "name": "Scribus",
+    "abbr": "SC",
+    "category": "office",
+    "tags": [
+      "排版",
+      "印刷",
+      "開源"
+    ],
+    "summary": "開源桌面排版軟體，印前製作的免費選擇。",
+    "intro": "Scribus 用於排版雜誌、海報、宣傳冊，支援 CMYK、專色、ICC 色彩管理和 PDF/X 匯出，適合需要印刷成品的版式工作。",
+    "features": [
+      "CMYK 與專色",
+      "PDF/X 匯出",
+      "主頁與圖層",
+      "免費商用"
+    ],
+    "tips": [],
+    "license": "GPL-2.0-or-later",
+    "mirror_allowed": true,
+    "homepage": "https://www.scribus.net/",
+    "source": {
+      "type": "winget",
+      "id": "Scribus.Scribus",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "windows-x64\\.exe",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "freeplane",
+    "name": "Freeplane",
+    "abbr": "FP",
+    "category": "office",
+    "tags": [
+      "思維導圖",
+      "筆記",
+      "開源"
+    ],
+    "summary": "開源思維導圖與知識管理工具。",
+    "intro": "Freeplane 繪製思維導圖、管理筆記與待辦，支援 LaTeX 公式、節點加密、日曆提醒，檔案以本地 .mm 格式保存。",
+    "features": [
+      "思維導圖",
+      "節點加密",
+      "LaTeX 公式",
+      "本地儲存"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.freeplane.org/",
+    "source": {
+      "type": "winget",
+      "id": "Freeplane.Freeplane",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "Freeplane-Setup.*\\.exe",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/freeplane.svg"
+  },
+  {
+    "slug": "pdfsam",
+    "name": "PDFsam Basic",
+    "abbr": "PS",
+    "category": "office",
+    "tags": [
+      "PDF",
+      "合併",
+      "拆分",
+      "開源"
+    ],
+    "summary": "開源 PDF 拆分、合併、旋轉與提取工具。",
+    "intro": "PDFsam Basic 合併多個 PDF、按頁數或書籤拆分、旋轉頁面、提取指定頁，全部本地處理，不上傳檔案。",
+    "features": [
+      "合併與拆分",
+      "提取頁面",
+      "旋轉頁面",
+      "本地處理"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://pdfsam.org/",
+    "source": {
+      "type": "github",
+      "repo": "torakiki/pdfsam",
+      "assets": [
+        {
+          "match": "^pdfsam-basic-.*-windows-x64\\.msi$",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^pdfsam-basic-.*-windows-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/pdfsam.png"
+  },
+  {
+    "slug": "texstudio",
+    "name": "TeXstudio",
+    "abbr": "TX",
+    "category": "office",
+    "tags": [
+      "LaTeX",
+      "論文",
+      "開源"
+    ],
+    "summary": "功能完整的開源 LaTeX 編輯器。",
+    "intro": "TeXstudio 寫 LaTeX 論文與文件，內建 PDF 預覽、語法高亮、自動補全、拼寫檢查和參考文獻管理。",
+    "features": [
+      "即時 PDF 預覽",
+      "自動補全",
+      "拼寫檢查",
+      "便攜版 ZIP"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.texstudio.org/",
+    "source": {
+      "type": "github",
+      "repo": "texstudio-org/texstudio",
+      "assets": [
+        {
+          "match": "^texstudio-.*-win-qt6-signed\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^texstudio-.*-win-portable-qt6\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "qownnotes",
+    "name": "QOwnNotes",
+    "abbr": "QN",
+    "category": "office",
+    "tags": [
+      "筆記",
+      "Markdown",
+      "待辦",
+      "開源"
+    ],
+    "summary": "開源 Markdown 筆記本，筆記存為本地純文字。",
+    "intro": "QOwnNotes 是本地 Markdown 筆記與待辦工具，筆記直接存成純文字檔案，可用 Nextcloud / ownCloud 同步，支援標籤、搜尋與加密。",
+    "features": [
+      "Markdown 筆記",
+      "待辦清單",
+      "Nextcloud 同步",
+      "便攜模式"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.qownnotes.org/",
+    "source": {
+      "type": "github",
+      "repo": "pbek/QOwnNotes",
+      "assets": [
+        {
+          "match": "^QOwnNotes\\.msi$",
+          "label": "Windows · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^QOwnNotes\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/qownnotes.png"
+  },
+  {
+    "slug": "notesnook",
+    "name": "Notesnook",
+    "abbr": "NN",
+    "category": "office",
+    "tags": [
+      "筆記",
+      "加密",
+      "同步",
+      "開源"
+    ],
+    "summary": "端到端加密的開源筆記應用。",
+    "intro": "Notesnook 筆記在裝置上先加密再同步，免費版不限筆記數量與裝置，可從 Evernote、Obsidian、Google Keep 匯入。",
+    "features": [
+      "端到端加密",
+      "不限筆記數量",
+      "多裝置同步",
+      "便攜版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://notesnook.com/",
+    "source": {
+      "type": "github",
+      "repo": "streetwriters/notesnook",
+      "assets": [
+        {
+          "match": "^notesnook_win_x64\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^notesnook_win_x64_portable\\.exe$",
+          "label": "Windows x64 · 便攜版 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/notesnook.png"
+  },
+  {
+    "slug": "cherrytree",
+    "name": "CherryTree",
+    "abbr": "CT",
+    "category": "office",
+    "tags": [
+      "筆記",
+      "階層",
+      "開源"
+    ],
+    "summary": "階層式開源筆記本，富文字與程式碼片段。",
+    "intro": "CherryTree 以樹狀結構組織筆記，支援富文字、表格、圖片、程式碼高亮與密碼保護，單一檔案方便備份攜帶。",
+    "features": [
+      "樹狀筆記",
+      "程式碼高亮",
+      "密碼保護",
+      "便攜版 7z"
+    ],
+    "tips": [],
+    "license": "GPL-3.0-or-later",
+    "mirror_allowed": true,
+    "homepage": "https://www.giuspen.net/cherrytree/",
+    "source": {
+      "type": "github",
+      "repo": "giuspen/cherrytree",
+      "assets": [
+        {
+          "match": "^cherrytree_.*_win64_setup\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^cherrytree_.*_win64_portable\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/cherrytree.png"
+  },
+  {
+    "slug": "focuswriter",
+    "name": "FocusWriter",
+    "abbr": "FW",
+    "category": "office",
+    "tags": [
+      "寫作",
+      "專注",
+      "開源"
+    ],
+    "summary": "無干擾的開源寫作工具。",
+    "intro": "FocusWriter 隱藏介面、只留文字與背景，支援每日寫作目標、打字機音效與主題，適合長文與小說寫作。",
+    "features": [
+      "全螢幕寫作",
+      "每日目標統計",
+      "打字機音效",
+      "自訂主題"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://gottcode.org/focuswriter/",
+    "source": {
+      "type": "winget",
+      "id": "GottCode.FocusWriter",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/focuswriter.png"
+  },
+  {
+    "slug": "nomacs",
+    "name": "nomacs",
+    "abbr": "NM",
+    "category": "graphics",
+    "tags": [
+      "看圖",
+      "圖片",
+      "绿色版"
+    ],
+    "summary": "開源看圖軟體，支援 RAW 與多種圖片格式，可同步瀏覽對比。",
+    "intro": "nomacs 是輕量的圖片查看器，支援 RAW、TIFF、JPEG 等格式，可並排對比多張圖，適合攝影與選片。",
+    "features": [
+      "支援 RAW 等多種格式",
+      "多圖同步對比瀏覽",
+      "批量重命名與轉換",
+      "便攜版免安裝"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://nomacs.org/",
+    "source": {
+      "type": "github",
+      "repo": "nomacs/nomacs",
+      "assets": [
+        {
+          "match": "nomacs-portable-win\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "nomacs-setup-x64\\.msi$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/nomacs.png"
+  },
+  {
+    "slug": "digikam",
+    "name": "digiKam",
+    "abbr": "DK",
+    "category": "graphics",
+    "tags": [
+      "照片管理",
+      "RAW",
+      "看圖"
+    ],
+    "summary": "KDE 出品的專業照片管理軟體，支援 RAW、人臉識別與 AI 標籤。",
+    "intro": "digiKam 是開源的照片管理器，可按相冊、標籤、人臉整理海量照片，內建 RAW 處理與圖片編輯器。",
+    "features": [
+      "照片相冊與標籤管理",
+      "人臉識別與 AI 自動標籤",
+      "RAW 解碼與編輯",
+      "G'MIC 600+ 濾鏡"
+    ],
+    "tips": [],
+    "license": "GPL-2.0+",
+    "mirror_allowed": true,
+    "homepage": "https://www.digikam.org/",
+    "source": {
+      "type": "winget",
+      "id": "KDE.digiKam",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/digikam.png"
+  },
+  {
+    "slug": "lazpaint",
+    "name": "LazPaint",
+    "abbr": "LP",
+    "category": "graphics",
+    "tags": [
+      "修圖",
+      "輕量",
+      "绿色版"
+    ],
+    "summary": "輕量圖像編輯器，位圖與矢量圖層兼備，類似 Paint.NET。",
+    "intro": "LazPaint 是用 Lazarus 編寫的輕量修圖軟體，支援位圖與矢量圖層、圖層特效，低配置電腦也能流暢運行。",
+    "features": [
+      "位圖與矢量圖層",
+      "圖層陰影與描邊特效",
+      "腳本與命令列支援",
+      "便攜版免安裝"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://lazpaint.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "bgrabitmap/lazpaint",
+      "assets": [
+        {
+          "match": "win64_no_install\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "setup_win32_win64\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/lazpaint.svg"
+  },
+  {
+    "slug": "caesium",
+    "name": "Caesium Image Compressor",
+    "abbr": "CS",
+    "category": "graphics",
+    "tags": [
+      "圖片壓縮",
+      "批量",
+      "绿色版"
+    ],
+    "summary": "開源批量圖片壓縮工具，JPG/PNG/WebP 無損或有損壓縮，帶即時預覽。",
+    "intro": "Caesium 可批量壓縮 JPG、PNG、WebP、TIFF，支援無損壓縮、品質調節與尺寸調整，壓縮前後可並排對比預覽。",
+    "features": [
+      "批量壓縮 JPG/PNG/WebP/TIFF",
+      "無損與有損模式",
+      "壓縮前後即時預覽",
+      "可調尺寸與品質"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://saerasoft.com/caesium",
+    "source": {
+      "type": "github",
+      "repo": "Lymphatus/caesium-image-compressor",
+      "assets": [
+        {
+          "match": "win-portable\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win-setup\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/caesium.svg"
+  },
+  {
+    "slug": "synfig",
+    "name": "Synfig Studio",
+    "abbr": "SY",
+    "category": "graphics",
+    "tags": [
+      "動畫",
+      "矢量",
+      "2D"
+    ],
+    "summary": "開源 2D 矢量動畫軟體，設關鍵幀自動補間，不用逐幀畫。",
+    "intro": "Synfig Studio 用骨骼綁定與關鍵幀補間做 2D 動畫，支援 50 多種圖層與特效，可匯出影片或 Lottie。",
+    "features": [
+      "關鍵幀自動補間",
+      "骨骼綁定做角色動畫",
+      "50+ 圖層與特效",
+      "可匯出 Lottie"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.synfig.org/",
+    "source": {
+      "type": "github",
+      "repo": "synfig/synfig",
+      "assets": [
+        {
+          "match": "win64-.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win64-.*\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "pencil2d",
+    "name": "Pencil2D",
+    "abbr": "P2",
+    "category": "graphics",
+    "tags": [
+      "動畫",
+      "手繪",
+      "绿色版"
+    ],
+    "summary": "開源手繪 2D 動畫軟體，位圖與矢量逐幀繪製，適合入門做卡通。",
+    "intro": "Pencil2D 是輕量的逐幀手繪動畫工具，支援位圖與矢量圖層、洋蔥皮預覽，匯出 GIF 與影片。",
+    "features": [
+      "逐幀手繪動畫",
+      "洋蔥皮預覽",
+      "位圖與矢量圖層",
+      "匯出 GIF 與影片"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.pencil2d.org/",
+    "source": {
+      "type": "github",
+      "repo": "pencil2d/pencil",
+      "assets": [
+        {
+          "match": "pencil2d-win64-.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/pencil2d.svg"
+  },
+  {
+    "slug": "oculante",
+    "name": "Oculante",
+    "abbr": "OC",
+    "category": "graphics",
+    "tags": [
+      "看圖",
+      "輕量",
+      "绿色版"
+    ],
+    "summary": "極簡高速看圖軟體，單檔案免安裝，支援大圖與動圖。",
+    "intro": "Oculante 是用 Rust 編寫的極簡看圖器，只有一個 exe 檔案，啟動快、佔用低，支援縮放、旋轉與動圖播放。",
+    "features": [
+      "單檔案免安裝",
+      "啟動快佔用低",
+      "支援 GIF 動圖",
+      "縮放與旋轉"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/woelper/oculante",
+    "source": {
+      "type": "github",
+      "repo": "woelper/oculante",
+      "assets": [
+        {
+          "match": "^oculante\\.exe$",
+          "label": "Windows x64 · 單檔案 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/oculante.svg"
   }
 ]
