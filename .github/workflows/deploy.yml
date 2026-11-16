@@ -22,6 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # 完整歷史：提交步驟要 git pull --rebase，淺 clone 會失敗
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
@@ -37,13 +38,21 @@ jobs:
         run: python scripts/sync.py
 
       - name: 提交版本数据
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENLIST_URL: ${{ secrets.OPENLIST_URL }}
+          OPENLIST_TOKEN: ${{ secrets.OPENLIST_TOKEN }}
+          MIRROR_DRIVES: ${{ vars.MIRROR_DRIVES }}
         run: |
           if ! git diff --quiet data/releases.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/releases.json
             git commit -m "chore: 同步官方版本 $(date -u +%F)"
-            git pull --rebase origin main
+            # 先拉遠端再推：目錄提交和圖標上傳前後腳推送時，遠端 main 可能已超前，
+            # 直接 push 會被拒（non-fast-forward，見 2026-11-16 cbe037d 失敗）。
+            # rebase 衝突時（兩次同步改了同一行），丟棄本地提交、以遠端為準重新同步再提交。
+            git pull --rebase || (git rebase --abort; git reset --hard origin/main; python scripts/sync.py; if ! git diff --quiet data/releases.json; then git add data/releases.json; git commit -m "chore: 同步官方版本 $(date -u +%F)"; fi)
             git push
           fi
 
