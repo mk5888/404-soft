@@ -4432,7 +4432,11 @@
         }
       ]
     },
-    "icon": "/static/icons/weasel.png"
+    "icon": "/static/icons/weasel.png",
+    "screenshots": [
+      "/static/screenshots/weasel-1.jpg",
+      "/static/screenshots/weasel-2.jpg"
+    ]
   },
   {
     "slug": "sogou-input",
@@ -7501,7 +7505,11 @@
         }
       ]
     },
-    "icon": "/static/icons/wetype.png"
+    "icon": "/static/icons/wetype.png",
+    "screenshots": [
+      "/static/screenshots/wetype-1.jpg",
+      "/static/screenshots/wetype-2.jpg"
+    ]
   },
   {
     "slug": "stability-matrix",
@@ -8817,7 +8825,11 @@
         }
       ]
     },
-    "icon": "/static/icons/palminput.png"
+    "icon": "/static/icons/palminput.png",
+    "screenshots": [
+      "/static/screenshots/palminput-1.jpg",
+      "/static/screenshots/palminput-2.jpg"
+    ]
   },
   {
     "slug": "baidu-pinyin",
@@ -9032,7 +9044,11 @@
         }
       ]
     },
-    "icon": "/static/icons/doubao-ime.png"
+    "icon": "/static/icons/doubao-ime.png",
+    "screenshots": [
+      "/static/screenshots/doubao-ime-1.jpg",
+      "/static/screenshots/doubao-ime-2.jpg"
+    ]
   },
   {
     "slug": "rime-ice",
@@ -9075,7 +9091,11 @@
       ],
       "tag_regex": "^\\d{4}\\.\\d"
     },
-    "icon": "/static/icons/rime-ice.png"
+    "icon": "/static/icons/rime-ice.png",
+    "screenshots": [
+      "/static/screenshots/rime-ice-1.jpg",
+      "/static/screenshots/rime-ice-2.jpg"
+    ]
   },
   {
     "slug": "rime-frost",
@@ -9111,7 +9131,11 @@
         }
       ],
       "tag_regex": "^\\d+\\.\\d"
-    }
+    },
+    "screenshots": [
+      "/static/screenshots/rime-frost-1.jpg",
+      "/static/screenshots/rime-frost-2.jpg"
+    ]
   },
   {
     "slug": "google-japanese-input",
@@ -9147,7 +9171,11 @@
         }
       ]
     },
-    "icon": "/static/icons/google-japanese-input.png"
+    "icon": "/static/icons/google-japanese-input.png",
+    "screenshots": [
+      "/static/screenshots/google-japanese-input-1.jpg",
+      "/static/screenshots/google-japanese-input-2.jpg"
+    ]
   },
   {
     "slug": "microsoft-chinese-ime",
@@ -9181,7 +9209,11 @@
     "platforms": [
       "Windows"
     ],
-    "icon": "/static/icons/microsoft-chinese-ime.png"
+    "icon": "/static/icons/microsoft-chinese-ime.png",
+    "screenshots": [
+      "/static/screenshots/microsoft-chinese-ime-1.jpg",
+      "/static/screenshots/microsoft-chinese-ime-2.jpg"
+    ]
   },
   {
     "slug": "v2rayn",
