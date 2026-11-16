@@ -1,0 +1,22 @@
+name: 版权 / 下架请求
+description: 软件作者或权利人要求删除条目、移除镜像或修改内容
+title: "[下架] "
+labels: ["takedown"]
+body:
+  - type: input
+    id: page
+    attributes: { label: 相关页面地址, placeholder: "https://soft.896404.xyz/software/xxx/" }
+    validations: { required: true }
+  - type: textarea
+    id: proof
+    attributes: { label: 权利证明, description: 官网、官方仓库、开发者账号等能证明你是作者或权利人的信息 }
+    validations: { required: true }
+  - type: dropdown
+    id: action
+    attributes:
+      label: 诉求
+      options: [删除整个条目, 移除网盘镜像, 修改介绍内容, 其他]
+    validations: { required: true }
+  - type: textarea
+    id: note
+    attributes: { label: 补充说明 }
