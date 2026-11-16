@@ -4725,30 +4725,30 @@
     "mirrored": false
   },
   "appflowy": {
-    "version": "0.15.0",
-    "released": "2026-11-02",
+    "version": "0.15.1",
+    "released": "2026-11-15",
     "verified": "2026-11-16",
-    "release_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.0",
-    "changelog": "### 🚀 v0.15.0\r\n\r\n#### New Features\r\n\r\n- **Dashboards** — Added dashboards combining views from multiple databases, with movable and resizable widgets, shared filters, and personal filter changes. Local dashboards could reuse existing views; creating new widget views required a server connection.\r\n- **Charts and drill-downs** — Added Number charts for workspaces with Pro features, expanded grouping and display controls, and drill-down tables for exploring a chart's records and saving the result as a filtered view.\r\n- **Page widths** — Added full-width and custom-width formatting per document, shared with collaborators while retaining each user's default for pages without an explicit width.\r\n- **Image search results** — Showed the image and matched text behind a search result, and opened documents at the matched image when the server supplied this information.\r\n- **Native update installation** — Added user-initiated installation on macOS and Windows x64 when the server enabled it and supplied a signed update feed. Retained manual downloads when native installation was unavailable.\r\n\r\n#### Improvements\r\n\r\n- **Database exports** — Added A4, A3, Letter, and Legal paper sizes with portrait or landscape orientation. Paginated wide PDF tables at a readable size and exported the active view's visible fields and current rows, with support for complete offline caches.\r\n- **Board views** — Added sorting within columns, column calculations, and backgrounds based on group colors.\r\n- **Images** — Saved thumbnails and decoded images at their display size across documents and database cards, reducing the size of images held in memory.\r\n- **Translations** — Updated interface translations and corrected Grid header and cell alignment in right-to-left languages.\r\n\r\n#### Bug Fixes\r\n\r\n- Preserved individual heading text during multi-block conversion, kept link formatting when editing URLs, and allowed read-only toggle blocks to expand without changing the shared document.\r\n- Prevented moving subpages in the sidebar from sending them to Trash, and preserved external-link and date mentions when copying or exporting document text.\r\n- Corrected row peek navigation and calendar row opening, focused newly added Grid rows for editing, and kept hidden Board groups usable during partial schema refreshes.\r\n- Preserved document image sizes while scrolling and recovered missing or damaged media caches without losing image authentication.\r\n- Prevented duplicated database content from uploading before its page was acknowledged by the server, and preserved database layouts when reopening views.\r\n- Fixed PDF image reading with Ollama models that advertised vision support through their capabilities.\r\n\r\n#### ⚠️ Action Required\r\n\r\n- Self-hosted workspaces still require **AppFlowy Cloud v0.19.10 or later**.\r\n- Self-hosted dashboards require server support for the Dashboard layout. Before using more than twelve widgets or four widgets in one row, deploy the updated dashboard validation to every realtime server.\r\n",
+    "release_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.1",
+    "changelog": "### 🚀 v0.15.1\r\n\r\n#### Improvements\r\n\r\n- **Feed discussions** — Opened comment threads in a popover on the card, with replies and drafts retained when the popover was dismissed.\r\n- **Database row actions** — Enabled row creation from List and Gallery group headers, added Copy link to Gallery cards in cloud and self-hosted workspaces, and kept peek navigation in grouped List order.\r\n- **Database history** — Clarified that row counts covered the whole saved database and that row-page content had its own history. Kept preview tabs and names tied to the saved version, excluding linked views embedded elsewhere.\r\n\r\n#### Bug Fixes\r\n\r\n- Fixed missing Gallery groups, empty-group visibility, and loading additional cards within large groups. Corrected List property alignment and gaps around empty Gallery and Feed properties.\r\n- Preserved pending text, number, and rollup filter values when closing their editors, and prevented blank checklist tasks.\r\n- Corrected date-only formula comparisons to use calendar days, while retaining precise comparisons when either date included a time.\r\n- Restored reciprocal relation links when duplicating database rows.\r\n- Preserved embedded databases and linked views in row templates opened and edited across Web and Desktop.\r\n- Restored Person names in database history, row properties, and group headers.\r\n- Recovered page references from outdated access denials and kept copied subpages visible after duplication completed.\r\n- Fixed restored tabs that stayed blank after another tab was closed, and corrected row highlights and navigation between peek surfaces.\r\n- Prevented reopened database views from staying in a loading state after their rows had finished loading. Suspended repeated upload and restore checks for unavailable databases while retaining recovery data for a later retry.\r\n- Fixed stuck image-upload progress and recovery when selecting the same file again. Prevented incomplete uploads from being marked successful, waited for comment attachments to finish uploading before publishing them, and reduced repeated downloads of missing images.\r\n- Kept notification lists readable when a newer server returned an unfamiliar notification type, and prevented malformed document block data from hanging reads or producing incomplete exports.\r\n- Fixed missing PDF preview libraries in Windows packages and Windows native-updater registration. Fixed Linux shortcut errors caused by delayed key events after unregistration.\r\n\r\nThe minimum self-hosted server version remained **AppFlowy Cloud v0.19.10**.\r\n",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "AppFlowy-0.15.0-windows-x86_64.zip",
-        "size": 136660487,
-        "sha256": "a8acbcb249c31c5b76654b9570e784730ec76e903ee49536dca1b1aa68240b48",
-        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.0/AppFlowy-0.15.0-windows-x86_64.zip",
+        "file": "AppFlowy-0.15.1-windows-x86_64.zip",
+        "size": 140087644,
+        "sha256": "a039f88bdb191572a3c79053fcbda9d56b5b959873b0bc009384b20fdee11f58",
+        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.1/AppFlowy-0.15.1-windows-x86_64.zip",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "AppFlowy-0.15.0-windows-x86_64.exe",
-        "size": 94306136,
-        "sha256": "fad56ccdb0532ae49f9841410d67ed18f5d88091a8743663ea9e073517d24676",
-        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.0/AppFlowy-0.15.0-windows-x86_64.exe",
+        "file": "AppFlowy-0.15.1-windows-x86_64.exe",
+        "size": 96723728,
+        "sha256": "7ca3952d876b2226b506156131ef390c5130c9372e974011649d90ac15094721",
+        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.1/AppFlowy-0.15.1-windows-x86_64.exe",
         "mirrors": []
       }
     ],
@@ -7020,6 +7020,384 @@
         "size": 49555968,
         "sha256": "85bf65b56faa3f353384a9cafbca83e969d73cf7d6d0e0c10e5cd85c0070a6d9",
         "official": "https://github.com/woelper/oculante/releases/download/0.9.6/oculante.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "duplicati": {
+    "version": "2.4.1.0_stable_2026-10-29",
+    "released": "2026-10-29",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/duplicati/duplicati/releases/tag/v2.4.1.0_stable_2026-10-29",
+    "changelog": "# About this release\n\nThis release builds on version 2.4.0.1 with a large number of bug fixes, and adds three new features: incremental (delta) backups of Microsoft 365 and Google Workspace, and restore tests that can run after backups and be switched on remotely from the console.\n\nThe local database format is updated by this release. See \"Downgrading\" below before going back to an earlier version.\n\n## Delta walk for Microsoft 365 and Google Workspace\n\nMicrosoft 365 and Google Workspace backups no longer need to list every item on every run. The providers now store a delta token with each backup and use the Microsoft Graph and Google change APIs, so later backups list only what was created, changed, moved or removed since the previous backup and carry the rest forward from it.\n\nFor Microsoft 365 this covers mail folders, SharePoint and group document libraries. For Google Workspace it covers Gmail, Drive, Calendar and Contacts. Delta tracking is enabled by default. The first backup, the first backup after the local database is recreated, and the backup after one that was stopped still list everything in full.\n\nDelta tracking can be turned off per service with `--office365-disable-mail-delta`, `--office365-disable-drive-delta`, `--google-disable-gmail-delta`, `--google-disable-drive-delta`, `--google-disable-calendar-delta` and `--google-disable-contacts-delta`. If a document library reports more changes than `--office365-drive-delta-max-items` or `--google-drive-delta-max-items`, the library is listed in full instead.\n\nA backup that combines a Microsoft 365 or Google Workspace source with the USN change journal or `--changed-files` is now refused with an error, as the two mechanisms cannot be combined.\n\n## Restore tests\n\nA new restore test operation restores a sample of a backup from the remote destination into a temporary folder and verifies it, so the backup is regularly proven to be restorable. It is available as the `restore-test` command in the command line and in ServerUtil, and through the server API.\n\nThe sample is chosen with `--restore-test-mode`: a number of random files, a percentage of the backup size, every file, or a rolling mode that prefers files that have not been verified recently. The test can be limited with `--restore-test-max-download-size` and `--restore-test-max-runtime`, can rebuild a temporary database from the destination with `--restore-test-recreate-database`, and can compare the restored files with the source files with `--restore-test-compare-source`.\n\nSet `--perform-restore-test-after` to run a restore test as the last step of a backup whenever the previous test is older than the given interval. When the machine is connected to the Duplicati console, the console can set this interval for its backups, so restore tests can be switched on remotely. A restore test after a backup does not change the result of the backup, but a failed test is reported with its own notification.\n\n## Improved support for Sync jobs\n\nWith this version, Sync jobs now store their logs so the logs can be viewed after the job has completed. Several places where the Sync job was showing options that were only relevant to restores are now updated.\n\n## Other new features\n\n- Backup versions can be given a label with the `set-version-label` command. The labels are also stored on the destination, so a database recreate keeps them.\n- Point-in-time access to a destination: with `--remote-point-in-time`, the S3 and Duplicati Storage destinations read the destination as it was at the given time, using bucket versioning. The destination is read-only in this mode.\n- Report modules can send reports for other operations than backups, chosen with `--send-http-operations`, `--send-mail-operations`, `--send-xmpp-operations` and `--send-telegram-operations`. Backup reports remain the default.\n- A restore on an existing backup can now carry additional advanced options.\n- The new `--disable-secret-provider` option disables the default secret provider, the configured secret provider, or both. `--disable-default-secret-provider` still works but is deprecated. The server now also reports which secret provider is active.\n- Duplicati Storage can be used as a secondary target, and supports object locking.\n- Uploads to Google Cloud Storage now carry a CRC32 checksum.\n- SMB servers that require SMB 3.1.1 can be used with `--enable-smb311`.\n- Neon Object Storage has been added to the list of S3 providers.\n\n## Changed behavior\n\n- A backup that asks for object locks on a bucket or container that does not have locking enabled now completes with a warning that no locks were applied, instead of failing. This applies to S3, B2, Azure, Google Cloud Storage and Duplicati Storage.\n- Options in source and destination urls are now validated, so an option that no module supports is reported with a warning.\n- The Microsoft 365 site classifications \"Classic\" and \"Communication\" have been removed, as they never matched any site.\n- When a restore does not specify overwrite, restore permissions or skip metadata, the settings of the backup and the server defaults now apply instead of turning them off.\n\n## Downgrading\n\nThis release updates the local database from version 19 to version 22 and the sync database to version 1. Version 2.4.0.1 cannot open the newer databases. To go back to 2.4.0.1, downgrade the databases with the DatabaseTool `downgrade` command first. Its default target versions now match 2.4.0.1, so no version options are needed.\n\n## Fixes\n\nAborting a backup no longer waits for a stuck source listing, file open, size or metadata read, and a stop or abort that arrives before the operation is ready is kept.\n\nRestores keep an appended file when restoring without `--overwrite`, do not read through a link when restoring a symbolic link to a file, keep the drive letter folder when restoring Windows paths in place, and stop when `--restore-path` has no value. A partial restore no longer warns about the folders it has to crea",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "duplicati-2.4.1.0_stable_2026-10-29-win-x64-gui.msi",
+        "size": 109589504,
+        "sha256": "b5574d08baf9782f43b961741814a111c5dc3a19f4ebb3f49fb1556d0bae8a0d",
+        "official": "https://github.com/duplicati/duplicati/releases/download/v2.4.1.0_stable_2026-10-29/duplicati-2.4.1.0_stable_2026-10-29-win-x64-gui.msi",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "duplicati-2.4.1.0_stable_2026-10-29-win-x64-gui.zip",
+        "size": 107789096,
+        "sha256": "34f3c38466ccc738470da4f31b35effda4eef91f1314d4ea90e21362f93388c3",
+        "official": "https://github.com/duplicati/duplicati/releases/download/v2.4.1.0_stable_2026-10-29/duplicati-2.4.1.0_stable_2026-10-29-win-x64-gui.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "bleachbit": {
+    "version": "6.0.6",
+    "released": "2026-10-22",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/bleachbit/bleachbit/releases/tag/v6.0.6",
+    "changelog": "BleachBit 6.0.6 is released with over 300 changes to speed up the application, add cleaners for Helium and Docker, clean more in existing browsers including Google Chrome, fix dozens of bugs, improve macOS support, and update 61 translations.\r\n\r\nHighlights:\r\n\r\n- Faster startup, deep scan, file deletion, and file wiping\r\n- New cleaners for the Helium browser and Docker Desktop on Windows, Linux, and macOS\r\n- More crash reports, GPU caches, and network state files cleaned in web browsers and VS Code-based editors, and more cache and session files cleaned in Claude Code\r\n- Windows: fixes a bug in versions 5.0.0 through 6.0.5 that prevented saving settings after first running as administrator, and repairs affected folders automatically\r\n- Linux: fixes configuration file ownership when running with sudo, and \"BleachBit as Administrator\" on Fedora and other Red Hat-based distributions\r\n- macOS: extended cleaners for Adobe Acrobat, Devin, GIMP, Google Earth, TeamViewer, Visual Studio Code, VLC, Zen browser, and Zoom\r\n\r\n📝[Read the full release notes](https://www.bleachbit.org/news/bleachbit-606) \r\n\r\n⬇️[Download BleachBit](https://www.bleachbit.org/download)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "BleachBit-6.0.6-portable.zip",
+        "size": 20402357,
+        "sha256": "285a53c01f95cf859250c1b612f27c2ff1247c5af53eb8e8c6744b374f1ed19e",
+        "official": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/BleachBit-6.0.6-portable.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "BleachBit-6.0.6-setup.exe",
+        "size": 15140856,
+        "sha256": "a8d27535cdc53e89c21090eabca6026d32c4d385863f8dfc6fc8814bda7881c4",
+        "official": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/BleachBit-6.0.6-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "wireguard": {
+    "version": "1.1.1",
+    "released": "2026-09-20",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WireGuard/WireGuard/1.1.1",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "wireguard-amd64-1.1.1.msi",
+        "size": null,
+        "sha256": "7bfed60ad61b785c914b38b61555a975488e1d3ec472dbfb2fcdf498fca75242",
+        "official": "https://download.wireguard.com/windows-client/wireguard-amd64-1.1.1.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "gpg4win": {
+    "version": "5.1.1",
+    "released": "2026-09-23",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GnuPG/Gpg4win/5.1.1",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "gpg4win-5.1.1.exe",
+        "size": null,
+        "sha256": "ed19c0c89ec42fe32c52a7abd6e3da5f491752700546b9eed7ddf82fd303cddf",
+        "official": "https://files.gpg4win.org/gpg4win-5.1.1.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "passwordsafe": {
+    "version": "3.73.0",
+    "released": "2026-10-08",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/RonyShapiro/PasswordSafe/3.73.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "pwsafe64-3.73.0.msi",
+        "size": null,
+        "sha256": "6bd98519f886be96292c2c75f309583112f301c0e75683f13eb567b06d94053b",
+        "official": "https://github.com/pwsafe/pwsafe/releases/download/3.73.0/pwsafe64-3.73.0.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "github-cli": {
+    "version": "2.104.0",
+    "released": "2026-11-12",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/cli/cli/releases/tag/v2.104.0",
+    "changelog": "## Protect private forks when deleting repositories\r\n\r\n`gh repo delete` now warns when deleting a private or internal repository will also delete its forks. The additional confirmation is required even with `--yes`.\r\n\r\nNon-interactive workflows and agents must explicitly accept the cascading deletion:\r\n\r\n```shell\r\ngh repo delete OWNER/REPO --yes --accept-cascading-deletion-of-private-forks\r\n```\r\n\r\n## What's Changed\r\n\r\n### ✨ Features\r\n\r\n* Require confirmation before `gh repo delete` deletes private forks by @BagToad in [#14858](https://github.com/cli/cli/pull/14858)\r\n\r\n### 🐛 Fixes\r\n\r\n* fix(auth status): surface underlying rate-limit, server, and network errors in terminal output by @babakks and @Copilot in [#15009](https://github.com/cli/cli/pull/15009)\r\n* fix(auth): skip token refresh when `gh`'s state directory is not writable by @babakks in [#14845](https://github.com/cli/cli/pull/14845)\r\n\r\n### 📚 Docs & Chores\r\n\r\n* Use REST to apply issue triage labels by @BagToad in [#15041](https://github.com/cli/cli/pull/15041)\r\n* Prevent repeated Dependabot triage assessments by @BagToad in [#15002](https://github.com/cli/cli/pull/15002)\r\n* Apply issue triage labels directly by @BagToad in [#15001](https://github.com/cli/cli/pull/15001)\r\n* Provide verified build versions to issue triage by @BagToad in [#15000](https://github.com/cli/cli/pull/15000)\r\n* Use a synthetic namespace for triage fixtures by @BagToad in [#14976](https://github.com/cli/cli/pull/14976)\r\n* Remove the accidental issue-triage model pin by @BagToad in [#14972](https://github.com/cli/cli/pull/14972)\r\n* Add a fake GitHub API runner for reproductions by @BagToad in [#14951](https://github.com/cli/cli/pull/14951)\r\n* Clarify which hosts use `GH_ENTERPRISE_TOKEN` by @BagToad in [#14918](https://github.com/cli/cli/pull/14918)\r\n* Regenerate triage workflows with `gh-aw` v1.0.1 by @tidy-dev in [#14910](https://github.com/cli/cli/pull/14910)\r\n* Test the `ShowRefs` option separator by @BagToad in [#14879](https://github.com/cli/cli/pull/14879)\r\n* Fix local extension-install test path normalization by @bobrik in [#14854](https://github.com/cli/cli/pull/14854)\r\n* Save Go caches only from trunk by @williammartin in [#14840](https://github.com/cli/cli/pull/14840)\r\n* Add a private vulnerability report form by @BagToad in [#14825](https://github.com/cli/cli/pull/14825)\r\n* Replace `msgpack` with a minimal node ID encoder by @tj-smith47 in [#14801](https://github.com/cli/cli/pull/14801)\r\n* Test the Git client with real repositories by @williammartin in [#14348](https://github.com/cli/cli/pull/14348)\r\n\r\n### :dependabot: Dependencies\r\n\r\n* chore(deps): bump `github.com/klauspost/compress` from 1.20.3 to 1.20.4 by @dependabot in [#15040](https://github.com/cli/cli/pull/15040)\r\n* chore(deps): bump `charm.land/lipgloss/v2` from 2.0.6 to 2.1.0 by @dependabot in [#15039](https://github.com/cli/cli/pull/15039)\r\n* chore(deps): bump Go toolchain from 1.27.3 to 1.27.4 by @github-actions[bot] in [#15028](https://github.com/cli/cli/pull/15028)\r\n* chore(deps): bump `golang.org/x/sys` from 0.49.0 to 0.50.0 by @dependabot in [#15010](https://github.com/cli/cli/pull/15010)\r\n* chore(deps): bump `golang.org/x/sync` from 0.24.0 to 0.25.0 by @dependabot in [#14998](https://github.com/cli/cli/pull/14998)\r\n* chore(deps): bump the `codeql-actions` group across 1 directory with 3 updates by @dependabot in [#14964](https://github.com/cli/cli/pull/14964)\r\n* chore(deps): bump `github.com/spf13/pflag` from 1.0.10 to 1.1.0 by @dependabot in [#14963](https://github.com/cli/cli/pull/14963)\r\n* chore(deps): bump `github.com/yuin/goldmark` from 1.8.6 to 1.8.7 by @dependabot in [#14907](https://github.com/cli/cli/pull/14907)\r\n* chore(deps): bump `charm.land/bubbletea/v2` from 2.1.0 to 2.1.1 by @dependabot in [#14906](https://github.com/cli/cli/pull/14906)\r\n* chore(deps): bump `github.com/sigstore/sigstore-go` from 1.3.0 to 1.4.0 by @dependabot in [#14905](https://github.com/cli/cli/pull/14905)\r\n* chore(deps): bump `google.golang.org/grpc` from 1.84.0 to 1.85.0 by @dependabot in [#14878](https://github.com/cli/cli/pull/14878)\r\n* chore(deps): bump the `codeql-actions` group with 3 updates by @dependabot in [#14824](https://github.com/cli/cli/pull/14824)\r\n\r\n\r\n## New Contributors\r\n* @tj-smith47 made their first contribution in https://github.com/cli/cli/pull/14801\r\n* @bobrik made their first contribution in https://github.com/cli/cli/pull/14854\r\n\r\n**Full Changelog**: https://github.com/cli/cli/compare/v2.103.3...v2.104.0",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "gh_2.104.0_windows_amd64.msi",
+        "size": 15425536,
+        "sha256": "cc89beb33ee020669efac70270aff55ca3ad52321aa813307537f2fe9237cc6e",
+        "official": "https://github.com/cli/cli/releases/download/v2.104.0/gh_2.104.0_windows_amd64.msi",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "gh_2.104.0_windows_amd64.zip",
+        "size": 15169772,
+        "sha256": "08c06d10482f12c478018cd259f64acbd5f625712cadf331aad19ba973c879e5",
+        "official": "https://github.com/cli/cli/releases/download/v2.104.0/gh_2.104.0_windows_amd64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "cmake": {
+    "version": "4.5.0",
+    "released": "2026-11-12",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/Kitware/CMake/releases/tag/v4.5.0",
+    "changelog": "See also the [release notes](https://cmake.org/cmake/help/latest/release/4.5.html) and [release milestone](https://gitlab.kitware.com/cmake/cmake/-/milestones/206).\r\n\r\nPGP sig by [2D2CEF1034921684](http://pool.sks-keyservers.net:11371/pks/lookup?op=get&search=0xCBA23971357C2E6590D9EFD3EC8FEF3A7BFB4EDA)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "cmake-4.5.0-windows-x86_64.msi",
+        "size": 40415232,
+        "sha256": "8e450caad4ce6bfb0f30206cac64bc611deee0d6848f4bf0ef30f51ff3606e25",
+        "official": "https://github.com/Kitware/CMake/releases/download/v4.5.0/cmake-4.5.0-windows-x86_64.msi",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "cmake-4.5.0-windows-x86_64.zip",
+        "size": 56341654,
+        "sha256": "301b1728317ccd84e984b02e366a8293735bc5ac618757d3d8f58b578f062411",
+        "official": "https://github.com/Kitware/CMake/releases/download/v4.5.0/cmake-4.5.0-windows-x86_64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "geany": {
+    "version": "2.1.0",
+    "released": "2025-07-06",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/geany/geany/releases/tag/2.1.0",
+    "changelog": "## General\r\n* Include themes from geany-themes ([Issue#4035](https://github.com/geany/geany/issues/4035), [PR#4044](https://github.com/geany/geany/pull/4044), [Issue#4340](https://github.com/geany/geany/issues/4340), [PR#4354](https://github.com/geany/geany/pull/4354)).\r\n* Fix silently truncating files containing NUL bytes ([PR#3716](https://github.com/geany/geany/pull/3716)).\r\n* Improve compatibility focusing the editor window when opening a file externally (Kondor Dániel, [Issue#3531](https://github.com/geany/geany/issues/3531), [PR#4071](https://github.com/geany/geany/pull/4071)).\r\n* Require GLib 2.56 ([PR#4199](https://github.com/geany/geany/pull/4199)).\r\n* Update placeholders for external printing command to use the same ones as build commands (Pynckels, [PR#4250](https://github.com/geany/geany/pull/4250)).\r\n\r\n## Bug Fixes\r\n* Improve corner-case encoding detection and conversion ([PR#3716](https://github.com/geany/geany/pull/3716)).\r\n* Fix losing session after opening several projects ([Issue#3897](https://github.com/geany/geany/issues/3897), [PR#3898](https://github.com/geany/geany/pull/3898)).\r\n* Fix emission of the \"document-activate\" signal, leading to glitches in UI and plugins ([Issue#3684](https://github.com/geany/geany/issues/3684), [PR#3891](https://github.com/geany/geany/pull/3891)).\r\n* Fix spurious CPU load after running a build command ([PR#3902](https://github.com/geany/geany/pull/3902)).\r\n* Use a more reliable method for saving preferences and other auxiliary files ([Issue#3946](https://github.com/geany/geany/issues/3946), [PR#3950](https://github.com/geany/geany/pull/3950)).\r\n* Fix focusing the symbol list through key binding (Pascal Baillehache, [Issue#3678](https://github.com/geany/geany/issues/3678), [PR#3681](https://github.com/geany/geany/pull/3681)).\r\n* Fix search entry after editing the toolbar ([Issue#3831](https://github.com/geany/geany/issues/3831), [PR#3838](https://github.com/geany/geany/pull/3838)).\r\n* Fix non-deterministic anonymous symbol names ([Issue#3717](https://github.com/geany/geany/issues/3717), [PR#3785](https://github.com/geany/geany/pull/3785)).\r\n* Fix displaying symbols declared out of order ([Issue#4060](https://github.com/geany/geany/issues/4060), [PR#4063](https://github.com/geany/geany/pull/4063)).\r\n* Fix possible invalid memory access when generating user initials on first startup ([Issue#3844](https://github.com/geany/geany/issues/3844), [PR#3846](https://github.com/geany/geany/pull/3846)).\r\n* Fix Meson build when either `fnmatch()` or `regcomp()` is missing on the system ([Issue#3618](https://github.com/geany/geany/issues/3618)).\r\n* Fix replacing placeholders in filenames in build commands ([PR#4318](https://github.com/geany/geany/pull/4318)).\r\n\r\n## Interface\r\n* Add support for searching the Messages and Compiler output ([PR#3823](https://github.com/geany/geany/pull/3823)).\r\n* Add support for modern platform-native file selection dialogs ([Issue#1310](https://github.com/geany/geany/issues/1310), [Issue#2794](https://github.com/geany/geany/issues/2794), [Issue#3458](https://github.com/geany/geany/issues/3458), [Issue#3868](https://github.com/geany/geany/issues/3868), [Issue#4220](https://github.com/geany/geany/issues/4220), [Issue#4259](https://github.com/geany/geany/issues/4259), [PR#3861](https://github.com/geany/geany/pull/3861)).\r\n* Regroup filetypes by letter ([PR#3977](https://github.com/geany/geany/pull/3977)).\r\n* Add filter for open documents sidebar ([PR#4210](https://github.com/geany/geany/pull/4210)).\r\n* Add filter for keybindings preferences ([Issue#2848](https://github.com/geany/geany/issues/2848), [PR#4192](https://github.com/geany/geany/pull/4192)).\r\n* Add various pref to skip \"replace in session\" confirmation dialog ([Issue#3702](https://github.com/geany/geany/issues/3702), [PR#3851](https://github.com/geany/geany/pull/3851)).\r\n* Make it easier to wrap search when the confirmation dialog is shown ([Issue#1192](https://github.com/geany/geany/issues/1192), [PR#4042](https://github.com/geany/geany/pull/4042)).\r\n* Fix spurious selection when clicking an externally-modified file ([Issue#3906](https://github.com/geany/geany/issues/3906), [PR#3909](https://github.com/geany/geany/pull/3909)).\r\n* Fix translation of the Various preferences tab ([Issue#3628](https://github.com/geany/geany/issues/3628), [PR#3634](https://github.com/geany/geany/pull/3634)).\r\n* Do not show redundant None encoding ([Issue#3624](https://github.com/geany/geany/issues/3624), [PR#3640](https://github.com/geany/geany/pull/3640)).\r\n* Do not display encodings not supported on the system ([PR#3720](https://github.com/geany/geany/pull/3720)).\r\n* Move \"Virtual Spaces\" preference to \"Editor -> Features\" ([Issue#3605](https://github.com/geany/geany/issues/3605)).\r\n* Various UI tweaks ([PR#3560](https://github.com/geany/geany/pull/3560), [Issue#3630](https://github.com/geany/geany/issues/3630), [PR#3637](https://github.com/geany/geany/pull/3637), [PR#4098](https://github.com/geany/geany/pull/4098), [PR#4149](https://github.com/geany/geany/pull/4149)).\r\n\r\n## Editor\r\n* Update Scintilla to 5.5.4 and Lexilla to 5.4.2 ([PR#4168](https://github.com/geany/geany/pull/4168)).\r\n* Allow pasting and autocompletion for multiple carets ([Issue#625](https://github.com/geany/geany/issues/625), [Issue#2328](https://github.com/geany/geany/issues/2328), [PR#4278](https://github.com/geany/geany/pull/4278)).\r\n* Increase minimal number margin width ([Issue#4332](https://github.com/geany/geany/issues/4332), [PR#4334](https://github.com/geany/geany/pull/4334)).\r\n\r\n## Filetypes\r\n* Update parsers to Universal Ctags p6.1.20240519.0, which leads to many updated symbol parsers ([PR#3859](https://github.com/geany/geany/pull/3859), [PR#3877](https://github.com/geany/geany/pull/3877)).\r\n* Add CIL filetype (Christian Schrötter, [PR#3480](https://github.com/geany/geany/pull/3480)).\r\n* Add Dart filetype ([Issue#371](https://github.com/geany/geany/issues/371), [PR#3973](https://github.com/geany/geany",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "geany-2.1_setup.exe",
+        "size": 28220816,
+        "sha256": "50c7835b31bc736d0b5e5f894aa8ec08a95185873fb64d29a95727d2859107d8",
+        "official": "https://github.com/geany/geany/releases/download/2.1.0/geany-2.1_setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "musescore": {
+    "version": "4.7.7",
+    "released": "2026-11-12",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/musescore/MuseScore/releases/tag/v4.7.7",
+    "changelog": "### MuseScore Studio 4.7.7 is now available!\r\n\r\nThis update adds updated translations, support for FFMPEG 9, some small improvements to instruments, as well as fixes for several bugs and crashes.\r\n\r\nTo learn more, see the full announcements for [4.7.7](https://musescore.org/en/4.7.7) and [4.7](https://musescore.org/en/4.7).\r\n\r\nAnd don't forget to check out the [4.7 release video](https://www.youtube.com/watch?v=grKX-cBEEmM)!",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "MuseScore-Studio-4.7.7.261109195-x86_64.msi",
+        "size": 135069696,
+        "sha256": "1e54d88c63c20b348f12d23008b3533fd255e1bc88734a9496a46391c4b072a9",
+        "official": "https://github.com/musescore/MuseScore/releases/download/v4.7.7/MuseScore-Studio-4.7.7.261109195-x86_64.msi",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 便攜版 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "MuseScore-Studio-4.7.7.261109195-x86_64.paf.exe",
+        "size": 120398680,
+        "sha256": "73b4a7f4dcdd4f48726ed8ce6632372b759a8082a4bdcbad391b734b0edd446d",
+        "official": "https://github.com/musescore/MuseScore/releases/download/v4.7.7/MuseScore-Studio-4.7.7.261109195-x86_64.paf.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "kodi": {
+    "version": "21.3.0.0",
+    "released": "2025-11-23",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/x/XBMCFoundation/Kodi/21.3.0.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "kodi-21.3-Omega-x64.exe",
+        "size": null,
+        "sha256": "2c46c2bd60b38bb60eb0a5e3468bfd43e9235521eae2910b8c81455e46335c5c",
+        "official": "https://mirrors.kodi.tv/releases/windows/win64/kodi-21.3-Omega-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "freetube": {
+    "version": "0.26.0",
+    "released": "2026-11-02",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FreeTube/FreeTube/0.26.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "freetube-0.26.0-beta-setup-x64.exe",
+        "size": null,
+        "sha256": "9a7c4525dd3d64b68a48f274dab27d629da0b590b6d2b1e497c5b38b1a741961",
+        "official": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-setup-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "transmission": {
+    "version": "4.1.4",
+    "released": "2026-10-24",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/transmission/transmission/releases/tag/4.1.4",
+    "changelog": "# Transmission 4.1.4\r\n\r\nThis is Transmission 4.1.4, a bugfix release. It fixes a security vulnerability in the macOS client and has other small bugfixes. Users are encouraged to upgrade to this version.\r\n\r\n## What's New in 4.1.4\r\n\r\n### All Platforms\r\n\r\n* Fixed a Transmission 4.1.0 regression that could cause torrents with zero-byte files to be handled incorrectly, sometimes losing downloaded progress ([#9165](https://github.com/transmission/transmission/pull/9165))\r\n* Hardened the `torrent-add` RPC method against malformed requests. ([#9158](https://github.com/transmission/transmission/pull/9158))\r\n* Unified launch and delegation between the Qt and GTK clients: If either is already running and then you or a browser's mime-type handler tries to start the other to add a new torrent, that new torrent will get handed off to the pre-existing session. ([#9032](https://github.com/transmission/transmission/pull/9032))\r\n* Fixed a build failure that happened when building Transmission with `-Wnull-dereference -Werror` in gcc 12.15. ([#9057](https://github.com/transmission/transmission/pull/9057))\r\n* Fixed a rare bug could leave Transmission hung but running on shutdown. ([#9058](https://github.com/transmission/transmission/pull/9058))\r\n* Fixed a rare bug that could prevent downloading webseeds from finishing. ([#9146](https://github.com/transmission/transmission/pull/9146))\r\n* Fixed a bug where setting `TR_CURL_PROXY_SSL_NO_VERIFY` broke origin server SSL verification. ([#9153](https://github.com/transmission/transmission/pull/9153))\r\n* Fixed per-torrent session speed-limit overrides so they apply to both downloads and uploads. ([#9154](https://github.com/transmission/transmission/pull/9154))\r\n\r\n### macOS Client\r\n\r\n* Fixed a potential RCE vulnerability in the macOS client. It requires local write access to the user's preferences, so it is not remotely exploitable. ([GHSA-v7mp-fpv3-jf5r](https://github.com/transmission/transmission/security/advisories/GHSA-v7mp-fpv3-jf5r))\r\n* Minimum supported version increased to macOS 12 ([#9166](https://github.com/transmission/transmission/pull/9166))\r\n* Fixed a bug that prevented some magnet links from being added correctly. ([#9062](https://github.com/transmission/transmission/pull/9062))\r\n* Migrate Sparkle update signing from DSA to EdDSA. ([#9065](https://github.com/transmission/transmission/pull/9065))\r\n\r\n### Qt Client\r\n\r\n* On Windows builds, change to zlib `1.3.2` from `1.3.1` to pick up [7ASecurity audit](https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit/) fixes. ([#9025](https://github.com/transmission/transmission/pull/9025))\r\n* On Windows 10+ builds, change to Qt `6.10.3` from `6.10.1` to pick up Qt bugfixes. ([#9030](https://github.com/transmission/transmission/pull/9030))\r\n* On Windows 7 builds, change to Qt `5.15.19` from `5.15.17` to pick up Qt bugfixes. ([#9030](https://github.com/transmission/transmission/pull/9030))\r\n* Improved UI code to use less CPU. ([#9161](https://github.com/transmission/transmission/pull/9161))\r\n\r\n### GTK Client\r\n\r\n* The torrent list now re-sorts and re-applies its filter when the torrent's top folder's name changes, eg after a rename or after a magnet link's metadata arrives. ([#9159](https://github.com/transmission/transmission/pull/9159))\r\n* Opening a torrent's folder now opens the correct folder when a single-file torrent uses a directory structure. ([#9160](https://github.com/transmission/transmission/pull/9160))\r\n* Fixed a bug that prevented `transmission-gtk`'s app icon from being found on some desktops. ([#9032](https://github.com/transmission/transmission/pull/9032))\r\n\r\n### Web Client\r\n\r\n* Fixed a display bug that sometimes listed torrent  names as 'Unknown'. ([#9135](https://github.com/transmission/transmission/pull/9135))\r\n\r\n### transmission-remote\r\n\r\n* Fixed a 4.0.0 bug that broke `transmission-remote --list-groups`. ([#9157](https://github.com/transmission/transmission/pull/9157))\r\n\r\n## Thank You!\r\n\r\nLast but certainly not least, a big ***Thank You*** to these people who contributed to this release:\r\n\r\n* @danudey ([Daniel Fox](https://github.com/danudey)): Code review. ([#9032](https://github.com/transmission/transmission/pull/9032))\r\n* @jgalat ([Jorge Galat](https://github.com/jgalat)): Fixed per-torrent session speed-limit overrides so they apply to both downloads and uploads. ([#9154](https://github.com/transmission/transmission/pull/9154))\r\n* @h1de0x ([Kirill Shtumf](https://github.com/h1de0x)): Opening a torrent's folder now opens the correct folder when a single-file torrent uses a directory structure. ([#9160](https://github.com/transmission/transmission/pull/9160))\r\n\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "transmission-4.1.4-x64.msi",
+        "size": 23457792,
+        "sha256": "cf51e5772f39a3ead3c8f763b689399b9b4b8b016a4c0ca68ab5d6c634be2e1c",
+        "official": "https://github.com/transmission/transmission/releases/download/4.1.4/transmission-4.1.4-x64.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "element": {
+    "version": "1.12.35",
+    "released": "2026-11-12",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/Element/Element/1.12.35",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Element Setup 1.12.35.exe",
+        "size": null,
+        "sha256": "8064db8e9b2a5eff871b56ef063af4fc751f1058344f108285c33a9bb97ba994",
+        "official": "https://packages.element.io/desktop/install/win32/x64/Element%20Setup%201.12.35.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "signal": {
+    "version": "8.35.0",
+    "released": "2026-11-11",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhisperSystems/Signal/8.35.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "signal-desktop-win-8.35.0.exe",
+        "size": null,
+        "sha256": "47509a9d5626efdc4bfffe938bf633e3b8c80d6798b43620ceb5d250f058e26f",
+        "official": "https://updates.signal.org/desktop/signal-desktop-win-8.35.0.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "tor-browser": {
+    "version": "16.0.1",
+    "released": "2026-11-10",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TorProject/TorBrowser/16.0.1",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 便攜版 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "tor-browser-windows-x86_64-portable-16.0.1.exe",
+        "size": null,
+        "sha256": "fbef840ba111409213dec2291e3594a43b82525545cdef0490a5750f24f5f232",
+        "official": "https://archive.torproject.org/tor-package-archive/torbrowser/16.0.1/tor-browser-windows-x86_64-portable-16.0.1.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "anythingllm": {
+    "version": "1.19.0",
+    "released": "2026-10-26",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.19.0",
+    "changelog": "### Built-in LLM for Docker\r\n<img width=\"3680\" height=\"2212\" alt=\"AnythingLLM Docker built-in LLM powered by Lemonade and llama.cpp\" src=\"https://github.com/user-attachments/assets/410b5784-ca15-4027-a1c4-056d9d5c748e\" />\r\n\r\nAnythingLLM Docker now has a default local LLM experience right out of the box. The same kind of built-in engine that ships with [AnythingLLM Desktop](https://docs.anythingllm.com/setup/llm-configuration/local/built-in) can now run **inside the container**: [Lemonade](https://lemonade-server.ai), the fully [open-source](https://github.com/lemonade-sdk/lemonade) local inference server from AMD, running your models with [llama.cpp](https://github.com/ggml-org/llama.cpp). You no longer need to run Ollama, LM Studio or any other inference server next to AnythingLLM.\r\n\r\nPass your GPU into the container and the engine is accelerated on whatever hardware you have. It picks the fastest backend automatically: CUDA for NVIDIA GPUs, Vulkan for AMD and Intel GPUs, or the CPU. It runs on both `amd64` and `arm64` hosts.\r\n\r\nWhen it's turned on, **Built-in** becomes the default LLM provider during onboarding, with three models recommended for your hardware. You can download any model from the model table or pull any GGUF model from Hugging Face. It works everywhere a provider can be used: the system LLM, workspace and agent LLMs, the chat window model picker, and [Model Router](https://docs.anythingllm.com/model-router/setup).\r\n\r\n> [!TIP]\r\n> **The built-in LLM is off by default.** Turn it on by starting the container with `-e ENABLE_BUILT_IN_LLM=true`, and add `--gpus all` (or pass in your AMD or Intel GPU devices) for GPU acceleration. See [Built-in LLM for Docker](https://docs.anythingllm.com/installation-docker/built-in-llm) for the full setup for each kind of hardware.\r\n\r\n### Color palettes\r\n\r\nColor palettes are straightforward thematic tinting you can apply to the entire UI. We plan to expand this functionality more so you can more heavily customize the UI and even layout. [Learn more](https://docs.anythingllm.com/features/branding)\r\n\r\n<table>\r\n  <tr>\r\n    <td><img width=\"100%\" alt=\"Ocean color palette\" src=\"https://github.com/user-attachments/assets/08c2baa2-9a9b-4ecd-ae95-88e88175ffe5\" /></td>\r\n    <td><img width=\"100%\" alt=\"Forest color palette\" src=\"https://github.com/user-attachments/assets/4274998a-dba8-490e-ab5d-9faecf9248c4\" /></td>\r\n  </tr>\r\n  <tr>\r\n    <td><img width=\"100%\" alt=\"Plum color palette\" src=\"https://github.com/user-attachments/assets/214c3571-7d72-4111-bf08-ce3d60ff1b99\" /></td>\r\n    <td><img width=\"100%\" alt=\"Ember color palette\" src=\"https://github.com/user-attachments/assets/88449231-139c-40a3-bb49-135bd0f1e9fa\" /></td>\r\n  </tr>\r\n</table>\r\n\r\n----\r\n\r\n## What's Changed\r\n* fix: route Bedrock India (in.) inference profiles via bedrock-runtime by @kimnamu in https://github.com/Mintplex-Labs/anything-llm/pull/6717\r\n* Remove open-computer (moved to its own repo) by @timothycarambat in https://github.com/Mintplex-Labs/anything-llm/pull/6727\r\n* Neutralize spreadsheet formulas in CSV chat exports by @timothycarambat in https://github.com/Mintplex-Labs/anything-llm/pull/6728\r\n* Cap request body size to prevent unauthenticated embed DoS by @timothycarambat in https://github.com/Mintplex-Labs/anything-llm/pull/6729\r\n* feat: show notice when response hits max output token limit (#6703) by @ManojDevarajulu in https://github.com/Mintplex-Labs/anything-llm/pull/6726\r\n* Hold clarifying-question timeout once the user starts answering by @timothycarambat in https://github.com/Mintplex-Labs/anything-llm/pull/6730\r\n* Move Weaviate to weaviate-client v3 by @shatfield4 in https://github.com/Mintplex-Labs/anything-llm/pull/6675\r\n* Support .mov files for transcription by @shatfield4 in https://github.com/Mintplex-Labs/anything-llm/pull/6721\r\n* Stop system prompt variable values from expanding other placeholders by @shatfield4 in https://github.com/Mintplex-Labs/anything-llm/pull/6731\r\n* Apply workspace model changes to agent sessions mid-thread by @shatfield4 in https://github.com/Mintplex-Labs/anything-llm/pull/6673\r\n* Show per-file embed progress in context overflow modal by @shatfield4 in https://github.com/Mintplex-Labs/anything-llm/pull/6639\r\n* fix: include email body/recipients and job prompt in tool approval requests by @rtmalikian in https://github.com/Mintplex-Labs/anything-llm/pull/6732\r\n* fix: send the full GitLab branch name when fetching repository files by @MohammadHijjawi97 in https://github.com/Mintplex-Labs/anything-llm/pull/6740\r\n* fix: return MCP tool text without the result envelope by @Sairaj-24 in https://github.com/Mintplex-Labs/anything-llm/pull/6736\r\n* Fix prompt compressor crash on history records skipped by convertToPromptHistory (#6737) by @ManojDevarajulu in https://github.com/Mintplex-Labs/anything-llm/pull/6738\r\n* fix: keep current-turn attachments when the string compressor runs by @devYRPauli in https://github.com/Mintplex-Labs/anything-llm/pull/6742\r\n* Stop sending deprecated sampling and thinking params to Gemini by @shatfield4 in https://github.com/Mintplex-Labs/anything-llm/pull/6733\r\n* fix: count the text of messages with attachments in statsFrom by @devYRPauli in https://github.com/Mintplex-Labs/anything-llm/pull/6745\r\n* Built-in LLM for Docker (embedded_lemonade) by @timothycarambat in https://github.com/Mintplex-Labs/anything-llm/pull/6719\r\n* fix: truncate long citation URLs in the detail modal by @leilei3167 in https://github.com/Mintplex-Labs/anything-llm/pull/6781\r\n* fix: default OpenAI image generation to gpt-image-2.5-flare by @rtmalikian in https://github.com/Mintplex-Labs/anything-llm/pull/6780\r\n* fix: keep conversation history when the OpenAI compatible chat prompt is compressed by @MarMarLabs in https://github.com/Mintplex-Labs/anything-llm/pull/6777\r\n* fix: tell the user why a password reset was refused by @MarMarLabs in https://github.com/Mintplex-Labs/anything-llm/pull/6771\r\n* fix: report empty connector imports as failures by",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "AnythingLLMDesktop.exe",
+        "size": 403299096,
+        "sha256": "743d10ddf920087b46cd614cafd2e0e31550089405436f00cbd827c43ca4c90a",
+        "official": "https://github.com/Mintplex-Labs/anything-llm/releases/download/v1.19.0/AnythingLLMDesktop.exe",
         "mirrors": []
       }
     ],
