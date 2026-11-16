@@ -7453,5 +7453,26 @@
     ],
     "mirrored": false,
     "source": "winget"
+  },
+  "tigervnc": {
+    "version": "1.16.2",
+    "released": "2026-03-26",
+    "verified": "2026-11-16",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TigerVNC/TigerVNC/1.16.2",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安裝包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "tigervnc64-1.16.2.exe",
+        "size": null,
+        "sha256": "96a0117c8d0d55ea2e2c20e3d9d9a798011da8c5a813a35cd0b9e006d58bb7f4",
+        "official": "https://sourceforge.net/projects/tigervnc/files/stable/1.16.2/tigervnc64-1.16.2.exe/download",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
   }
 }
