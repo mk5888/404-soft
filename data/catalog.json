@@ -11904,5 +11904,616 @@
       ]
     },
     "icon": "/static/icons/oculante.svg"
+  },
+  {
+    "slug": "duplicati",
+    "name": "Duplicati",
+    "abbr": "DU",
+    "category": "file",
+    "tags": [
+      "備份",
+      "加密",
+      "雲端"
+    ],
+    "summary": "開源加密備份工具，增量備份到各大雲端與自架伺服器。",
+    "intro": "Duplicati 把檔案加密、壓縮、增量備份到 OneDrive、S3、Google Drive、WebDAV、SFTP 等目標，支援排程與版本還原。",
+    "features": [
+      "AES-256 加密備份",
+      "增量備份省流量",
+      "支援多種雲端與自架目標",
+      "排程與版本還原"
+    ],
+    "tips": [],
+    "license": "LGPL-2.1",
+    "mirror_allowed": true,
+    "homepage": "https://www.duplicati.com/",
+    "source": {
+      "type": "github",
+      "repo": "duplicati/duplicati",
+      "assets": [
+        {
+          "match": "win-x64-gui\\.msi$",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "win-x64-gui\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/duplicati.png"
+  },
+  {
+    "slug": "bleachbit",
+    "name": "BleachBit",
+    "abbr": "BB",
+    "category": "system",
+    "tags": [
+      "清理",
+      "隱私",
+      "绿色版"
+    ],
+    "summary": "開源系統清理工具，清除快取、暫存檔與使用痕跡。",
+    "intro": "BleachBit 清理瀏覽器快取、系統暫存、日誌與 90 多種應用的殘留檔案，釋放磁碟空間並保護隱私。",
+    "features": [
+      "清理 90+ 應用殘留",
+      "粉碎檔案防恢復",
+      "便攜版免安裝",
+      "可自訂清理規則"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.bleachbit.org/",
+    "source": {
+      "type": "github",
+      "repo": "bleachbit/bleachbit",
+      "assets": [
+        {
+          "match": "^BleachBit-.*-portable\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^BleachBit-.*-setup\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/bleachbit.svg"
+  },
+  {
+    "slug": "wireguard",
+    "name": "WireGuard",
+    "abbr": "WG",
+    "category": "security",
+    "tags": [
+      "VPN",
+      "加密",
+      "隧道"
+    ],
+    "summary": "極簡高速的開源 VPN，用幾行設定就能搭加密隧道。",
+    "intro": "WireGuard 是新一代 VPN 協議與客戶端，程式碼只有幾千行、速度快、設定簡單，支援金鑰對與二維碼匯入設定。",
+    "features": [
+      "極簡設定",
+      "速度快耗電低",
+      "二維碼匯入設定",
+      "支援多種平台"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.wireguard.com/",
+    "source": {
+      "type": "winget",
+      "id": "WireGuard.WireGuard",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "wireguard-amd64-.*\\.msi",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/wireguard.png"
+  },
+  {
+    "slug": "gpg4win",
+    "name": "Gpg4win",
+    "abbr": "GP",
+    "category": "security",
+    "tags": [
+      "加密",
+      "PGP",
+      "郵件"
+    ],
+    "summary": "Windows 上的 GnuPG 套件，檔案與郵件加密簽名。",
+    "intro": "Gpg4win 把 GnuPG、Kleopatra 憑證管理、Outlook 插件打包在一起，加密簽名檔案與郵件，支援 OpenPGP 與 S/MIME。",
+    "features": [
+      "OpenPGP 與 S/MIME",
+      "Kleopatra 憑證管理",
+      "Outlook 加密插件",
+      "檔案加密簽名"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.gpg4win.org/",
+    "source": {
+      "type": "winget",
+      "id": "GnuPG.Gpg4win",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "passwordsafe",
+    "name": "Password Safe",
+    "abbr": "PW",
+    "category": "security",
+    "tags": [
+      "密碼管理",
+      "加密",
+      "本地"
+    ],
+    "summary": "Bruce Schneier 設計的開源密碼管理器，本地加密存檔。",
+    "intro": "Password Safe 用一個主密碼保護所有帳號密碼，資料存在本地加密檔案，可產生高強度密碼，支援 YubiKey 二次驗證。",
+    "features": [
+      "本地加密存檔",
+      "高強度密碼產生器",
+      "YubiKey 二次驗證",
+      "免費商用"
+    ],
+    "tips": [],
+    "license": "Artistic-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://pwsafe.org/",
+    "source": {
+      "type": "winget",
+      "id": "RonyShapiro.PasswordSafe",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "pwsafe64.*\\.msi",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "github-cli",
+    "name": "GitHub CLI",
+    "abbr": "GH",
+    "category": "dev",
+    "tags": [
+      "GitHub",
+      "命令列",
+      "開發"
+    ],
+    "summary": "GitHub 官方命令列工具，在終端機管理倉庫與 PR。",
+    "intro": "GitHub CLI（gh）在終端機完成建立倉庫、開 PR、看 Issue、跑 Actions 等操作，可寫腳本自動化 GitHub 流程。",
+    "features": [
+      "終端機管理 PR 與 Issue",
+      "Actions 狀態查詢",
+      "可寫腳本自動化",
+      "支援 GitHub Enterprise"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://cli.github.com/",
+    "source": {
+      "type": "github",
+      "repo": "cli/cli",
+      "assets": [
+        {
+          "match": "^gh_.*_windows_amd64\\.msi$",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^gh_.*_windows_amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/github-cli.png"
+  },
+  {
+    "slug": "cmake",
+    "name": "CMake",
+    "abbr": "CM",
+    "category": "dev",
+    "tags": [
+      "構建",
+      "C++",
+      "開發"
+    ],
+    "summary": "跨平台 C/C++ 構建工具，絕大多數開源專案都在用。",
+    "intro": "CMake 用 CMakeLists.txt 描述構建流程，產生 Visual Studio、Ninja、Make 等專案檔，是 C/C++ 開發的標準構建工具。",
+    "features": [
+      "跨平台構建",
+      "支援 VS / Ninja / Make",
+      "套件管理整合",
+      "命令列與 GUI 皆有"
+    ],
+    "tips": [],
+    "license": "BSD-3-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://cmake.org/",
+    "source": {
+      "type": "github",
+      "repo": "Kitware/CMake",
+      "assets": [
+        {
+          "match": "^cmake-.*-windows-x86_64\\.msi$",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^cmake-.*-windows-x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/cmake.png"
+  },
+  {
+    "slug": "geany",
+    "name": "Geany",
+    "abbr": "GE",
+    "category": "dev",
+    "tags": [
+      "編輯器",
+      "程式設計",
+      "輕量"
+    ],
+    "summary": "輕量快速的開源程式編輯器，內建編譯與執行。",
+    "intro": "Geany 是輕量的程式碼編輯器，啟動快、支援 50 多種語言的語法高亮與程式碼折疊，可直接編譯執行，適合不想開重型 IDE 的時候。",
+    "features": [
+      "50+ 語言語法高亮",
+      "內建編譯執行",
+      "外掛擴充功能",
+      "啟動飛快"
+    ],
+    "tips": [],
+    "license": "GPL-2.0+",
+    "mirror_allowed": true,
+    "homepage": "https://www.geany.org/",
+    "source": {
+      "type": "github",
+      "repo": "geany/geany",
+      "assets": [
+        {
+          "match": "^geany-.*_setup\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/geany.png"
+  },
+  {
+    "slug": "musescore",
+    "name": "MuseScore",
+    "abbr": "MS",
+    "category": "media",
+    "tags": [
+      "樂譜",
+      "作曲",
+      "音樂"
+    ],
+    "summary": "開源免費的樂譜編輯與作曲軟體，專業打譜工具。",
+    "intro": "MuseScore 可編寫、排版與播放樂譜，支援 MIDI 輸入、吉他譜、鼓譜與上千種樂器音色，樂譜可匯出 PDF、音訊與 MIDI。",
+    "features": [
+      "樂譜編寫與排版",
+      "MIDI 輸入與回放",
+      "匯出 PDF 與音訊",
+      "便攜版免安裝"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://musescore.org/",
+    "source": {
+      "type": "github",
+      "repo": "musescore/MuseScore",
+      "assets": [
+        {
+          "match": "^MuseScore-Studio-.*-x86_64\\.msi$",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^MuseScore-Studio-.*-x86_64\\.paf\\.exe$",
+          "label": "Windows x64 · 便攜版 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/musescore.png"
+  },
+  {
+    "slug": "kodi",
+    "name": "Kodi",
+    "abbr": "KO",
+    "category": "media",
+    "tags": [
+      "家庭影院",
+      "媒體中心",
+      "電視"
+    ],
+    "summary": "開源家庭影院與媒體中心，海報牆管理本地影視庫。",
+    "intro": "Kodi 把電腦變成客廳媒體中心，自動刮削電影、電視劇海報與簡介，支援插件擴充，可遙控播放本地與局域網媒體。",
+    "features": [
+      "影視海報牆",
+      "自動刮削簡介",
+      "插件擴充",
+      "遙控與投屏"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://kodi.tv/",
+    "source": {
+      "type": "winget",
+      "id": "XBMCFoundation.Kodi",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "win64.*\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "freetube",
+    "name": "FreeTube",
+    "abbr": "FT",
+    "category": "video",
+    "tags": [
+      "YouTube",
+      "無廣告",
+      "隱私"
+    ],
+    "summary": "開源隱私 YouTube 客戶端，無廣告、無需登入、可訂閱。",
+    "intro": "FreeTube 不用 Google 帳號就能看 YouTube，屏蔽廣告與追蹤，支援本地訂閱、播放列表、SponsorBlock 與 Invidious 代理。",
+    "features": [
+      "無廣告播放",
+      "本地訂閱無需登入",
+      "SponsorBlock 跳過贊助",
+      "Invidious 代理"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://freetubeapp.io/",
+    "source": {
+      "type": "winget",
+      "id": "FreeTube.FreeTube",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "setup-x64\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/freetube.png"
+  },
+  {
+    "slug": "transmission",
+    "name": "Transmission",
+    "abbr": "TR",
+    "category": "download",
+    "tags": [
+      "BT",
+      "下載",
+      "輕量"
+    ],
+    "summary": "輕量開源 BT 下載器，佔用極低，支援磁力連結。",
+    "intro": "Transmission 是老牌輕量 BT 客戶端，介面簡潔、資源佔用低，支援磁力連結、DHT、做種限速與遠端 Web 管理。",
+    "features": [
+      "磁力連結與 DHT",
+      "佔用極低",
+      "做種限速",
+      "Web 遠端管理"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://transmissionbt.com/",
+    "source": {
+      "type": "github",
+      "repo": "transmission/transmission",
+      "assets": [
+        {
+          "match": "^transmission-[\\d.]+-x64\\.msi$",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/transmission.png"
+  },
+  {
+    "slug": "element",
+    "name": "Element",
+    "abbr": "EL",
+    "category": "chat",
+    "tags": [
+      "Matrix",
+      "聊天",
+      "加密"
+    ],
+    "summary": "開源 Matrix 聊天客戶端，端到端加密、支援自建伺服器。",
+    "intro": "Element 是 Matrix 協議的官方桌面客戶端，支援端到端加密群聊、語音視訊通話與頻道，可用公共伺服器或自建伺服器。",
+    "features": [
+      "端到端加密聊天",
+      "語音視訊通話",
+      "支援自建伺服器",
+      "跨平台同步"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://element.io/",
+    "source": {
+      "type": "winget",
+      "id": "Element.Element",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/element.png"
+  },
+  {
+    "slug": "signal",
+    "name": "Signal",
+    "abbr": "SG",
+    "category": "chat",
+    "tags": [
+      "聊天",
+      "加密",
+      "隱私"
+    ],
+    "summary": "開源端到端加密聊天軟體，隱私標杆。",
+    "intro": "Signal 預設對所有訊息與通話做端到端加密，不收集元數據，支援閱後即焚、已讀回執關閉與桌面端同步。",
+    "features": [
+      "預設端到端加密",
+      "閱後即焚訊息",
+      "語音視訊通話",
+      "桌面端同步"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://signal.org/",
+    "source": {
+      "type": "winget",
+      "id": "OpenWhisperSystems.Signal",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/signal.svg"
+  },
+  {
+    "slug": "tor-browser",
+    "name": "Tor Browser",
+    "abbr": "TB",
+    "category": "browser",
+    "tags": [
+      "隱私",
+      "匿名",
+      "瀏覽器"
+    ],
+    "summary": "Tor 官方匿名瀏覽器，防追蹤、防指紋、繞過審查。",
+    "intro": "Tor Browser 基於 Firefox ESR，流量經 Tor 網路多層中轉，內建 NoScript 與防指紋保護，打開即用、無需配置。",
+    "features": [
+      "Tor 匿名網路",
+      "防追蹤與防指紋",
+      "內建 NoScript",
+      "便攜版免安裝"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.torproject.org/",
+    "source": {
+      "type": "winget",
+      "id": "TorProject.TorBrowser",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "x86_64-portable.*\\.exe$",
+          "label": "Windows x64 · 便攜版 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/tor-browser.png"
+  },
+  {
+    "slug": "anythingllm",
+    "name": "AnythingLLM",
+    "abbr": "AL",
+    "category": "ai",
+    "tags": [
+      "本地 AI",
+      "知識庫",
+      "聊天"
+    ],
+    "summary": "開源本地 AI 助手，文件餵給模型離線問答。",
+    "intro": "AnythingLLM 把 PDF、網頁與筆記建成私有知識庫，搭配本地模型或雲端 API 問答，支援多模型、多助手與 Agent 工具調用。",
+    "features": [
+      "本地知識庫問答",
+      "支援本地模型",
+      "多模型與多助手",
+      "Agent 工具調用"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://anythingllm.com/",
+    "source": {
+      "type": "github",
+      "repo": "Mintplex-Labs/anything-llm",
+      "assets": [
+        {
+          "match": "^AnythingLLMDesktop\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/anythingllm.png"
   }
 ]
