@@ -1189,20 +1189,20 @@
     "source": "winget"
   },
   "crystaldiskinfo": {
-    "version": "9.9.4",
-    "released": "2026-11-03",
+    "version": "9.9.5",
+    "released": "2026-11-15",
     "verified": "2026-11-16",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalDewWorld/CrystalDiskInfo/9.9.4",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalDewWorld/CrystalDiskInfo/9.9.5",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "CrystalDiskInfo9_9_4.exe",
+        "file": "CrystalDiskInfo9_9_5.exe",
         "size": null,
-        "sha256": "248d99fc43041e6c9c486beaae3e38e7fb864d8787b31f24d7634e0032952333",
-        "official": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.4/CrystalDiskInfo9_9_4.exe/download",
+        "sha256": "17cf38131d89003c666d499ccb62b5b9418b0127d7f362aeefeaa048481a8912",
+        "official": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.5/CrystalDiskInfo9_9_5.exe/download",
         "mirrors": []
       }
     ],
