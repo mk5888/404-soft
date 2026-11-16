@@ -12515,5 +12515,181 @@
       ]
     },
     "icon": "/static/icons/anythingllm.png"
+  },
+  {
+    "slug": "sunshine",
+    "name": "Sunshine",
+    "abbr": "SU",
+    "category": "remote",
+    "tags": [
+      "串流",
+      "遊戲",
+      "遠程"
+    ],
+    "summary": "開源遊戲串流主機端，配 Moonlight 客戶端低延遲玩電腦遊戲。",
+    "intro": "Sunshine 是自架的遊戲串流主機端，搭配站上已有的 Moonlight 客戶端，可在筆電、電視或手機上低延遲串流電腦遊戲，支援 4K、HDR 與手柄。",
+    "features": [
+      "低延遲遊戲串流",
+      "4K 與 HDR",
+      "手柄支援",
+      "便攜版免安裝"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://app.lizardbyte.dev/Sunshine/",
+    "source": {
+      "type": "github",
+      "repo": "LizardByte/Sunshine",
+      "assets": [
+        {
+          "match": "^Sunshine-Windows-AMD64-installer\\.msi$",
+          "label": "Windows x64 · 安裝包 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Sunshine-Windows-AMD64-lite\\.zip$",
+          "label": "Windows x64 · 便攜版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/sunshine.png"
+  },
+  {
+    "slug": "tigervnc",
+    "name": "TigerVNC",
+    "abbr": "TV",
+    "category": "remote",
+    "tags": [
+      "遠程桌面",
+      "VNC",
+      "查看器"
+    ],
+    "summary": "開源 VNC 遠程桌面，輕量快速的查看器。",
+    "intro": "TigerVNC 是老牌開源 VNC 實現，查看器輕量快速，可連接各類 VNC 伺服器遠程操控桌面，支援多種平台。",
+    "features": [
+      "輕量快速查看器",
+      "支援多種 VNC 伺服器",
+      "加密連接",
+      "跨平台"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://tigervnc.org/",
+    "source": {
+      "type": "winget",
+      "id": "TigerVNC.TigerVNC",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "tigervnc64-.*\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ultravnc",
+    "name": "UltraVNC",
+    "abbr": "UV",
+    "category": "remote",
+    "tags": [
+      "遠程桌面",
+      "VNC",
+      "控制"
+    ],
+    "summary": "開源 VNC 遠程控制，伺服器與查看器一體。",
+    "intro": "UltraVNC 是 Windows 上的開源遠程控制軟體，伺服器與查看器打包在一起，支援檔案傳輸、聊天與多種認證方式。",
+    "features": [
+      "伺服器與查看器一體",
+      "檔案傳輸",
+      "聊天功能",
+      "多種認證方式"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.uvnc.com/",
+    "source": {
+      "type": "winget",
+      "id": "uvncbvba.UltraVNC",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "UltraVNC_.*_x64_Setup\\.exe$",
+          "label": "Windows x64 · 安裝包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "freefilesync",
+    "name": "FreeFileSync",
+    "abbr": "FF",
+    "category": "file",
+    "tags": [
+      "同步",
+      "備份",
+      "文件夾對比"
+    ],
+    "summary": "開源文件夾對比與同步工具，備份利器。",
+    "intro": "FreeFileSync 對比兩個文件夾的差異並同步，支援雙向、鏡像與更新模式，可同步到 FTP、SFTP 與網路磁碟，適合定期備份。",
+    "features": [
+      "文件夾差異對比",
+      "雙向與鏡像同步",
+      "支援 FTP / SFTP",
+      "可排程備份"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://freefilesync.org/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://freefilesync.org/download.php",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/freefilesync.png"
+  },
+  {
+    "slug": "filezilla",
+    "name": "FileZilla",
+    "abbr": "FZ",
+    "category": "network",
+    "tags": [
+      "FTP",
+      "SFTP",
+      "傳輸"
+    ],
+    "summary": "開源 FTP / FTPS / SFTP 客戶端，傳檔案的老牌工具。",
+    "intro": "FileZilla 是經典的開源 FTP 客戶端，支援 FTP、FTPS 與 SFTP，可斷點續傳、拖拽上傳、管理多站點，適合網站與伺服器檔案傳輸。",
+    "features": [
+      "FTP / FTPS / SFTP",
+      "斷點續傳",
+      "站點管理器",
+      "拖拽上傳"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://filezilla-project.org/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://filezilla-project.org/download.php?platform=win64",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/filezilla.png"
   }
 ]
