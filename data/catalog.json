@@ -9150,6 +9150,40 @@
     "icon": "/static/icons/google-japanese-input.png"
   },
   {
+    "slug": "microsoft-chinese-ime",
+    "name": "中文输入法",
+    "abbr": "微",
+    "category": "ime",
+    "tags": [
+      "输入法",
+      "微软",
+      "拼音"
+    ],
+    "summary": "微软全新升级的中文输入法，纯净无广告。",
+    "intro": "微软 2026 年 11 月上架 Microsoft Store 的全新中文输入法：界面简洁纯净无广告，内置丰富词库覆盖热词、人名、地名和专业术语，支持导入/导出自学习词库，输入时可直接查看必应搜索建议。",
+    "features": [
+      "纯净无广告",
+      "丰富中文词库",
+      "导入/导出自学习词库",
+      "必应搜索建议"
+    ],
+    "tips": [
+      "仅支持全拼音和双拼，不支持五笔",
+      "仅黑白配色，无皮肤自定义"
+    ],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://apps.microsoft.com/detail/xpfpt96q7b9s4n?hl=zh-CN&gl=CN",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://apps.microsoft.com/detail/xpfpt96q7b9s4n?hl=zh-CN&gl=CN",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/microsoft-chinese-ime.png"
+  },
+  {
     "slug": "v2rayn",
     "name": "v2rayN",
     "abbr": "v2N",
