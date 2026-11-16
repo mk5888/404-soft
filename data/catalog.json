@@ -12586,7 +12586,7 @@
       "assets": [
         {
           "arch": "x64",
-          "url": "tigervnc64-.*\\.exe$",
+          "url": "tigervnc64-.*\\.exe",
           "label": "Windows x64 · 安裝包",
           "platform": "Windows",
           "portable": false
