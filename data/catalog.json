@@ -44,7 +44,10 @@
         }
       ]
     },
-    "icon": "/static/icons/sharex.png"
+    "icon": "/static/icons/sharex.png",
+    "screenshots": [
+      "/static/screenshots/sharex-1.jpg"
+    ]
   },
   {
     "slug": "obs-studio",
@@ -470,7 +473,11 @@
         }
       ]
     },
-    "icon": "/static/icons/imageglass.png"
+    "icon": "/static/icons/imageglass.png",
+    "screenshots": [
+      "/static/screenshots/imageglass-1.jpg",
+      "/static/screenshots/imageglass-2.jpg"
+    ]
   },
   {
     "slug": "peazip",
@@ -2956,7 +2963,11 @@
     "platforms": [
       "Windows"
     ],
-    "icon": "/static/icons/snipaste.png"
+    "icon": "/static/icons/snipaste.png",
+    "screenshots": [
+      "/static/screenshots/snipaste-1.jpg",
+      "/static/screenshots/snipaste-2.jpg"
+    ]
   },
   {
     "slug": "screentogif",
@@ -2992,7 +3003,11 @@
         }
       ]
     },
-    "icon": "/static/icons/screentogif.svg"
+    "icon": "/static/icons/screentogif.svg",
+    "screenshots": [
+      "/static/screenshots/screentogif-1.jpg",
+      "/static/screenshots/screentogif-2.jpg"
+    ]
   },
   {
     "slug": "paint-net",
@@ -3027,7 +3042,10 @@
         }
       ]
     },
-    "icon": "/static/icons/paint-net.png"
+    "icon": "/static/icons/paint-net.png",
+    "screenshots": [
+      "/static/screenshots/paint-net-1.jpg"
+    ]
   },
   {
     "slug": "gimp",
@@ -3063,7 +3081,11 @@
         }
       ]
     },
-    "icon": "/static/icons/gimp.png"
+    "icon": "/static/icons/gimp.png",
+    "screenshots": [
+      "/static/screenshots/gimp-1.jpg",
+      "/static/screenshots/gimp-2.jpg"
+    ]
   },
   {
     "slug": "inkscape",
@@ -3134,7 +3156,11 @@
         }
       ]
     },
-    "icon": "/static/icons/krita.png"
+    "icon": "/static/icons/krita.png",
+    "screenshots": [
+      "/static/screenshots/krita-1.jpg",
+      "/static/screenshots/krita-2.jpg"
+    ]
   },
   {
     "slug": "blender",
@@ -3170,7 +3196,10 @@
         }
       ]
     },
-    "icon": "/static/icons/blender.png"
+    "icon": "/static/icons/blender.png",
+    "screenshots": [
+      "/static/screenshots/blender-1.jpg"
+    ]
   },
   {
     "slug": "xnviewmp",
@@ -4513,7 +4542,11 @@
         }
       ]
     },
-    "icon": "/static/icons/greenshot.png"
+    "icon": "/static/icons/greenshot.png",
+    "screenshots": [
+      "/static/screenshots/greenshot-1.jpg",
+      "/static/screenshots/greenshot-2.jpg"
+    ]
   },
   {
     "slug": "flameshot",
@@ -4555,7 +4588,10 @@
         }
       ]
     },
-    "icon": "/static/icons/flameshot.png"
+    "icon": "/static/icons/flameshot.png",
+    "screenshots": [
+      "/static/screenshots/flameshot-1.jpg"
+    ]
   },
   {
     "slug": "qview",
@@ -4596,7 +4632,10 @@
         }
       ]
     },
-    "icon": "/static/icons/qview.svg"
+    "icon": "/static/icons/qview.svg",
+    "screenshots": [
+      "/static/screenshots/qview-1.jpg"
+    ]
   },
   {
     "slug": "libresprite",
@@ -6592,7 +6631,10 @@
       ]
     },
     "download_page": "https://www.bandisoft.com/honeyview/",
-    "icon": "/static/icons/honeyview.png"
+    "icon": "/static/icons/honeyview.png",
+    "screenshots": [
+      "/static/screenshots/honeyview-1.jpg"
+    ]
   },
   {
     "slug": "aria2-next",
@@ -8225,7 +8267,10 @@
         }
       ]
     },
-    "icon": "/static/icons/freecad.png"
+    "icon": "/static/icons/freecad.png",
+    "screenshots": [
+      "/static/screenshots/freecad-1.jpg"
+    ]
   },
   {
     "slug": "darktable",
@@ -8260,7 +8305,10 @@
         }
       ]
     },
-    "icon": "/static/icons/darktable.svg"
+    "icon": "/static/icons/darktable.svg",
+    "screenshots": [
+      "/static/screenshots/darktable-1.jpg"
+    ]
   },
   {
     "slug": "rawtherapee",
@@ -8302,7 +8350,10 @@
         }
       ]
     },
-    "icon": "/static/icons/rawtherapee.png"
+    "icon": "/static/icons/rawtherapee.png",
+    "screenshots": [
+      "/static/screenshots/rawtherapee-1.jpg"
+    ]
   },
   {
     "slug": "pinta",
@@ -8337,7 +8388,11 @@
         }
       ]
     },
-    "icon": "/static/icons/pinta.png"
+    "icon": "/static/icons/pinta.png",
+    "screenshots": [
+      "/static/screenshots/pinta-1.jpg",
+      "/static/screenshots/pinta-2.jpg"
+    ]
   },
   {
     "slug": "converseen",
@@ -8379,7 +8434,10 @@
         }
       ]
     },
-    "icon": "/static/icons/converseen.png"
+    "icon": "/static/icons/converseen.png",
+    "screenshots": [
+      "/static/screenshots/converseen-1.jpg"
+    ]
   },
   {
     "slug": "imagemagick",
@@ -11735,7 +11793,11 @@
         }
       ]
     },
-    "icon": "/static/icons/nomacs.png"
+    "icon": "/static/icons/nomacs.png",
+    "screenshots": [
+      "/static/screenshots/nomacs-1.jpg",
+      "/static/screenshots/nomacs-2.jpg"
+    ]
   },
   {
     "slug": "digikam",
@@ -11772,7 +11834,11 @@
         }
       ]
     },
-    "icon": "/static/icons/digikam.png"
+    "icon": "/static/icons/digikam.png",
+    "screenshots": [
+      "/static/screenshots/digikam-1.jpg",
+      "/static/screenshots/digikam-2.jpg"
+    ]
   },
   {
     "slug": "lazpaint",
@@ -11814,7 +11880,10 @@
         }
       ]
     },
-    "icon": "/static/icons/lazpaint.svg"
+    "icon": "/static/icons/lazpaint.svg",
+    "screenshots": [
+      "/static/screenshots/lazpaint-1.jpg"
+    ]
   },
   {
     "slug": "caesium",
@@ -11856,7 +11925,10 @@
         }
       ]
     },
-    "icon": "/static/icons/caesium.svg"
+    "icon": "/static/icons/caesium.svg",
+    "screenshots": [
+      "/static/screenshots/caesium-1.jpg"
+    ]
   },
   {
     "slug": "synfig",
@@ -11897,7 +11969,11 @@
           "portable": false
         }
       ]
-    }
+    },
+    "screenshots": [
+      "/static/screenshots/synfig-1.jpg",
+      "/static/screenshots/synfig-2.jpg"
+    ]
   },
   {
     "slug": "pencil2d",
@@ -11933,7 +12009,10 @@
         }
       ]
     },
-    "icon": "/static/icons/pencil2d.svg"
+    "icon": "/static/icons/pencil2d.svg",
+    "screenshots": [
+      "/static/screenshots/pencil2d-1.jpg"
+    ]
   },
   {
     "slug": "oculante",
@@ -11969,7 +12048,11 @@
         }
       ]
     },
-    "icon": "/static/icons/oculante.svg"
+    "icon": "/static/icons/oculante.svg",
+    "screenshots": [
+      "/static/screenshots/oculante-1.jpg",
+      "/static/screenshots/oculante-2.jpg"
+    ]
   },
   {
     "slug": "duplicati",
