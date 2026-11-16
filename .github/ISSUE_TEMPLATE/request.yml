@@ -1,0 +1,23 @@
+name: 推荐收录软件
+description: 推荐一款符合收录标准的免费 / 开源软件
+title: "[推荐] "
+labels: ["request"]
+body:
+  - type: input
+    id: name
+    attributes: { label: 软件名称 }
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes: { label: 官方网站或仓库地址 }
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes: { label: 简介与推荐理由 }
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: 确认
+      options:
+        - label: 这是免费 / 开源软件或官方免费版，不是破解或修改版
+          required: true

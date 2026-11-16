@@ -11,6 +11,12 @@
 - `scripts/build.py`    生成静态站到 `dist/`
 - `.github/workflows/deploy.yml` 每 6 小时自动同步并部署到 GitHub Pages
 
+## 文档与条款
+- [免责声明 / 隐私 / 版权与下架](DISCLAIMER.md)（网站版：`/disclaimer/` `/privacy/` `/copyright/`）
+- [参与贡献与收录标准](CONTRIBUTING.md)
+- Issue 模板：链接失效、推荐收录、版权 / 下架请求
+- [MIT 许可证](LICENSE)：只覆盖本仓库代码，不涉及收录的第三方软件、商标与图标
+
 ## 本地预览
 ```bash
 python3 scripts/sync.py

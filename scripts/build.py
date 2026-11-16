@@ -17,6 +17,9 @@ DIST = os.path.join(ROOT, "dist")
 BASE = (os.getenv("BASE_PATH") or "").rstrip("/")
 SITE_URL = (os.getenv("SITE_URL") or "").rstrip("/")
 SITE = "404绿色软件库"
+REPO_URL = "https://github.com/mk5888/404-soft"
+ISSUES_URL = REPO_URL + "/issues/new/choose"
+LEGAL_UPDATED = "2026-11-16"
 SLOGAN = "只收录官方下载入口，官方提供校验值的文件都附 SHA-256。"
 PLATFORMS = ["Windows", "macOS", "Linux", "Android", "iOS"]
 
@@ -141,7 +144,7 @@ def layout(title, body, desc=SLOGAN, active="", path="/"):
 <footer class="footer">
   <div class="container">
     <p><strong>{SITE}</strong> · 仅提供官方合法下载入口与开源许可允许的镜像。我们与软件作者及项目方无隶属关系。</p>
-    <p><a href="{url('/about/')}">关于与规范</a> · <a href="{url('/sitemap.xml')}">网站地图</a> · © {year}</p>
+    <p><a href="{url('/about/')}">关于与规范</a> · <a href="{url('/disclaimer/')}">免责声明</a> · <a href="{url('/privacy/')}">隐私说明</a> · <a href="{url('/copyright/')}">版权与下架</a> · <a href="{url('/sitemap.xml')}">网站地图</a> · © {year}</p>
   </div>
 </footer>
 <script src="{url('/static/app.js')}" defer></script>
@@ -329,28 +332,88 @@ def page_detail(item, rel, items, releases, cats):
     return layout(f"{item['name']} {rel.get('version', '')} 官方下载 · {SITE}", body, item["summary"], item["category"], f"/software/{item['slug']}/")
 
 
-def page_about(items, releases, cats):
-    body = f"""
-<nav class="crumb"><a href="{url('/')}">首页</a> › 关于与规范</nav>
-<div class="layout">
-  <article class="panel prose">
-    <h1>关于与规范</h1>
-    <p>{SITE} 是一个轻量的软件下载目录，目标是缩短从「找到软件」到「安全装上」的距离。</p>
+LEGAL_PAGES = {
+    "about": ("关于与规范", f"""
+    <p>{SITE} 是一个轻量的软件下载目录，目标是缩短从「找到软件」到「安全装上」的距离。本站是个人维护的非商业项目，与所收录软件的作者及项目方没有任何隶属、合作或代理关系。</p>
     <h2>收录规范</h2>
     <ul>
       <li>只收录免费、开源或官方提供免费版本的软件。</li>
-      <li>不提供破解、注册机、去授权或任何修改版。</li>
-      <li>下载按钮优先指向官方发布地址；网盘镜像只用于许可证允许再分发的软件，且与官方文件哈希一致。</li>
+      <li>不提供破解、注册机、激活工具、去授权或任何修改版，也不接受此类收录请求。</li>
+      <li>下载按钮优先指向软件作者的官方发布地址（GitHub Release、官网、winget 清单等），本站服务器不存放安装包。</li>
+      <li>网盘镜像只用于许可证允许再分发的软件，内容为官方文件的原样转存，不做任何修改。</li>
       <li>版本信息由脚本定时从官方发布页同步，页面上的「核验日期」即最近一次同步时间。</li>
     </ul>
-    <h2>如何校验文件</h2>
+    <h2>关于 SHA-256</h2>
+    <p>只有上游官方提供校验值的文件才会显示 SHA-256；标注「官方未提供 SHA-256」的文件，本站无法替你确认其完整性，请仅从官方地址下载。</p>
     <p>Windows：<code>certutil -hashfile 文件名 SHA256</code><br>macOS / Linux：<code>shasum -a 256 文件名</code></p>
-    <h2>反馈与投诉</h2>
-    <p>链接失效、版本过旧或权利人要求下架，请在 GitHub 仓库提交 Issue。</p>
+    <h2>反馈</h2>
+    <p>链接失效、版本过旧、推荐收录或权利人要求下架，请在 <a href="{ISSUES_URL}" target="_blank" rel="noopener">GitHub 仓库提交 Issue</a>。更多说明见<a href="{url('/disclaimer/')}">免责声明</a>、<a href="{url('/privacy/')}">隐私说明</a>与<a href="{url('/copyright/')}">版权与下架</a>。</p>
+"""),
+    "disclaimer": ("免责声明", f"""
+    <p>使用本站即表示你已阅读并同意以下条款。</p>
+    <h2>1. 信息性质</h2>
+    <p>本站仅整理并链接第三方软件的官方公开下载地址与版本信息，属于信息索引服务。软件本身由其作者或发布方提供，本站不是任何软件的开发者、发行商或销售方。</p>
+    <h2>2. 不作任何保证</h2>
+    <p>本站内容按「现状」提供。版本号、文件大小、校验值、功能介绍等信息由脚本自动同步或人工整理，可能存在延迟、错误或遗漏；本站不保证其准确、完整、及时，也不保证任何软件无缺陷、无病毒、适合特定用途或与你的设备兼容。</p>
+    <h2>3. 自行判断与承担风险</h2>
+    <ul>
+      <li>下载、安装和使用软件前，请自行核对官方来源与校验值，并备份重要数据。</li>
+      <li>因下载、安装或使用任何软件导致的设备故障、数据丢失、安全问题或其他直接、间接损失，由使用者自行承担，本站及维护者不承担责任。</li>
+      <li>请遵守你所在地区的法律法规及各软件自身的许可协议；违规使用产生的后果与本站无关。</li>
+    </ul>
+    <h2>4. 第三方链接</h2>
+    <p>本站包含指向 GitHub、软件官网、网盘等第三方网站的链接。这些网站的内容、可用性与隐私做法由其运营方负责，与本站无关。</p>
+    <h2>5. 商标与图标</h2>
+    <p>软件名称、Logo、图标及相关商标归各自权利人所有，本站仅为指明软件来源而使用，不代表任何认可或合作关系。</p>
+    <h2>6. 广告</h2>
+    <p>本站可能展示广告或推广内容，广告内容由广告方负责，不构成本站对其产品或服务的推荐与担保。</p>
+    <h2>7. 条款变更</h2>
+    <p>本声明可能随时更新，更新后在本页公布即生效。最近更新：{LEGAL_UPDATED}。</p>
+"""),
+    "privacy": ("隐私说明", f"""
+    <p>本站是纯静态网站，没有账号系统，不收集、不出售你的个人信息。</p>
+    <h2>本站自身</h2>
+    <ul>
+      <li>不使用 Cookie 跟踪你，也不接入统计分析脚本。</li>
+      <li>深色模式开关只保存在你浏览器的本地存储（localStorage）中，不会上传。</li>
+      <li>搜索在你的浏览器内完成，搜索词不会发送到本站服务器。</li>
+    </ul>
+    <h2>托管与网络服务</h2>
+    <p>网站托管于 GitHub Pages，并可能经由 Cloudflare 加速。这些服务商为安全和运维会按其政策处理访问日志（如 IP 地址、浏览器信息），详见 <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub 隐私声明</a>与 <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare 隐私政策</a>。</p>
+    <h2>下载与外部链接</h2>
+    <p>点击下载后，你会直接连接到软件官方或网盘服务器，对方的隐私做法由其自行负责。</p>
+    <h2>广告</h2>
+    <p>如果日后启用第三方广告（例如 Google AdSense），广告商可能使用 Cookie 展示相关广告，届时本页会同步更新说明，你也可以在浏览器或 <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Google 广告设置</a>中管理。</p>
+    <p>最近更新：{LEGAL_UPDATED}。</p>
+"""),
+    "copyright": ("版权与下架", f"""
+    <p>本站尊重软件作者和权利人的合法权益。本站不托管安装包，下载按钮指向官方地址；网盘镜像仅限许可证允许再分发的软件。</p>
+    <h2>权利人下架流程</h2>
+    <p>如果你是软件作者或权利人，认为某个条目、镜像或介绍内容侵犯了你的权益，或者不希望软件被收录，请在 <a href="{ISSUES_URL}" target="_blank" rel="noopener">GitHub 仓库</a>选择「版权 / 下架请求」提交，并提供：</p>
+    <ul>
+      <li>相关页面地址（例如 <code>{SITE_URL or ''}/software/xxx/</code>）；</li>
+      <li>你的身份或权利证明（如官网、官方仓库、开发者账号）；</li>
+      <li>具体诉求：删除条目、移除镜像或修改介绍。</li>
+    </ul>
+    <p>确认后本站会尽快删除或修改相关内容，无需任何理由。</p>
+    <h2>本站代码与内容的许可</h2>
+    <p>本站源代码以 <a href="{REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener">MIT 许可证</a>开源。该许可只覆盖本站自己的代码，不涉及所收录的任何第三方软件、商标或图标，它们仍遵循各自的许可与权利。</p>
+"""),
+}
+
+
+def page_legal(key, items, releases, cats):
+    title, content = LEGAL_PAGES[key]
+    body = f"""
+<nav class="crumb"><a href="{url('/')}">首页</a> › {title}</nav>
+<div class="layout">
+  <article class="panel prose">
+    <h1>{title}</h1>
+{content}
   </article>
   {sidebar(items, releases, cats)}
 </div>"""
-    return layout(f"关于与规范 · {SITE}", body, path="/about/")
+    return layout(f"{title} · {SITE}", body, path=f"/{key}/")
 
 
 def write(path, content):
@@ -383,14 +446,15 @@ def main():
     shutil.copy(os.path.join(ROOT, "data", "ads.json"), os.path.join(DIST, "ads.json"))
 
     write("/index.html", page_home(items, releases, cats))
-    write("/about/index.html", page_about(items, releases, cats))
+    for k in LEGAL_PAGES:
+        write(f"/{k}/index.html", page_legal(k, items, releases, cats))
     for k in USED_CATS:
         write(f"/category/{k}/index.html", page_category(k, cats.get(k, k), items, releases, cats))
     for i in items:
         write(f"/software/{i['slug']}/index.html", page_detail(i, releases.get(i["slug"], {}), items, releases, cats))
     write("/404.html", layout(f"页面不存在 · {SITE}", f'<section class="hero"><h1>404</h1><p>这个页面不存在，但软件库还在。</p><a class="btn" href="{url("/")}">回到首页</a></section>'))
 
-    paths = ["/", "/about/"] + [f"/category/{k}/" for k in USED_CATS] + [f"/software/{i['slug']}/" for i in items]
+    paths = ["/"] + [f"/{k}/" for k in LEGAL_PAGES] + [f"/category/{k}/" for k in USED_CATS] + [f"/software/{i['slug']}/" for i in items]
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{SITE_URL}{p}</loc></url>" for p in paths) + "</urlset>")
     write("/robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")

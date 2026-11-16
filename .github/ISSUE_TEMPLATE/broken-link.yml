@@ -1,0 +1,13 @@
+name: 链接失效 / 版本过旧
+description: 下载失败、版本落后或信息有误
+title: "[失效] "
+labels: ["broken-link"]
+body:
+  - type: input
+    id: page
+    attributes: { label: 页面地址, placeholder: "https://soft.896404.xyz/software/xxx/" }
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes: { label: 问题描述, description: 哪个下载项、出现了什么情况、官方最新版本是多少 }
+    validations: { required: true }
