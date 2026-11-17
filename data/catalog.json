@@ -12874,5 +12874,368 @@
       "Windows"
     ],
     "icon": "/static/icons/filezilla.png"
+  },
+  {
+    "slug": "idm",
+    "name": "Internet Download Manager",
+    "abbr": "ID",
+    "category": "download",
+    "tags": [
+      "下载加速",
+      "多线程",
+      "浏览器集成"
+    ],
+    "summary": "多线程下载加速工具，浏览器集成下载。",
+    "intro": "IDM 是老牌下载加速工具，多线程分段下载、浏览器右键集成、断点续传与站点抓取，适合大文件与视频下载。",
+    "features": [
+      "多线程下载加速",
+      "浏览器集成",
+      "断点续传",
+      "站点抓取"
+    ],
+    "tips": [
+      "30 天试用，到期需购买"
+    ],
+    "license": "付费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.internetdownloadmanager.com/",
+    "source": {
+      "type": "winget",
+      "id": "Tonec.InternetDownloadManager",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/idm.png"
+  },
+  {
+    "slug": "hibit-uninstaller",
+    "name": "HiBit Uninstaller",
+    "abbr": "HB",
+    "category": "system",
+    "tags": [
+      "卸载",
+      "残留清理",
+      "启动项"
+    ],
+    "summary": "轻量卸载工具，彻底清理残留文件与注册表。",
+    "intro": "HiBit Uninstaller 是小巧免费的卸载工具，强制卸载顽固软件并清理残留文件、注册表与启动项，另带磁盘清理与进程管理。",
+    "features": [
+      "强制卸载",
+      "残留文件与注册表清理",
+      "启动项管理",
+      "磁盘清理"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://hibitsoft.ir/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://hibitsoft.ir/",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/hibit-uninstaller.png"
+  },
+  {
+    "slug": "pixpin",
+    "name": "PixPin",
+    "abbr": "PP",
+    "category": "graphics",
+    "tags": [
+      "截图",
+      "贴图",
+      "OCR"
+    ],
+    "summary": "截图贴图工具，支持长截图、OCR 与录屏。",
+    "intro": "PixPin 是国产截图工具，截图、贴图、标注、OCR 文字识别、长截图与 GIF 录屏一应俱全，一个快捷键全搞定。",
+    "features": [
+      "截图与贴图",
+      "长截图",
+      "OCR 文字识别",
+      "GIF 录屏"
+    ],
+    "tips": [
+      "部分 AI 功能需开通会员"
+    ],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://pixpin.cn/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://pixpin.cn/",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/pixpin.png"
+  },
+  {
+    "slug": "diskgenius",
+    "name": "DiskGenius",
+    "abbr": "DG",
+    "category": "system",
+    "tags": [
+      "分区",
+      "数据恢复",
+      "磁盘管理"
+    ],
+    "summary": "分区管理与数据恢复工具，磁盘坏道检测。",
+    "intro": "DiskGenius 是老牌磁盘工具，分区管理、数据恢复、坏道检测与备份还原，装机与抢救数据都用得上。",
+    "features": [
+      "分区管理",
+      "数据恢复",
+      "坏道检测",
+      "备份与还原"
+    ],
+    "tips": [
+      "免费版功能有限，专业版付费"
+    ],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.diskgenius.com/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.diskgenius.com/download.php",
+    "platforms": [
+      "Windows"
+    ]
+  },
+  {
+    "slug": "uu-remote",
+    "name": "网易 UU 远程",
+    "abbr": "UU",
+    "category": "remote",
+    "tags": [
+      "远程桌面",
+      "远程控制"
+    ],
+    "summary": "网易出品的免费远程桌面，真 4K 画质。",
+    "intro": "网易 UU 远程是免费远程控制软件，真 4K 画质、低延迟，支持远程协助、文件传输与手机远程控制电脑。",
+    "features": [
+      "远程控制",
+      "真 4K 画质",
+      "文件传输",
+      "手机远程电脑"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://uuyc.163.com/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://uuyc.163.com/download/",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/uu-remote.png"
+  },
+  {
+    "slug": "huorong",
+    "name": "火绒安全",
+    "abbr": "火",
+    "category": "security",
+    "tags": [
+      "杀毒",
+      "安全防护",
+      "弹窗拦截"
+    ],
+    "summary": "轻量杀毒与系统防护，拦截弹窗与流氓软件。",
+    "intro": "火绒安全是国产轻量杀毒软件，病毒查杀、弹窗拦截与系统防护，安静不弹窗、不捆绑，占用资源少。",
+    "features": [
+      "病毒查杀",
+      "弹窗拦截",
+      "系统防护",
+      "轻量无捆绑"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.huorong.cn/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.huorong.cn/",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/huorong.png"
+  },
+  {
+    "slug": "wepe",
+    "name": "微 PE 工具箱",
+    "abbr": "PE",
+    "category": "system",
+    "tags": [
+      "PE",
+      "启动盘",
+      "装机"
+    ],
+    "summary": "纯净无广告的 WinPE 启动盘制作工具。",
+    "intro": "微 PE 工具箱（WePE）是纯净无广告的 WinPE 制作工具，支持 UEFI 与 Legacy，内置常用维护工具，装机必备。",
+    "features": [
+      "纯净无广告",
+      "支持 UEFI / Legacy",
+      "内置维护工具",
+      "一键制作启动盘"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.wepe.com.cn/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.wepe.com.cn/download.html",
+    "platforms": [
+      "Windows"
+    ]
+  },
+  {
+    "slug": "faststone-capture",
+    "name": "FastStone Capture",
+    "abbr": "FS",
+    "category": "graphics",
+    "tags": [
+      "截图",
+      "录屏",
+      "取色"
+    ],
+    "summary": "截图与屏幕录制工具，支持滚动截图与标注。",
+    "intro": "FastStone Capture 是轻量截图工具，滚动截图、屏幕录制、标注编辑与取色器，截图后直接编辑保存。",
+    "features": [
+      "滚动截图",
+      "屏幕录制",
+      "标注编辑",
+      "取色器"
+    ],
+    "tips": [
+      "30 天试用，到期需购买"
+    ],
+    "license": "付费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.faststone.org/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.faststone.org/FSCaptureDownload.htm",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/faststone-capture.png"
+  },
+  {
+    "slug": "fastcopy",
+    "name": "FastCopy",
+    "abbr": "FC",
+    "category": "file",
+    "tags": [
+      "复制",
+      "文件传输",
+      "校验"
+    ],
+    "summary": "高速文件复制工具，比系统复制快得多。",
+    "intro": "FastCopy 是开源高速复制工具，大文件与海量小文件复制都比系统自带快，支持校验、差分复制与免安装使用。",
+    "features": [
+      "高速复制",
+      "文件校验",
+      "差分复制",
+      "免安装"
+    ],
+    "tips": [],
+    "license": "BSD-3-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://fastcopy.jp/",
+    "source": {
+      "type": "winget",
+      "id": "FastCopy.FastCopy",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/fastcopy.png"
+  },
+  {
+    "slug": "aida64",
+    "name": "AIDA64",
+    "abbr": "A6",
+    "category": "hardware",
+    "tags": [
+      "硬件检测",
+      "跑分",
+      "温度监控"
+    ],
+    "summary": "专业硬件检测与跑分工具，信息最全。",
+    "intro": "AIDA64 是专业硬件检测工具，CPU、主板、内存、显卡信息一应俱全，支持温度监控、稳定性烤机与性能跑分。",
+    "features": [
+      "硬件信息一览",
+      "温度与风扇监控",
+      "稳定性烤机",
+      "性能跑分"
+    ],
+    "tips": [
+      "Extreme 试用 30 天，到期需购买"
+    ],
+    "license": "付费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.aida64.com/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.aida64.com/downloads",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/aida64.png"
+  },
+  {
+    "slug": "tuba-toolbox",
+    "name": "图拉丁吧工具箱",
+    "abbr": "图",
+    "category": "hardware",
+    "tags": [
+      "硬件检测",
+      "装机",
+      "跑分"
+    ],
+    "summary": "硬件检测工具合集，装机验机一站搞定。",
+    "intro": "图拉丁吧工具箱是始于 2014 年的硬件检测工具合集，上百款 CPU、显卡、硬盘检测与烤机工具集中启动，绿色免安装，装机验机必备。",
+    "features": [
+      "上百款检测工具",
+      "CPU / 显卡 / 硬盘检测",
+      "烤机与跑分",
+      "绿色免安装"
+    ],
+    "tips": [
+      "安装包内含系统激活工具，可能被杀软报毒",
+      "内含工具各走各的授权"
+    ],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.tbtool.cn/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.tbtool.cn/download/",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/tuba-toolbox.png"
   }
 ]
