@@ -7474,5 +7474,47 @@
     ],
     "mirrored": false,
     "source": "winget"
+  },
+  "idm": {
+    "version": "6.43.18",
+    "released": "2026-11-04",
+    "verified": "2026-11-17",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tonec/InternetDownloadManager/6.43.18",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "idman643build18.exe",
+        "size": null,
+        "sha256": "7346128fab42957b4254eabdb012bfdbd751e9069361e98a6916f26bb03d62ee",
+        "official": "https://download.internetdownloadmanager.com/idman643build18.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "fastcopy": {
+    "version": "5.12.0",
+    "released": "2026-08-18",
+    "verified": "2026-11-17",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FastCopy/FastCopy/5.12.0",
+    "changelog": "在外壳扩展中，添加了将资源管理器的标准拖放／粘贴替换为 FastCopy 执行的选项。（默认关闭）\n多项安全性增强。\n- 启用 CET 影子堆栈（/CETCOMPAT）。\n- 启用控制流保护（Control Flow Guard，/guard:cf）。\n- 加强 DLL 加载安全性（/DEPENDENTLOADFLAG:0x800）\n- （此前已启用：/GS、/NXCOMPAT（DEP）、/SAFESEH（x86）、/DELAYLOAD、/DYNAMICBASE、/HIGHENTROPYVA、SetDefaultDllDirectories）",
+    "downloads": [
+      {
+        "label": "Windows x64 · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "FastCopy5.12.0_installer.exe",
+        "size": null,
+        "sha256": "14ccc9d2ebbdfbcbcf0c6e4004773d12bb98de197a572959473a2d9d3b000e3d",
+        "official": "https://fastcopy.jp/archive/FastCopy5.12.0_installer.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
   }
 }
