@@ -13237,5 +13237,44 @@
       "Windows"
     ],
     "icon": "/static/icons/tuba-toolbox.png"
+  },
+  {
+    "slug": "tim",
+    "name": "TIM",
+    "abbr": "TIM",
+    "category": "chat",
+    "tags": [
+      "聊天",
+      "办公",
+      "腾讯"
+    ],
+    "summary": "腾讯办公版 QQ，轻聊无广告，支持协作文档。",
+    "intro": "TIM 是腾讯推出的办公版 QQ，用 QQ 账号直接登录，界面清爽无广告，支持在线文档、云文件、日程与邮件，适合办公沟通。",
+    "features": [
+      "QQ 账号直接登录",
+      "在线文档协作",
+      "云文件与日程",
+      "无广告轻聊版"
+    ],
+    "tips": [
+      "最新版为 2023 年 10 月的 3.4.8，之后未再更新"
+    ],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://tim.qq.com/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.TIM",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/tim.png"
   }
 ]
