@@ -13256,25 +13256,17 @@
       "云文件与日程",
       "无广告轻聊版"
     ],
-    "tips": [
-      "最新版为 2023 年 10 月的 3.4.8，之后未再更新"
-    ],
+    "tips": [],
     "license": "免费软件（闭源）",
     "mirror_allowed": false,
     "homepage": "https://tim.qq.com/",
     "source": {
-      "type": "winget",
-      "id": "Tencent.TIM",
-      "assets": [
-        {
-          "arch": "",
-          "url": ".",
-          "label": "Windows · 官方安装包",
-          "platform": "Windows",
-          "portable": false
-        }
-      ]
+      "type": "official"
     },
-    "icon": "/static/icons/tim.png"
+    "icon": "/static/icons/tim.png",
+    "download_page": "https://tim.qq.com/download.html",
+    "platforms": [
+      "Windows"
+    ]
   }
 ]
