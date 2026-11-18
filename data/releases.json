@@ -7516,26 +7516,5 @@
     ],
     "mirrored": false,
     "source": "winget"
-  },
-  "tim": {
-    "version": "3.4.8.22121",
-    "released": "2023-10-17",
-    "verified": "2026-11-18",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TIM/3.4.8.22121",
-    "changelog": "",
-    "downloads": [
-      {
-        "label": "Windows · 官方安装包",
-        "platform": "Windows",
-        "portable": false,
-        "file": "TIM3.4.8.22121.exe",
-        "size": null,
-        "sha256": "94eb4be511f67c103d8d4835026360eb5519018e9ed9577650c6206164bb8589",
-        "official": "https://dldir1v6.qq.com/qqfile/qq/TIM3.4.8/TIM3.4.8.22121.exe",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false,
-    "source": "winget"
   }
 }
