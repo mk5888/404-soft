@@ -38,6 +38,8 @@ code { font: 12.5px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
 .nav a:hover, .nav a.on { color: var(--text); background: var(--soft); }
 .bar-actions { display: flex; gap: 6px; margin-left: auto; }
 .icon-btn { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; font-size: 16px; }
+.icon-btn:hover { background: var(--soft); }
+.icon-btn svg { display: block; }
 
 /* 首页 */
 .hero { text-align: center; padding: 56px 0 28px; }
