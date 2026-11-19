@@ -11392,6 +11392,55 @@
     }
   },
   {
+    "slug": "tungbox",
+    "name": "TungBox",
+    "abbr": "TB",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "sing-box",
+      "macOS"
+    ],
+    "summary": "macOS 原生 sing-box 图形客户端，内置内核，开箱即用。",
+    "intro": "TungBox 是用 Swift + AppKit 写的 sing-box 原生 macOS 客户端，适配 macOS 13 及以上。发布包内置 sing-box Core，支持订阅管理、规则分流、节点测速、TUN 模式和状态栏控制。\n\n系统代理与 TUN 是两个独立开关，可以同时开启；直连、全局、规则三种出站模式运行中即时切换。",
+    "features": [
+      "内置 sing-box Core，开箱即用",
+      "订阅导入：sing-box JSON / Clash YAML",
+      "系统代理与 TUN 独立开关",
+      "规则、规则集与 DNS 自定义",
+      "状态栏切换节点与实时网速"
+    ],
+    "tips": [
+      "首次打开若提示无法验证开发者，到 系统设置 → 隐私与安全性 点“仍要打开”。",
+      "Apple 芯片选 arm64，Intel Mac 选 x86_64。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/tongfei11/TungBox",
+    "source": {
+      "type": "github",
+      "repo": "tongfei11/TungBox",
+      "assets": [
+        {
+          "match": "^TungBox-[\\d.]+-macos-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^TungBox-[\\d.]+-macos-x86_64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/tungbox.png",
+    "screenshots": [
+      "/static/screenshots/tungbox-1.jpg"
+    ]
+  },
+  {
     "slug": "singbox-mt",
     "name": "sing-box MT（iOS）",
     "abbr": "SB",
