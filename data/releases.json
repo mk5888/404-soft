@@ -2004,20 +2004,20 @@
     "mirrored": false
   },
   "joplin": {
-    "version": "3.7.22",
-    "released": "2026-10-28",
+    "version": "3.7.24",
+    "released": "2026-11-19",
     "verified": "2026-11-19",
-    "release_url": "https://github.com/laurent22/joplin/releases/tag/v3.7.22",
-    "changelog": "- Improved: Add read_notes MCP tool (#16845) (#16782)\r\n- Improved: Reduce read_note token consumption with outline and section navigation (#16838) (#16777)\r\n- Improved: Return the enclosing section with each search_notes result (#16842) (#16778)\r\n- Improved: Treat private network AI providers as local (#16837)\r\n- Improved: Upgrade app banner shows the wrong minimum app version (#16819) (#16721 by [@Rygaa](https://github.com/Rygaa))\r\n- Fixed: Security: Upgrade to Electron 42.11.18 (#16964) (#16939 by [@personalizedrefrigerator](https://github.com/personalizedrefrigerator))",
+    "release_url": "https://github.com/laurent22/joplin/releases/tag/v3.7.24",
+    "changelog": "- Improved: Add a first-class OpenAI provider using the Responses API (#16864) (#16450 by [@Rygaa](https://github.com/Rygaa))\r\n- Improved: Create the application authorisation ID in one place (79d954a)\r\n- Improved: Prioritize local changes to sync info over values with unchanged far-future remote timestamps (2624b35 by Henry Heino)\r\n- Improved: Sync/E2EE: Avoid propagating share/publish status until an item has decrypted (b6692eb by Henry Heino)\r\n- Fixed: Fix ENEX import failing when an unescaped ampersand is directly followed by a tag (e5ed69a)\r\n- Fixed: Fix crash when a semantic search result is open in a secondary window (#17085)\r\n- Security: Add UI to allow validating public key fingerprints when sharing notebooks (3fd2f2f by Henry Heino)\r\n- Security: Ask for confirmation before disabling E2EE (f4447dd by Henry Heino)\r\n- Security: Detect and allow recovering from invalid public-private key pairs (27944cf by Henry Heino)\r\n- Security: Disable unencrypted uploads by default when E2EE is enabled (cfce373 by Henry Heino)\r\n- Security: Fix SQL injection in data API (64522e0 by Henry Heino)\r\n- Security: Harden master key loading, add new encryption method forward compatibility (46c5442 by Henry Heino)\r\n- Security: Harden server share API response handling (64d513a by Henry Heino)\r\n- Security: Prevent OneNote import from reading files outside the import directory (86250d4)\r\n- Security: Sync/E2EE: Do not mark items as published based on the list of shares returned by the server (2d1a179 by Henry Heino)\r\n- Security: Sync/E2EE: Harden marking items as published/shared (3cf1c1a by Henry Heino)\r\n- Security: Sync: Do not allow a remote item to decrypt/deserialize to an item with a different ID (b61ef1e by Henry Heino)",
     "downloads": [
       {
         "label": "Windows · 便携版 EXE",
         "platform": "Windows",
         "portable": true,
         "file": "JoplinPortable.exe",
-        "size": 368591720,
-        "sha256": "cb959b1af470395a28460f8d29a82c677fd84a09d08929c9a695054405e607b5",
-        "official": "https://github.com/laurent22/joplin/releases/download/v3.7.22/JoplinPortable.exe",
+        "size": 368718896,
+        "sha256": "e0c4e11a0c5ae00ff93dfa0ca6172bde49c739ed85fdd19a6cfbaad0fa247057",
+        "official": "https://github.com/laurent22/joplin/releases/download/v3.7.24/JoplinPortable.exe",
         "mirrors": []
       }
     ],
@@ -2494,20 +2494,20 @@
     "source": "winget"
   },
   "playnite": {
-    "version": "10.64",
-    "released": "2026-11-09",
+    "version": "10.65",
+    "released": "2026-11-19",
     "verified": "2026-11-19",
-    "release_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.64",
-    "changelog": "Fixed:\r\n\r\n* Improvements to program update process \r\n* Emulator profiles updates (by @darklinkpower) \r\n* Fullscreen views are misaligned when Windows taskbar is set to the left or right \r\n* Missing scrollbars on some settings views \r\n* Updated core framework dependencies \r\n",
+    "release_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.65",
+    "changelog": "Fixed:\r\n\r\n* Updated web view dependency \r\n* Import exclusion item removal not working when removing using Del key \r\n* Scrolling not working properly in tray menu \r\n* Scrolling not working well on some settings views \r\n* Updated emulator profiles \r\n\r\nSDK:\r\n\r\n* Added StartGameAction method to run specific game actions \r\n",
     "downloads": [
       {
         "label": "Windows · 绿色版 7z",
         "platform": "Windows",
         "portable": true,
-        "file": "10.64.7z",
-        "size": 140273552,
-        "sha256": "a4538628d6a0f49cd337c8a8640294849d736217bf4d2d7c99c1eb1b68428611",
-        "official": "https://github.com/JosefNemec/Playnite/releases/download/10.64/10.64.7z",
+        "file": "10.65.7z",
+        "size": 145660077,
+        "sha256": "e92528a8af95d61eaa75a5cfd1845e519f529ae397738e6cac241c7b3370a823",
+        "official": "https://github.com/JosefNemec/Playnite/releases/download/10.65/10.65.7z",
         "mirrors": []
       }
     ],
@@ -4583,20 +4583,20 @@
     "mirrored": false
   },
   "wetype": {
-    "version": "3.0.2.44",
-    "released": "2026-11-13",
+    "version": "3.0.3.6",
+    "released": "2026-11-19",
     "verified": "2026-11-19",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeType/3.0.2.44",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeType/3.0.3.6",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "WeTypeSetup_3.0.2.44_3.exe",
+        "file": "WeTypeSetup_3.0.3.6_3.exe",
         "size": null,
-        "sha256": "dd8d160b0ece768c5d576e08dfcf2c510e0b340cec6869c16cce89ae40178aa5",
-        "official": "https://download.z.weixin.qq.com/app/win/WeTypeSetup_3.0.2.44_3.exe",
+        "sha256": "da9026ce1b1ab8d0e009fefa0ba1b1b9d987b3f506257af74c6029250e9303e5",
+        "official": "https://download.z.weixin.qq.com/app/win/WeTypeSetup_3.0.3.6_3.exe",
         "mirrors": []
       }
     ],
@@ -5883,12 +5883,23 @@
     "mirrored": false
   },
   "bitwarden-android": {
-    "version": "2026.11.0-bwpm",
-    "released": "2026-11-05",
+    "version": "2026.11.1-bwpm",
+    "released": "2026-11-19",
     "verified": "2026-11-19",
-    "release_url": "https://github.com/bitwarden/android/releases/tag/v2026.11.0-bwpm",
-    "changelog": "# Overview\r\nThis F-Droid-only release was created to address an issue with publishing. It contains everything in 2026.10.1 plus the required fix.\r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at release/2026.10-rc65 -->\r\n\r\n## What's Changed\r\n### 🐛 Bug fixes\r\n* 🍒 [PM-46265] fix: Install AGP's default NDK in CI so native libraries are stripped by @mpbw2 in https://github.com/bitwarden/android/pull/7568\r\n\r\n\r\n**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.10.1-bwpm...v2026.11.0-bwpm\r\n**Builds Source:** https://github.com/bitwarden/android/actions/runs/42044993988",
-    "downloads": [],
+    "release_url": "https://github.com/bitwarden/android/releases/tag/v2026.11.1-bwpm",
+    "changelog": "# Overview\r\n* Collapse and expand vault sections\r\n* Refreshed look with a new font and tab icons\r\n* Fixed failed syncs not showing an error\r\n* Fixed occasional freezes when returning to the app\r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at release/2026.11-rc66 -->\r\n\r\n## What's Changed\r\n### ✨ Community Highlight\r\n* [PM-44484] fix: surface unreachable-server sync failures by @mvanhorn in https://github.com/bitwarden/android/pull/7444\r\n* [PM-46131] fix: use consistent hyphens in password generator labels by @mvanhorn in https://github.com/bitwarden/android/pull/7556\r\n* [PM-46454] fix: surface local network permission recovery after IPv6 connection timeouts by @mvanhorn in https://github.com/bitwarden/android/pull/7581\r\n### :shipit: Feature Development\r\n* [PM-35396] feat: Add expand/collapse to vault section headers by @andrebispo5 in https://github.com/bitwarden/android/pull/7504\r\n* [PM-44807] feature: generator slider arrow key by @merrick-cr in https://github.com/bitwarden/android/pull/7535\r\n* PM-45521: feat: Update illustration colors by @david-livefront in https://github.com/bitwarden/android/pull/7538\r\n* PM-45846: feat: Update BottomNav icons by @david-livefront in https://github.com/bitwarden/android/pull/7540\r\n* PM-9502: feat: Update login copy to match updated designs by @david-livefront in https://github.com/bitwarden/android/pull/7561\r\n* [PM-34837] feat: Update app font to Inter by @andrebispo5 in https://github.com/bitwarden/android/pull/7564\r\n### 🐛 Bug fixes\r\n* [PM-44810] fix: Ignore \"Vault Items\" send type parsing [bug-factory poc] by @andrebispo5 in https://github.com/bitwarden/android/pull/7488\r\n* [PM-43467] fix: Send Device-Identifier header on unauthenticated requests by @aj-rosado in https://github.com/bitwarden/android/pull/7490\r\n* [PM-42843] fix: Stop date picker flashing when switching to calendar by @andrebispo5 in https://github.com/bitwarden/android/pull/7536\r\n* [PM-45908] t:bug Fix sync account Off-by-one error in authenticator bridge by @merrick-cr in https://github.com/bitwarden/android/pull/7547\r\n* [PM-44566] fix: Lock the Send password field when editing a Send with a password by @andrebispo5 in https://github.com/bitwarden/android/pull/7559\r\n* PM-39367: bug: When the billing API 404s, the 'Plan' row should be hidden from the UI by @david-livefront in https://github.com/bitwarden/android/pull/7546\r\n* [PM-46265] fix: Install AGP's default NDK in CI so native libraries are stripped by @mpbw2 in https://github.com/bitwarden/android/pull/7549\r\n* [PM-46257] fix: Query browser autofill status off the main thread by @aj-rosado in https://github.com/bitwarden/android/pull/7563\r\n### ⚙️ Maintenance\r\n* [PM-45006] chore: Migrate from glide to coil for async image loading by @david-livefront in https://github.com/bitwarden/android/pull/7465\r\n* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7494\r\n* [PM-33888] ci: Fix labeler workflow race condition by @vvolkgang in https://github.com/bitwarden/android/pull/7498\r\n* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7528\r\n* PM-45875: chore: Update key connector API to use salt instead of email by @david-livefront in https://github.com/bitwarden/android/pull/7499\r\n* PM-28629: chore: Remove key connector url from GetTokenResponse by @david-livefront in https://github.com/bitwarden/android/pull/7543\r\n* PM-45133: chore: Remove Premium Upgrade feature flag by @david-livefront in https://github.com/bitwarden/android/pull/7544\r\n* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7553\r\n* [PM-46397] ci: Add F-Droid only option to GitHub release workflow by @mpbw2 in https://github.com/bitwarden/android/pull/7577\r\n* 🍒 PM-46860: chore: Remove the MigrateMyVaultToMyItems feature flag by @david-livefront in https://github.com/bitwarden/android/pull/7613\r\n### 📦 Dependency Updates\r\n* [PM-45008] deps: Migrate the app from Room to Room3 by @david-livefront in https://github.com/bitwarden/android/pull/7471\r\n* Update SDK to 4.0.0-9547-06f2c6f3 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7459\r\n* [deps]: Update kotlin to v2.4.21 by @renovate[bot] in https://github.com/bitwarden/android/pull/7532\r\n* Update SDK to 4.0.0-9737-d9119f7a by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7501\r\n* deps: Update OkHttp to v5.5.1 by @david-livefront in https://github.com/bitwarden/android/pull/7545\r\n* [deps]: Update fastlane to v2.241.1 by @renovate[bot] in https://github.com/bitwarden/android/pull/7390\r\n* [deps]: Update nkf to v0.3.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7475\r\n* [deps]: Update time to v0.5.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7533\r\n* [deps]: Update org.jetbrains.kotlinx:kotlinx-serialization-json to v1.12.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7562\r\n### 🎨 Other\r\n* chore: Add new policy types by @david-livefront in https://github.com/bitwarden/android/pull/7537\r\n* chore: Bump semantic version to 2026.11.0 by @david-livefront in https://github.com/bitwarden/android/pull/7541\r\n\r\n\r\n**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.11.0-bwpm...v2026.11.1-bwpm\r\n**Builds Source:** https://github.com/bitwarden/android/actions/runs/43461222793",
+    "downloads": [
+      {
+        "label": "Android · APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "com.x8bit.bitwarden.apk",
+        "size": 144824032,
+        "sha256": "ef7ecda031fbaf8a066ad61b5f33ad346bf9a22d18b51b4b09cb54e5cac28715",
+        "official": "https://github.com/bitwarden/android/releases/download/v2026.11.1-bwpm/com.x8bit.bitwarden.apk",
+        "mirrors": []
+      }
+    ],
     "mirrored": false
   },
   "exclave": {
@@ -6724,20 +6735,20 @@
     "mirrored": false
   },
   "qownnotes": {
-    "version": "26.11.11",
-    "released": "2026-11-18",
+    "version": "26.11.12",
+    "released": "2026-11-19",
     "verified": "2026-11-19",
-    "release_url": "https://github.com/pbek/QOwnNotes/releases/tag/v26.11.11",
-    "changelog": "## 26.11.11\n\n- Fixed unnecessary recursive watching of `.git` internals when a note folder is a Git\n  repository, which could cause long freezes during external-change scans on OneDrive\n  and exhaust filesystem watcher resources\n  (for [#3847](https://github.com/pbek/QOwnNotes/issues/3847))\n  - External note-change detection remains enabled, including when Git support is used\n- Fixed **Ctrl-hover highlighting** and **Ctrl-clicking links** with hanging indentation\n  enabled when wrapped Markdown list items shift the links below them\n  (for [#3853](https://github.com/pbek/QOwnNotes/issues/3853))\n\n## Released files\n\n- QOwnNotes-x86_64.AppImage: Portable Linux AppImage build with Qt 6\n- QOwnNotes-x86_64.AppImage.zsync: Metadata for AppImage delta updates\n- QOwnNotes-x86_64.AppImage.sha256sum: SHA-256 checksum for the AppImage\n- QOwnNotes-amd64.snap: Linux Snap build with Qt 6\n- QOwnNotes-amd64.snap.sha256sum: SHA-256 checksum for the Qt 6 Snap package\n- QOwnNotes.zip: Windows ZIP package built with Qt 6\n- QOwnNotes.zip.sha256: SHA-256 checksum for the Qt 6 Windows ZIP package\n- QOwnNotes.zip.sha256sum: Alternative SHA-256 checksum file for the Qt 6 Windows ZIP package\n- QOwnNotes.msi: Windows installer built with Qt 6\n- QOwnNotes.msi.sha256sum: SHA-256 checksum for the Qt 6 Windows installer\n- QOwnNotes.dmg: macOS disk image built with Qt 6\n- QOwnNotesQt5.dmg: macOS disk image built with Qt 5 for older systems",
+    "release_url": "https://github.com/pbek/QOwnNotes/releases/tag/v26.11.12",
+    "changelog": "## 26.11.12\n\n- Avoided unnecessary full note-folder scans on Windows when a watched subfolder's\n  notes are unchanged, reducing stalls after OneDrive sync notifications\n  (for [#3847](https://github.com/pbek/QOwnNotes/issues/3847))\n  - Nearby directory notifications share a delayed check, which still handles notes\n    that synchronization clients update by replacing the file\n- Fixed **Git versioning in the Snap** failing when a host `~/.gitconfig` is present\n  by using the Snap's private Git config\n  (for [#3857](https://github.com/pbek/QOwnNotes/issues/3857))\n- Added a **time picker** next to the due date of the **Nextcloud Deck** card dialog,\n  so the time no longer needs to be typed\n  (for [#3856](https://github.com/pbek/QOwnNotes/issues/3856))\n  - The due date and the due time now have separate fields, the date keeps its calendar\n    and the time gets the new clock picker\n  - The picker follows the light and dark mode and the accent color\n  - New **Today**, **Tomorrow** and **Next week** buttons set the due date and keep the time,\n    the buttons that move the due date earlier or later are now labeled\n  - The clock face shows hours on two rings and switches to the minutes after an hour was picked\n  - Quick presets for 09:00, 12:00, 15:00 and 18:00 and a **Now** button set common times\n  - The picked time is shown right away, **Escape** restores the previous time\n  - The mouse wheel, the arrow keys and **Tab** allow fine adjustments with the keyboard\n- Added a **Done** checkbox to the **Nextcloud Deck** card dialog to mark cards as done\n  (for [#3827](https://github.com/pbek/QOwnNotes/issues/3827))\n  - Multiple cards can be marked as done or not done from the context menu of the card list\n  - Done cards are struck through in the card list, show when they were done in their tooltip,\n    and their due date is no longer highlighted as overdue\n  - If a done stack is configured for the board in Nextcloud Deck, Deck moves cards\n    that are marked as done into it, and you are told where they went\n  - Saving a card no longer clears its done state in Nextcloud Deck\n  - Done and archived cards and missing due dates are now muted in a way that stays\n    readable in dark mode, including on alternating rows\n- Added **drag and drop** for copying and moving notes and subfolders in the note list and folder\n  panel, including mixed selections when the **note tree** is enabled\n  (for [#3854](https://github.com/pbek/QOwnNotes/issues/3854))\n  - Moves use the existing confirmation dialogs on drop, with **Don't ask again**\n    options; starting a drag does not show a dialog\n  - Internal drops offer a **Copy / Move** context menu at the drop position; **Ctrl-drag** selects Copy and\n    **Shift-drag** selects Move without the chooser, while confirmations remain enabled\n  - Notes cannot be dropped into their current subfolder; mixed selections skip notes\n    that are already in the destination\n  - **Shift-drag** shows a move cursor over internal targets instead of the copy cursor\n  - Folder copies include their contents and preserve note tags, never overwrite existing\n    folders, and do not follow symbolic links; links outside the copied tree may need adjustment\n  - Drags can also **copy** notes and folders to a file browser without\n    moving the originals\n  - Fixed a crash when cancelling a drop confirmation with **Escape**, caused by\n    incorrect ownership of the drag object during Qt's cleanup\n\n## Released files\n\n- QOwnNotes-x86_64.AppImage: Portable Linux AppImage build with Qt 6\n- QOwnNotes-x86_64.AppImage.zsync: Metadata for AppImage delta updates\n- QOwnNotes-x86_64.AppImage.sha256sum: SHA-256 checksum for the AppImage\n- QOwnNotes-amd64.snap: Linux Snap build with Qt 6\n- QOwnNotes-amd64.snap.sha256sum: SHA-256 checksum for the Qt 6 Snap package\n- QOwnNotes.zip: Windows ZIP package built with Qt 6\n- QOwnNotes.zip.sha256: SHA-256 checksum for the Qt 6 Windows ZIP package\n- QOwnNotes.zip.sha256sum: Alternative SHA-256 checksum file for the Qt 6 Windows ZIP package\n- QOwnNotes.msi: Windows installer built with Qt 6\n- QOwnNotes.msi.sha256sum: SHA-256 checksum for the Qt 6 Windows installer\n- QOwnNotes.dmg: macOS disk image built with Qt 6\n- QOwnNotesQt5.dmg: macOS disk image built with Qt 5 for older systems",
     "downloads": [
       {
         "label": "Windows · 安裝包 MSI",
         "platform": "Windows",
         "portable": false,
         "file": "QOwnNotes.msi",
-        "size": 39211008,
-        "sha256": "de28b92568f098932a6bfee2bfec5809e407925d00321a1bf51d505780175870",
-        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.11/QOwnNotes.msi",
+        "size": 39215104,
+        "sha256": "61cb56754623fa4e83f893850feba33750bdff95c723c081b1e44224f997ae36",
+        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.12/QOwnNotes.msi",
         "mirrors": []
       },
       {
@@ -6745,9 +6756,9 @@
         "platform": "Windows",
         "portable": true,
         "file": "QOwnNotes.zip",
-        "size": 55726174,
-        "sha256": "efc2a7173b8302e13ddf221673640d6918dec4c6bf059c7039f93810158e0a4b",
-        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.11/QOwnNotes.zip",
+        "size": 55763623,
+        "sha256": "a33fa55b7c47754da3b88a0f5f9fd70fe6750dc27b0f323772c5fc6ab9010946",
+        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.12/QOwnNotes.zip",
         "mirrors": []
       }
     ],
@@ -7169,30 +7180,30 @@
     "mirrored": false
   },
   "cmake": {
-    "version": "4.5.0",
-    "released": "2026-11-12",
+    "version": "4.5.1",
+    "released": "2026-11-19",
     "verified": "2026-11-19",
-    "release_url": "https://github.com/Kitware/CMake/releases/tag/v4.5.0",
-    "changelog": "See also the [release notes](https://cmake.org/cmake/help/latest/release/4.5.html) and [release milestone](https://gitlab.kitware.com/cmake/cmake/-/milestones/206).\r\n\r\nPGP sig by [2D2CEF1034921684](http://pool.sks-keyservers.net:11371/pks/lookup?op=get&search=0xCBA23971357C2E6590D9EFD3EC8FEF3A7BFB4EDA)",
+    "release_url": "https://github.com/Kitware/CMake/releases/tag/v4.5.1",
+    "changelog": "See also the [release notes](https://cmake.org/cmake/help/latest/release/4.5.html) and [release milestone](https://gitlab.kitware.com/cmake/cmake/-/milestones/218).\n\nPGP sig by [2D2CEF1034921684](http://pool.sks-keyservers.net:11371/pks/lookup?op=get&search=0xCBA23971357C2E6590D9EFD3EC8FEF3A7BFB4EDA)",
     "downloads": [
       {
         "label": "Windows x64 · 安裝包 MSI",
         "platform": "Windows",
         "portable": false,
-        "file": "cmake-4.5.0-windows-x86_64.msi",
-        "size": 40415232,
-        "sha256": "8e450caad4ce6bfb0f30206cac64bc611deee0d6848f4bf0ef30f51ff3606e25",
-        "official": "https://github.com/Kitware/CMake/releases/download/v4.5.0/cmake-4.5.0-windows-x86_64.msi",
+        "file": "cmake-4.5.1-windows-x86_64.msi",
+        "size": 40579072,
+        "sha256": "0041a25845bc8c399b42d20f836616cb0b7020a8605348c089563bbc0c023356",
+        "official": "https://github.com/Kitware/CMake/releases/download/v4.5.1/cmake-4.5.1-windows-x86_64.msi",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "cmake-4.5.0-windows-x86_64.zip",
-        "size": 56341654,
-        "sha256": "301b1728317ccd84e984b02e366a8293735bc5ac618757d3d8f58b578f062411",
-        "official": "https://github.com/Kitware/CMake/releases/download/v4.5.0/cmake-4.5.0-windows-x86_64.zip",
+        "file": "cmake-4.5.1-windows-x86_64.zip",
+        "size": 56581138,
+        "sha256": "bfe6eadb245dc8213e0d3feea316b520cb2aae92f5667ffd76059ba6b05c430c",
+        "official": "https://github.com/Kitware/CMake/releases/download/v4.5.1/cmake-4.5.1-windows-x86_64.zip",
         "mirrors": []
       }
     ],
@@ -7332,20 +7343,20 @@
     "source": "winget"
   },
   "signal": {
-    "version": "8.35.0",
-    "released": "2026-11-11",
+    "version": "8.36.0",
+    "released": "2026-11-19",
     "verified": "2026-11-19",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhisperSystems/Signal/8.35.0",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/o/OpenWhisperSystems/Signal/8.36.0",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 安裝包",
         "platform": "Windows",
         "portable": false,
-        "file": "signal-desktop-win-8.35.0.exe",
+        "file": "signal-desktop-win-8.36.0.exe",
         "size": null,
-        "sha256": "47509a9d5626efdc4bfffe938bf633e3b8c80d6798b43620ceb5d250f058e26f",
-        "official": "https://updates.signal.org/desktop/signal-desktop-win-8.35.0.exe",
+        "sha256": "4ba887638e25bf0d8c178b62274fd6d011c10c104f8db76b8855d1ca1af6483f",
+        "official": "https://updates.signal.org/desktop/signal-desktop-win-8.36.0.exe",
         "mirrors": []
       }
     ],
@@ -7506,5 +7517,35 @@
     ],
     "mirrored": false,
     "source": "winget"
+  },
+  "tungbox": {
+    "version": "0.4.1",
+    "released": "2026-10-31",
+    "verified": "2026-11-19",
+    "release_url": "https://github.com/tongfei11/TungBox/releases/tag/v0.4.1",
+    "changelog": "# TungBox 0.4.1\n\n编译版本：0307\n\n## 更新内容\n\n- 改进无 IPv6 出口网络下的 DNS 与 FakeIP 兼容性，修复部分场景中微信文章和朋友圈图片加载缓慢的问题。\n- 修复 macOS 27 普通代理的进程识别问题，继续兼容官方 sing-box Core，无需修改内核。\n- 优化状态栏测速结果配色，点击延迟测试后保持菜单展开，并弱化自动选择的勾选标记。\n- 简化节点卡片，移除选中圆点和国旗图标，调整延迟标签位置，突出手动代理组、弱化自动测试组。\n- 优化日志级别配色与明细排版，补齐应用事件时间，以节点名称显示连接关联信息，保留手动选择和一键复制。\n- 调整连接表格列宽，将末尾列顺序改为“出站、流量、规则”，修复序号重复和显示省略号的问题。\n\n## 安装提示\n\n首次打开可能需要在系统设置的“隐私与安全性”中允许。\n\n## 升级说明\n\n- 安装包内置官方 sing-box 1.14.2 Core，支持 macOS 13 及以上版本，提供 Apple Silicon 和 Intel 安装包。\n- 保留已安装或导入的本地 Core；升级后重新启动 TungBox 生效。\n",
+    "downloads": [
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "TungBox-0.4.1-macos-arm64.dmg",
+        "size": 36288915,
+        "sha256": "a4ccc2ad73ce3c1da969d790c26d1e837c1094b76e9bd66b5676efa3d5c08994",
+        "official": "https://github.com/tongfei11/TungBox/releases/download/v0.4.1/TungBox-0.4.1-macos-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "TungBox-0.4.1-macos-x86_64.dmg",
+        "size": 38725358,
+        "sha256": "235caa1ca5dba9bfa0f08bff948d3ee8f03f42530a3397b0f1d09a5f9ae9c86b",
+        "official": "https://github.com/tongfei11/TungBox/releases/download/v0.4.1/TungBox-0.4.1-macos-x86_64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
   }
 }
