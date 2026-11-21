@@ -1168,20 +1168,20 @@
     "source": "winget"
   },
   "hwinfo": {
-    "version": "8.54",
-    "released": "2026-09-30",
+    "version": "8.60",
+    "released": "2026-11-10",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALiX/HWiNFO/8.54",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALiX/HWiNFO/8.60",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "hwi64_854.exe",
+        "file": "hwi_860x.exe",
         "size": null,
-        "sha256": "16281ec83a69a720beac8e2a1dad606fb2eaf4757bb02c7752b72ee2c26ee243",
-        "official": "https://www.hwinfo.com/files/hwi64_854.exe",
+        "sha256": "a91126cf6bdba645da00b95be7ca54157666391798042bb2037bc23bffe791f9",
+        "official": "https://www.sac.sk/download/utildiag/hwi_860x.exe",
         "mirrors": []
       }
     ],
@@ -2065,20 +2065,20 @@
     "source": "winget"
   },
   "calibre": {
-    "version": "9.18.0",
-    "released": "2026-11-06",
+    "version": "9.19.0",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre/9.18.0",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre/9.19.0",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 安装包 MSI",
         "platform": "Windows",
         "portable": false,
-        "file": "calibre-64bit-9.18.0.msi",
+        "file": "calibre-64bit-9.19.0.msi",
         "size": null,
-        "sha256": "05c0f2223866f8082e05b2d4bc9c57b31a833de8355a1191fd79c260c2636d38",
-        "official": "https://download.calibre-ebook.com/9.18.0/calibre-64bit-9.18.0.msi",
+        "sha256": "241193d5045bdcbc3e7ec000c22ede0b5da1fd2e91e83fa0b17f0e1f67174480",
+        "official": "https://download.calibre-ebook.com/9.19.0/calibre-64bit-9.19.0.msi",
         "mirrors": []
       }
     ],
@@ -3827,20 +3827,20 @@
     "mirrored": false
   },
   "croc": {
-    "version": "11.6.5",
-    "released": "2026-11-07",
+    "version": "11.6.6",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/schollz/croc/releases/tag/v11.6.5",
-    "changelog": "## What's Changed\r\n* chore: update dependencies by @schollz in https://github.com/schollz/croc/pull/1429\r\n\r\n\r\n**Full Changelog**: https://github.com/schollz/croc/compare/v11.6.4...v11.6.5",
+    "release_url": "https://github.com/schollz/croc/releases/tag/v11.6.6",
+    "changelog": "## What's Changed\r\n* fix: add CROC_WEB_URL Fixes #1428 by @schollz in https://github.com/schollz/croc/pull/1431\r\n* fix: shell-quote relay, password and code in the receive command by @Kernel-Hunter in https://github.com/schollz/croc/pull/1434\r\n* fix: return an error for a bad --throttleUpload and apply large limits exactly by @Kernel-Hunter in https://github.com/schollz/croc/pull/1435\r\n* build(deps): bump docker/login-action from 4.6.0 to 4.8.0 by @dependabot[bot] in https://github.com/schollz/croc/pull/1433\r\n* fix: include the digit 9 in GenerateRandomPin by @Kernel-Hunter in https://github.com/schollz/croc/pull/1438\r\n* fix: match --git ignore patterns against relative paths by @b84330808 in https://github.com/schollz/croc/pull/1437\r\n* chore: update deps by @schollz in https://github.com/schollz/croc/pull/1439\r\n* docs: add CrocApp to the community desktop apps by @bakirgdev in https://github.com/schollz/croc/pull/1440\r\n* ci: setup-go with go-version-file by @zdiff in https://github.com/schollz/croc/pull/1442\r\n* fix: preserve received empty file permissions by @pcbeingused333 in https://github.com/schollz/croc/pull/1444\r\n* feat: count received bundle bytes in TotalSent by @bakirgdev in https://github.com/schollz/croc/pull/1427\r\n* feat: add Prompt option for library users by @bakirgdev in https://github.com/schollz/croc/pull/1449\r\n* fix: skip NTFS junctions when sending a folder by @b84330808 in https://github.com/schollz/croc/pull/1450\r\n* fix: align web tests with send files label by @schollz in https://github.com/schollz/croc/pull/1451\r\n\r\n## New Contributors\r\n* @Kernel-Hunter made their first contribution in https://github.com/schollz/croc/pull/1434\r\n* @b84330808 made their first contribution in https://github.com/schollz/croc/pull/1437\r\n* @bakirgdev made their first contribution in https://github.com/schollz/croc/pull/1440\r\n* @pcbeingused333 made their first contribution in https://github.com/schollz/croc/pull/1444\r\n\r\n**Full Changelog**: https://github.com/schollz/croc/compare/v11.6.5...v11.6.6",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "croc_v11.6.5_Windows-64bit.zip",
-        "size": 12982028,
-        "sha256": "ae5b9d249099ff159f6a4b91824a2bf7d2b32f0dd77342aef51b34154aa4fffb",
-        "official": "https://github.com/schollz/croc/releases/download/v11.6.5/croc_v11.6.5_Windows-64bit.zip",
+        "file": "croc_v11.6.6_Windows-64bit.zip",
+        "size": 13011316,
+        "sha256": "e84910ec971b81f34c9722dc20128d23f3b962cbdbe16437b5c289f757f88016",
+        "official": "https://github.com/schollz/croc/releases/download/v11.6.6/croc_v11.6.6_Windows-64bit.zip",
         "mirrors": []
       }
     ],
