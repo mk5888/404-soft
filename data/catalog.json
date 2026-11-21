@@ -13465,7 +13465,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/monitorcontrol.png"
   },
   {
     "slug": "pearcleaner",
@@ -13502,7 +13503,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/pearcleaner.png"
   },
   {
     "slug": "iina",
@@ -13611,7 +13613,8 @@
           "portable": true
         }
       ]
-    }
+    },
+    "icon": "/static/icons/ice-menubar.png"
   },
   {
     "slug": "quickrecorder",
@@ -13830,7 +13833,8 @@
           "portable": true
         }
       ]
-    }
+    },
+    "icon": "/static/icons/mos-macos.png"
   },
   {
     "slug": "battery-macos",
@@ -13867,7 +13871,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/battery-macos.png"
   },
   {
     "slug": "netnewswire",
@@ -13979,7 +13984,8 @@
           "portable": true
         }
       ]
-    }
+    },
+    "icon": "/static/icons/macpass.png"
   },
   {
     "slug": "copyq",
@@ -14032,7 +14038,8 @@
           "portable": true
         }
       ]
-    }
+    },
+    "icon": "/static/icons/copyq.png"
   },
   {
     "slug": "memreduct",
@@ -14075,7 +14082,8 @@
           "portable": true
         }
       ]
-    }
+    },
+    "icon": "/static/icons/memreduct.png"
   },
   {
     "slug": "mihon",
@@ -14110,7 +14118,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/mihon.png"
   },
   {
     "slug": "aves",
@@ -14145,7 +14154,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/aves.png"
   },
   {
     "slug": "app-manager",
@@ -14181,7 +14191,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/app-manager.png"
   },
   {
     "slug": "utm",
@@ -14262,7 +14273,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/delta-ios.png"
   },
   {
     "slug": "livecontainer",
@@ -14298,7 +14310,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/livecontainer.png"
   },
   {
     "slug": "yattee",
@@ -14333,7 +14346,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/yattee.png"
   },
   {
     "slug": "sidestore",
@@ -14369,7 +14383,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/sidestore.png"
   },
   {
     "slug": "provenance",
@@ -14443,6 +14458,7 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/trollstore.png"
   }
 ]
