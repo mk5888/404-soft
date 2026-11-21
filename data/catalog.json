@@ -13317,5 +13317,1132 @@
     "platforms": [
       "Windows"
     ]
+  },
+  {
+    "slug": "stats",
+    "name": "Stats",
+    "abbr": "St",
+    "category": "hardware",
+    "tags": [
+      "监控",
+      "菜单栏",
+      "Mac"
+    ],
+    "summary": "在菜单栏实时显示 CPU、GPU、内存、网络与风扇状态。",
+    "intro": "Stats 是开源的 macOS 菜单栏系统监控工具，可分模块显示处理器、显卡、内存、磁盘、网络、电池与传感器数据，每个模块都能单独开关和设置样式。",
+    "features": [
+      "CPU / GPU / 内存监控",
+      "磁盘与网络速率",
+      "温度与风扇传感器",
+      "模块可单独开关"
+    ],
+    "tips": [
+      "模块开太多会占满菜单栏，按需启用即可。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://mac-stats.com",
+    "source": {
+      "type": "github",
+      "repo": "exelban/stats",
+      "assets": [
+        {
+          "match": "Stats\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/stats.png"
+  },
+  {
+    "slug": "maccy",
+    "name": "Maccy",
+    "abbr": "Mc",
+    "category": "tools",
+    "tags": [
+      "剪贴板",
+      "效率",
+      "Mac"
+    ],
+    "summary": "轻量、键盘优先的 macOS 剪贴板历史工具。",
+    "intro": "Maccy 记录复制过的文字与图片，按快捷键呼出列表后可直接搜索并粘贴，界面原生、占用极低。",
+    "features": [
+      "剪贴板历史搜索",
+      "全键盘操作",
+      "支持图片与富文本",
+      "可忽略指定应用"
+    ],
+    "tips": [
+      "复制密码前可在设置里忽略密码管理器，避免被记录。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://maccy.app",
+    "source": {
+      "type": "github",
+      "repo": "p0deje/Maccy",
+      "assets": [
+        {
+          "match": "Maccy\\.app\\.zip$",
+          "label": "macOS · ZIP",
+          "platform": "macOS",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/maccy.png"
+  },
+  {
+    "slug": "rectangle",
+    "name": "Rectangle",
+    "abbr": "Re",
+    "category": "system",
+    "tags": [
+      "窗口管理",
+      "快捷键",
+      "Mac"
+    ],
+    "summary": "用快捷键或拖到屏幕边缘，快速分屏与调整窗口。",
+    "intro": "Rectangle 为 macOS 补上类似 Windows 的窗口贴靠功能：左右半屏、四分之一屏、最大化、居中都能用快捷键完成，也支持拖拽到屏幕边缘自动吸附。",
+    "features": [
+      "快捷键分屏",
+      "边缘拖拽吸附",
+      "多显示器切换",
+      "自定义尺寸"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://rectangleapp.com",
+    "source": {
+      "type": "github",
+      "repo": "rxhanson/Rectangle",
+      "assets": [
+        {
+          "match": "Rectangle[\\d.]*\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/rectangle.png"
+  },
+  {
+    "slug": "monitorcontrol",
+    "name": "MonitorControl",
+    "abbr": "MC",
+    "category": "hardware",
+    "tags": [
+      "显示器",
+      "亮度",
+      "Mac"
+    ],
+    "summary": "用键盘直接调节外接显示器的硬件亮度和音量。",
+    "intro": "MonitorControl 通过 DDC 协议控制外接显示器，让 Mac 键盘上的亮度、音量键也能作用于外接屏，并显示原生风格的提示框。",
+    "features": [
+      "外接屏硬件亮度",
+      "外接屏音量",
+      "原生 OSD 提示",
+      "多显示器同步"
+    ],
+    "tips": [
+      "部分显示器或扩展坞不支持 DDC，此时只能使用软件调光。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://monitorcontrol.app",
+    "source": {
+      "type": "github",
+      "repo": "MonitorControl/MonitorControl",
+      "assets": [
+        {
+          "match": "MonitorControl[\\d.]*\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "pearcleaner",
+    "name": "Pearcleaner",
+    "abbr": "PC",
+    "category": "system",
+    "tags": [
+      "卸载",
+      "清理",
+      "Mac"
+    ],
+    "summary": "彻底卸载 Mac 应用并清理残留文件。",
+    "intro": "Pearcleaner 会找出应用在资源库、缓存、偏好设置中留下的相关文件，一起移到废纸篓，也能扫描已删除应用遗留的孤立文件。",
+    "features": [
+      "卸载时连带清理残留",
+      "孤立文件扫描",
+      "拖拽卸载",
+      "Sentinel 自动监测"
+    ],
+    "tips": [
+      "删除前先看一遍列表，共享组件不要误删。"
+    ],
+    "license": "Apache-2.0 + Commons Clause",
+    "mirror_allowed": false,
+    "homepage": "https://itsalin.com/appInfo/?id=pearcleaner",
+    "source": {
+      "type": "github",
+      "repo": "alienator88/Pearcleaner",
+      "assets": [
+        {
+          "match": "Pearcleaner\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "iina",
+    "name": "IINA",
+    "abbr": "II",
+    "category": "media",
+    "tags": [
+      "播放器",
+      "视频",
+      "Mac"
+    ],
+    "summary": "基于 mpv、原生设计的现代 macOS 视频播放器。",
+    "intro": "IINA 用 mpv 做内核，几乎能播放所有格式，同时采用原生 macOS 界面，支持触控板手势、画中画、在线字幕与深色模式。",
+    "features": [
+      "几乎全格式播放",
+      "画中画与手势",
+      "在线字幕搜索",
+      "支持 mpv 配置与插件"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://iina.io",
+    "source": {
+      "type": "github",
+      "repo": "iina/iina",
+      "assets": [
+        {
+          "match": "IINA\\.v[\\d.]+\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/iina.png"
+  },
+  {
+    "slug": "keka",
+    "name": "Keka",
+    "abbr": "Ke",
+    "category": "file",
+    "tags": [
+      "解压",
+      "压缩",
+      "Mac"
+    ],
+    "summary": "支持 7z、ZIP、RAR 等格式的 macOS 压缩解压工具。",
+    "intro": "Keka 可以创建 7z、ZIP、TAR 等压缩包并支持 AES-256 加密，也能解开 RAR、ISO 等常见格式，拖到 Dock 图标即可处理。",
+    "features": [
+      "7z / ZIP / TAR 压缩",
+      "解压 RAR、ISO 等",
+      "AES-256 加密",
+      "分卷压缩"
+    ],
+    "tips": [
+      "官网下载免费，App Store 版付费用于支持作者。"
+    ],
+    "license": "免费软件",
+    "mirror_allowed": false,
+    "homepage": "https://www.keka.io",
+    "source": {
+      "type": "github",
+      "repo": "aonez/Keka",
+      "assets": [
+        {
+          "match": "Keka-[\\d.]+\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/keka.png"
+  },
+  {
+    "slug": "ice-menubar",
+    "name": "Ice",
+    "abbr": "Ice",
+    "category": "system",
+    "tags": [
+      "菜单栏",
+      "整理",
+      "Mac"
+    ],
+    "summary": "隐藏和整理 macOS 菜单栏图标，刘海屏也不再挤。",
+    "intro": "Ice 把菜单栏图标分为常显、隐藏和始终隐藏三组，点击或悬停即可展开，还能自定义菜单栏外观，适合刘海屏 MacBook。",
+    "features": [
+      "分组隐藏图标",
+      "悬停 / 滚动展开",
+      "菜单栏外观自定义",
+      "刘海屏友好"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://icemenubar.app",
+    "source": {
+      "type": "github",
+      "repo": "jordanbaird/Ice",
+      "assets": [
+        {
+          "match": "^Ice\\.zip$",
+          "label": "macOS · ZIP",
+          "platform": "macOS",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "quickrecorder",
+    "name": "QuickRecorder",
+    "abbr": "QR",
+    "category": "video",
+    "tags": [
+      "录屏",
+      "Mac"
+    ],
+    "summary": "轻量 macOS 录屏工具，无需额外驱动即可录系统声音。",
+    "intro": "QuickRecorder 基于 ScreenCaptureKit，可录制全屏、窗口或区域，直接录入系统内部声音，还支持摄像头画中画和 HEVC 编码。",
+    "features": [
+      "全屏 / 窗口 / 区域录制",
+      "系统内录无需驱动",
+      "摄像头叠加",
+      "HEVC 与 Alpha 通道"
+    ],
+    "tips": [
+      "需要 macOS 12.3 或更新版本。"
+    ],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://lihaoyun6.github.io/quickrecorder/",
+    "source": {
+      "type": "github",
+      "repo": "lihaoyun6/QuickRecorder",
+      "assets": [
+        {
+          "match": "QuickRecorder_v[\\d.]+\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/quickrecorder.png"
+  },
+  {
+    "slug": "linearmouse",
+    "name": "LinearMouse",
+    "abbr": "LM",
+    "category": "hardware",
+    "tags": [
+      "鼠标",
+      "触控板",
+      "Mac"
+    ],
+    "summary": "为鼠标和触控板分别设置滚动方向、加速度与按键。",
+    "intro": "LinearMouse 能让外接鼠标与触控板使用不同的滚动方向，关闭鼠标加速、开启平滑滚动，并给侧键映射手势或快捷键。",
+    "features": [
+      "鼠标与触控板分开设置",
+      "关闭鼠标加速",
+      "平滑滚动",
+      "侧键映射"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://linearmouse.app",
+    "source": {
+      "type": "github",
+      "repo": "linearmouse/linearmouse",
+      "assets": [
+        {
+          "match": "LinearMouse\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/linearmouse.png"
+  },
+  {
+    "slug": "betterdisplay",
+    "name": "BetterDisplay",
+    "abbr": "BD",
+    "category": "hardware",
+    "tags": [
+      "显示器",
+      "HiDPI",
+      "Mac"
+    ],
+    "summary": "为外接显示器开启 HiDPI、虚拟屏与硬件调节。",
+    "intro": "BetterDisplay 可以让普通外接屏开启 HiDPI 缩放，创建虚拟显示器，覆写 EDID，并通过 DDC 调节亮度与对比度。",
+    "features": [
+      "外接屏 HiDPI",
+      "虚拟显示器",
+      "DDC 亮度调节",
+      "EDID 覆写"
+    ],
+    "tips": [
+      "基础功能免费，部分高级功能需购买 Pro。"
+    ],
+    "license": "免费增值（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://betterdisplay.pro",
+    "source": {
+      "type": "github",
+      "repo": "waydabber/BetterDisplay",
+      "assets": [
+        {
+          "match": "BetterDisplay-v[\\d.]+\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/betterdisplay.svg"
+  },
+  {
+    "slug": "alttab-macos",
+    "name": "AltTab",
+    "abbr": "AT",
+    "category": "system",
+    "tags": [
+      "窗口切换",
+      "Mac"
+    ],
+    "summary": "把 Windows 式的 Alt+Tab 窗口预览切换带到 Mac。",
+    "intro": "AltTab 在切换时显示每个窗口的缩略图，而不只是应用图标，同一应用的多个窗口也能直接选中，快捷键和外观都可自定义。",
+    "features": [
+      "窗口缩略图预览",
+      "按窗口而非应用切换",
+      "快捷键自定义",
+      "多显示器支持"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://alt-tab.app",
+    "source": {
+      "type": "github",
+      "repo": "lwouis/alt-tab-macos",
+      "assets": [
+        {
+          "match": "AltTab-[\\d.]+\\.zip$",
+          "label": "macOS · ZIP",
+          "platform": "macOS",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/alttab-macos.png"
+  },
+  {
+    "slug": "karabiner-elements",
+    "name": "Karabiner-Elements",
+    "abbr": "KE",
+    "category": "system",
+    "tags": [
+      "键盘",
+      "改键",
+      "Mac"
+    ],
+    "summary": "强大的 macOS 键盘改键工具。",
+    "intro": "Karabiner-Elements 可以重新映射任意按键，支持复杂规则，比如把 Caps Lock 变成 Esc 或 Hyper 键，并能为不同键盘分别设置。",
+    "features": [
+      "任意按键映射",
+      "复杂组合规则",
+      "按设备分别配置",
+      "社区规则库导入"
+    ],
+    "tips": [
+      "首次安装需要在系统设置里允许驱动扩展和输入监控。"
+    ],
+    "license": "Unlicense",
+    "mirror_allowed": true,
+    "homepage": "https://karabiner-elements.pqrs.org/",
+    "source": {
+      "type": "github",
+      "repo": "pqrs-org/Karabiner-Elements",
+      "assets": [
+        {
+          "match": "Karabiner-Elements-[\\d.]+\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/karabiner-elements.png"
+  },
+  {
+    "slug": "mos-macos",
+    "name": "Mos",
+    "abbr": "Mos",
+    "category": "hardware",
+    "tags": [
+      "鼠标",
+      "平滑滚动",
+      "Mac"
+    ],
+    "summary": "让外接鼠标在 Mac 上平滑滚动，并单独设置方向。",
+    "intro": "Mos 为普通鼠标滚轮加入平滑滚动效果，可独立反转鼠标滚动方向而不影响触控板，还能针对不同应用设置。",
+    "features": [
+      "鼠标平滑滚动",
+      "独立反转方向",
+      "按应用设置",
+      "调节步长与速度"
+    ],
+    "tips": [],
+    "license": "CC BY-NC 4.0",
+    "mirror_allowed": false,
+    "homepage": "http://mos.caldis.me",
+    "source": {
+      "type": "github",
+      "repo": "Caldis/Mos",
+      "assets": [
+        {
+          "match": "^Mos\\.Versions\\.[\\d.]+-[\\d.]+\\.zip$",
+          "label": "macOS · ZIP",
+          "platform": "macOS",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "battery-macos",
+    "name": "battery",
+    "abbr": "Bt",
+    "category": "hardware",
+    "tags": [
+      "电池",
+      "充电限制",
+      "Mac"
+    ],
+    "summary": "限制 Apple 芯片 MacBook 的最高充电量，延长电池寿命。",
+    "intro": "battery 可以把 MacBook 的充电上限设为 80% 等数值，长时间插电时保护电池，提供菜单栏应用和命令行两种用法。",
+    "features": [
+      "自定义充电上限",
+      "菜单栏与命令行",
+      "放电到指定电量",
+      "保持电量"
+    ],
+    "tips": [
+      "仅支持 Apple 芯片 Mac。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/actuallymentor/battery",
+    "source": {
+      "type": "github",
+      "repo": "actuallymentor/battery",
+      "assets": [
+        {
+          "match": "battery-[\\d.]+-mac-arm64\\.dmg$",
+          "label": "macOS · Apple 芯片",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "netnewswire",
+    "name": "NetNewsWire",
+    "abbr": "NN",
+    "category": "tools",
+    "tags": [
+      "RSS",
+      "阅读",
+      "Mac"
+    ],
+    "summary": "免费开源的 Mac RSS 阅读器，快速原生。",
+    "intro": "NetNewsWire 是经典的 RSS 阅读器，支持 RSS、Atom 与 JSON Feed，可同步 iCloud、Feedbin、FreshRSS 等服务，界面简洁无追踪。",
+    "features": [
+      "RSS / Atom / JSON Feed",
+      "iCloud 与第三方同步",
+      "阅读视图",
+      "无广告无追踪"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://netnewswire.com/",
+    "source": {
+      "type": "github",
+      "repo": "Ranchero-Software/NetNewsWire",
+      "assets": [
+        {
+          "match": "NetNewsWire[\\d.]+\\.zip$",
+          "label": "macOS · ZIP",
+          "platform": "macOS",
+          "portable": true
+        }
+      ],
+      "tag_regex": "^mac-"
+    },
+    "icon": "/static/icons/netnewswire.png"
+  },
+  {
+    "slug": "boring-notch",
+    "name": "Boring Notch",
+    "abbr": "BN",
+    "category": "tools",
+    "tags": [
+      "刘海",
+      "灵动岛",
+      "Mac"
+    ],
+    "summary": "把 MacBook 刘海变成音乐控制与通知区域。",
+    "intro": "Boring Notch 让刘海区域像灵动岛一样展开，显示正在播放的音乐与可视化效果，还能放日历、文件暂存等小组件。",
+    "features": [
+      "刘海音乐控制",
+      "音频可视化",
+      "日历与文件暂存",
+      "动画展开"
+    ],
+    "tips": [
+      "主要为带刘海的 MacBook 设计。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://theboring.name/",
+    "source": {
+      "type": "github",
+      "repo": "TheBoredTeam/boring.notch",
+      "assets": [
+        {
+          "match": "boringNotch\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/boring-notch.png"
+  },
+  {
+    "slug": "macpass",
+    "name": "MacPass",
+    "abbr": "MP",
+    "category": "security",
+    "tags": [
+      "密码",
+      "KeePass",
+      "Mac"
+    ],
+    "summary": "原生 macOS 的 KeePass 兼容密码管理器。",
+    "intro": "MacPass 读写 KeePass 的 .kdbx 数据库，可与 Windows、手机上的 KeePass 客户端共用同一个密码库，数据完全保存在本地。",
+    "features": [
+      "兼容 KeePass kdbx",
+      "本地加密存储",
+      "自动填充快捷键",
+      "密码生成器"
+    ],
+    "tips": [
+      "记得定期备份 .kdbx 文件和主密码。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "http://macpass.app/",
+    "source": {
+      "type": "github",
+      "repo": "MacPass/MacPass",
+      "assets": [
+        {
+          "match": "MacPass-[\\d.]+\\.zip$",
+          "label": "macOS · ZIP",
+          "platform": "macOS",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "copyq",
+    "name": "CopyQ",
+    "abbr": "CQ",
+    "category": "tools",
+    "tags": [
+      "剪贴板",
+      "效率",
+      "绿色版"
+    ],
+    "summary": "跨平台的高级剪贴板管理器，支持标签与脚本。",
+    "intro": "CopyQ 记录剪贴板历史，可分标签整理、编辑条目、搜索，并用命令和脚本做自动化，Windows 有便携版。",
+    "features": [
+      "剪贴板历史与搜索",
+      "标签页分类",
+      "条目编辑",
+      "命令与脚本自动化"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/hluk/CopyQ",
+    "source": {
+      "type": "github",
+      "repo": "hluk/CopyQ",
+      "assets": [
+        {
+          "match": "copyq-[\\d.]+-setup\\.exe$",
+          "label": "Windows · 安装程序",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^copyq-[\\d.]+\\.zip$",
+          "label": "Windows · 便携 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "CopyQ-[\\d.]+-macos-\\d+-m1\\.dmg$",
+          "label": "macOS · Apple 芯片",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "CopyQ-[\\d.]+-x86_64\\.AppImage$",
+          "label": "Linux · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "memreduct",
+    "name": "Mem Reduct",
+    "abbr": "MR",
+    "category": "system",
+    "tags": [
+      "内存",
+      "清理",
+      "绿色版"
+    ],
+    "summary": "轻量的 Windows 内存监控与释放工具。",
+    "intro": "Mem Reduct 在托盘显示内存占用，可一键或按阈值自动清理系统缓存与工作集，程序很小，有便携版。",
+    "features": [
+      "托盘实时显示内存",
+      "一键释放",
+      "按阈值自动清理",
+      "便携版"
+    ],
+    "tips": [
+      "内存清理只是释放缓存，不能代替加内存。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/henrypp/memreduct",
+    "source": {
+      "type": "github",
+      "repo": "henrypp/memreduct",
+      "assets": [
+        {
+          "match": "memreduct-[\\d.]+-setup\\.exe$",
+          "label": "Windows · 安装程序",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "memreduct-[\\d.]+-bin\\.7z$",
+          "label": "Windows · 便携 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "mihon",
+    "name": "Mihon",
+    "abbr": "Mh",
+    "category": "android",
+    "tags": [
+      "漫画",
+      "阅读",
+      "Android"
+    ],
+    "summary": "开源 Android 漫画阅读器，Tachiyomi 的继任者。",
+    "intro": "Mihon 延续 Tachiyomi，支持本地漫画与扩展源，提供书架、追更、阅读进度同步和多种阅读模式。",
+    "features": [
+      "本地与扩展源",
+      "书架与追更",
+      "多种阅读模式",
+      "Tracker 进度同步"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/mihonapp/mihon",
+    "source": {
+      "type": "github",
+      "repo": "mihonapp/mihon",
+      "assets": [
+        {
+          "match": "mihon-arm64-v8a-v[\\d.]+\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "aves",
+    "name": "Aves",
+    "abbr": "Av",
+    "category": "android",
+    "tags": [
+      "相册",
+      "图片",
+      "Android"
+    ],
+    "summary": "功能丰富的开源 Android 相册，支持地图与元数据。",
+    "intro": "Aves 浏览照片和视频，支持 GIF、SVG、RAW、动态照片，可按地图、标签、日期整理，并查看完整 EXIF 元数据。",
+    "features": [
+      "多格式支持",
+      "地图与标签浏览",
+      "EXIF 元数据",
+      "无广告离线"
+    ],
+    "tips": [],
+    "license": "BSD-3-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/deckerst/aves",
+    "source": {
+      "type": "github",
+      "repo": "deckerst/aves",
+      "assets": [
+        {
+          "match": "app-libre-arm64-v8a-release\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "app-manager",
+    "name": "App Manager",
+    "abbr": "AM",
+    "category": "android",
+    "tags": [
+      "应用管理",
+      "Android"
+    ],
+    "summary": "开源 Android 应用管理器，可查看组件与权限。",
+    "intro": "App Manager 能查看应用的组件、权限、签名，支持批量操作、备份还原，配合 Root 或 ADB 还能冻结应用和屏蔽组件。",
+    "features": [
+      "组件与权限查看",
+      "批量操作",
+      "备份还原",
+      "Root / ADB 高级功能"
+    ],
+    "tips": [
+      "冻结或屏蔽系统组件前先确认用途。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "http://muntashir.dev/AppManager/",
+    "source": {
+      "type": "github",
+      "repo": "MuntashirAkon/AppManager",
+      "assets": [
+        {
+          "match": "AppManager_v[\\d.]+\\.apk$",
+          "label": "Android · APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "utm",
+    "name": "UTM",
+    "abbr": "UTM",
+    "category": "system",
+    "tags": [
+      "虚拟机",
+      "Mac",
+      "iOS"
+    ],
+    "summary": "在 Mac 和 iPhone 上运行 Windows、Linux 虚拟机。",
+    "intro": "UTM 基于 QEMU，在 Apple 芯片 Mac 上可用虚拟化跑 ARM 系统，也能模拟 x86，图形化管理虚拟机，iOS 版需侧载安装。",
+    "features": [
+      "Apple 虚拟化与 QEMU",
+      "x86 / ARM 模拟",
+      "图形化配置",
+      "Mac 与 iOS 双端"
+    ],
+    "tips": [
+      "iOS 版需要侧载，并且性能受系统限制。"
+    ],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://getutm.app",
+    "source": {
+      "type": "github",
+      "repo": "utmapp/UTM",
+      "assets": [
+        {
+          "match": "^UTM\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^UTM\\.ipa$",
+          "label": "iOS · IPA",
+          "platform": "iOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/utm.png"
+  },
+  {
+    "slug": "delta-ios",
+    "name": "Delta",
+    "abbr": "De",
+    "category": "ios",
+    "tags": [
+      "模拟器",
+      "游戏",
+      "iOS"
+    ],
+    "summary": "iOS 上的任天堂经典游戏机模拟器。",
+    "intro": "Delta 支持 NES、SNES、GBA、N64、NDS 等平台，可存档、快进、自定义皮肤并支持手柄，App Store 部分地区也已上架。",
+    "features": [
+      "多平台模拟",
+      "即时存档与快进",
+      "控制器支持",
+      "自定义皮肤"
+    ],
+    "tips": [
+      "游戏 ROM 请使用自己合法拥有的卡带转储。"
+    ],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/rileytestut/Delta",
+    "source": {
+      "type": "github",
+      "repo": "rileytestut/Delta",
+      "assets": [
+        {
+          "match": "\\.ipa$",
+          "label": "iOS · IPA",
+          "platform": "iOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "livecontainer",
+    "name": "LiveContainer",
+    "abbr": "LC",
+    "category": "ios",
+    "tags": [
+      "侧载",
+      "iOS"
+    ],
+    "summary": "在一个容器里运行多个 iOS 应用，无需逐个签名。",
+    "intro": "LiveContainer 只需签名一次，就能在里面运行其他未安装的 IPA，绕开免费账号的应用数量限制。",
+    "features": [
+      "免逐个签名运行 IPA",
+      "绕开 3 个应用限制",
+      "多容器数据隔离",
+      "配合 SideStore 使用"
+    ],
+    "tips": [
+      "需要先用 SideStore 等工具侧载。"
+    ],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/LiveContainer/LiveContainer",
+    "source": {
+      "type": "github",
+      "repo": "LiveContainer/LiveContainer",
+      "assets": [
+        {
+          "match": "^LiveContainer\\.ipa$",
+          "label": "iOS · IPA",
+          "platform": "iOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "yattee",
+    "name": "Yattee",
+    "abbr": "Ya",
+    "category": "ios",
+    "tags": [
+      "视频",
+      "YouTube",
+      "iOS"
+    ],
+    "summary": "注重隐私的 iOS 视频客户端，支持 Invidious 与 Piped。",
+    "intro": "Yattee 通过 Invidious、Piped 等实例观看 YouTube，无广告，支持画中画、后台播放和订阅，也有 tvOS 版。",
+    "features": [
+      "无广告观看",
+      "画中画与后台播放",
+      "订阅与收藏",
+      "多实例切换"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/yattee/yattee",
+    "source": {
+      "type": "github",
+      "repo": "yattee/yattee",
+      "assets": [
+        {
+          "match": "Yattee-[\\d.]+-iOS\\.ipa$",
+          "label": "iOS · IPA",
+          "platform": "iOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "sidestore",
+    "name": "SideStore",
+    "abbr": "SS",
+    "category": "ios",
+    "tags": [
+      "侧载",
+      "iOS"
+    ],
+    "summary": "无需电脑常驻即可侧载和续签 iOS 应用。",
+    "intro": "SideStore 是 AltStore 的分支，首次配置后可在手机上直接安装 IPA 并自动续签，不需要每 7 天连接电脑。",
+    "features": [
+      "手机端侧载 IPA",
+      "自动续签",
+      "支持软件源",
+      "免费 Apple ID 可用"
+    ],
+    "tips": [
+      "首次配置仍需电脑生成配对文件。"
+    ],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/SideStore/SideStore",
+    "source": {
+      "type": "github",
+      "repo": "SideStore/SideStore",
+      "assets": [
+        {
+          "match": "^SideStore\\.ipa$",
+          "label": "iOS · IPA",
+          "platform": "iOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "provenance",
+    "name": "Provenance",
+    "abbr": "Pv",
+    "category": "ios",
+    "tags": [
+      "模拟器",
+      "游戏",
+      "iOS"
+    ],
+    "summary": "iOS 多平台游戏模拟器，支持世嘉、索尼、任天堂等。",
+    "intro": "Provenance 支持 PS1、世嘉 MD、SNES、GBA 等众多平台，可云存档、即时存档并支持手柄，也有 tvOS 版。",
+    "features": [
+      "多平台模拟",
+      "即时存档",
+      "手柄支持",
+      "iCloud 同步"
+    ],
+    "tips": [
+      "游戏 ROM 请使用自己合法拥有的卡带转储。"
+    ],
+    "license": "BSD 类许可（自定义）",
+    "mirror_allowed": false,
+    "homepage": "https://provenance-emu.com",
+    "source": {
+      "type": "github",
+      "repo": "Provenance-Emu/Provenance",
+      "assets": [
+        {
+          "match": "Provenance-[\\d.]+-iOS\\.ipa$",
+          "label": "iOS · IPA",
+          "platform": "iOS",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/provenance.png"
+  },
+  {
+    "slug": "trollstore",
+    "name": "TrollStore",
+    "abbr": "TS",
+    "category": "ios",
+    "tags": [
+      "永久签名",
+      "iOS"
+    ],
+    "summary": "在特定 iOS 版本上永久安装 IPA，无需续签。",
+    "intro": "TrollStore 利用 CoreTrust 漏洞让 IPA 永久签名安装，不受 7 天限制，但只支持部分 iOS 版本（大致 14.0 至 16.6.1 与 17.0）。",
+    "features": [
+      "永久安装 IPA",
+      "无需续签",
+      "支持 URL Scheme 安装",
+      "可装持久化助手"
+    ],
+    "tips": [
+      "先确认自己的 iOS 版本在支持范围内，否则无法安装。"
+    ],
+    "license": "MIT / BSD-4-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/opa334/TrollStore",
+    "source": {
+      "type": "github",
+      "repo": "opa334/TrollStore",
+      "assets": [
+        {
+          "match": "^TrollStore\\.tar$",
+          "label": "iOS · 安装包",
+          "platform": "iOS",
+          "portable": false
+        }
+      ]
+    }
   }
 ]
