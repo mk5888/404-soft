@@ -1426,10 +1426,10 @@
     "source": "winget"
   },
   "process-explorer": {
-    "version": "17.2",
-    "released": "2026-10-15",
+    "version": "17.21",
+    "released": "2026-11-05",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer/17.2",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer/17.21",
     "changelog": "",
     "downloads": [
       {
@@ -1438,7 +1438,7 @@
         "portable": true,
         "file": "ProcessExplorer.zip",
         "size": null,
-        "sha256": "dab147316264b89ae46ae2ad7d8a94116848ef0b703bcac8de9ff22689ce9d51",
+        "sha256": "22551d0181dde6cb6af1bc134a190d867d883673f9c35c33039e4e8f9ac75df1",
         "official": "https://download.sysinternals.com/files/ProcessExplorer.zip",
         "mirrors": []
       }
@@ -4140,20 +4140,20 @@
     "mirrored": false
   },
   "sandboxie-plus": {
-    "version": "1.18.8",
-    "released": "2026-10-17",
+    "version": "1.19.1",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.18.8",
-    "changelog": "![0 5 5](https://user-images.githubusercontent.com/3890945/105014988-575cb680-5a41-11eb-90d5-d942d28184b2.png)\r\n\r\n### Release Notes\r\n\r\nSandboxie Plus 1.18.8 / Classic 5.73.8 brings important compatibility improvements for Firefox and other sandboxed browsers, with a particular focus on fixing video playback issues.\r\nVideo playback now works correctly in sandboxed Firefox on websites such as Disney, Amazon Prime, Netflix, TVNZ and ESPN that rely on mediaCapabilities.decodingInfo() to check media support before starting playback. This resolves an issue that could leave videos unable to start on affected sites.\r\nThe release also improves AppContainer handling used by browsers and other applications to isolate their child processes. Fixes address missing sandbox permissions and overly restrictive substitute tokens that could prevent these processes from starting or accessing required system resources. Microsoft Edge can again use the corrected substitute token without enabling UnRestrictAppContainerToken by default.\r\nA security fix addresses an out-of-bounds read in the GUI proxy’s MapWindowPoints handler that could expose service heap data to sandboxed callers. The Import Boxes workflow has also been corrected, allowing users to choose where imported sandboxes are created.\r\nFor existing sandboxes, the new fixboxdacls command in KmdUtil.exe adds missing AppContainer access permissions. Advanced configuration options provide additional control: KeepBroadGroupsInAppContainerToken=n restores the previous all-deny-only substitute token behavior, NeutralizeLowBoxToken=n allows direct NtCreateLowBoxToken calls through, and FakeAppContainerToken=n now allows sandboxed programs to create real AppContainer child processes.\r\n\r\n\r\nFor a full list of changes please review the [change log](https://github.com/sandboxie-plus/Sandboxie/blob/master/CHANGELOG.md#1188--5738---2026-10-17).\r\n\r\n\r\n#### You can support the project through donations, any help will be greatly appreciated.\r\n\r\n[<img src=\"https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif\">](https://xanasoft.com/go.php?to=donate)\r\n\r\n#### If you have issues with an update installation, just uninstall the previous version keeping the sandboxie.ini and reinstall the new build.\r\n",
+    "release_url": "https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.19.1",
+    "changelog": "![0 5 5](https://user-images.githubusercontent.com/3890945/105014988-575cb680-5a41-11eb-90d5-d942d28184b2.png)\r\n\r\n### Release Notes\r\n\r\nSandboxie-Plus 1.19.1 introduces AI-assisted troubleshooting in SandMan. The new “Troubleshoot with an AI Agent” toolbar button lets you connect an MCP-compatible AI client to investigate a sandbox issue. The feature is off by default and uses a local named pipe with a one-time pairing code. SandMan shows you the exact configuration changes or commands the agent proposes and asks for approval each time. You can review the session history and choose whether to submit an issue report with the agent’s findings and a log of the actions taken.\r\n\r\nThis release fixes two performance problems. Sandboxed applications that frequently look up localized strings or resources could suffer severe slowdowns, including frame rate drops in games. Those lookups now benefit from Windows’ cached language settings again. Sandboxie also removes a configuration locking bottleneck that forced concurrent process launches to wait on one another.\r\n\r\nSandbox border labels can now appear on any of the four window edges. A dedicated Box Border tab lets you choose the font, position and text orientation. The built-in INI editors gain optional line numbers and Ctrl+G navigation, and the new CustomProcessCommandLine setting lets you conditionally add, remove or replace arguments when launching a sandboxed process.\r\n\r\nVersion 1.19.1 also restores Windows 7 compatibility after a regression in 1.19.0 and fixes a hang when elevating sandboxed programs with Windows Administrator Protection enabled. Several SandMan crashes during startup, sandbox creation and shutdown have been fixed. The message log now has a size limit to prevent memory exhaustion during long sessions.\r\n\r\nFor a full list of changes please review the [change log](https://github.com/sandboxie-plus/Sandboxie/blob/master/CHANGELOG.md#1191--5741---2026-10-21).\r\n\r\n\r\n#### You can support the project through donations, any help will be greatly appreciated.\r\n\r\n[<img src=\"https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif\">](https://xanasoft.com/go.php?to=donate)\r\n\r\n#### If you have issues with an update installation, just uninstall the previous version keeping the sandboxie.ini and reinstall the new build.\r\n",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Sandboxie-Plus-x64-v1.18.8.exe",
-        "size": 24930680,
-        "sha256": "f27078ff74a07906fd51476079e1a7a8f5e20c8bb75a9d2ae86169d47179ae76",
-        "official": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.18.8/Sandboxie-Plus-x64-v1.18.8.exe",
+        "file": "Sandboxie-Plus-x64-v1.19.1.exe",
+        "size": 25500688,
+        "sha256": "443b528766f4e6448632fd94afa7df5d9e1c52e13940db79139d4070da3aa384",
+        "official": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.19.1/Sandboxie-Plus-x64-v1.19.1.exe",
         "mirrors": []
       }
     ],
@@ -5843,20 +5843,20 @@
     "mirrored": false
   },
   "fossify-gallery": {
-    "version": "1.14.2",
-    "released": "2026-11-07",
+    "version": "1.14.3",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.2",
-    "changelog": "### Changed\n\n- Updated translations\n\n**Full Changelog:** https://github.com/FossifyOrg/Gallery/compare/1.14.1...1.14.2\n\n",
+    "release_url": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.3",
+    "changelog": "### Changed\n\n- Updated translations\n\n**Full Changelog:** https://github.com/FossifyOrg/Gallery/compare/1.14.2...1.14.3\n\n",
     "downloads": [
       {
         "label": "Android · APK",
         "platform": "Android",
         "portable": false,
-        "file": "gallery-40-foss-release.apk",
-        "size": 38538751,
-        "sha256": "ff3e6122ccf1873620e9e8e374b9c9dec4d7eb3a8f42559135bd82562c65f41f",
-        "official": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.2/gallery-40-foss-release.apk",
+        "file": "gallery-50-foss-release.apk",
+        "size": 38543199,
+        "sha256": "2d330eda61579d2ae499bc2accab6e4d6bb77de96d2877ff90e481fac96e1b76",
+        "official": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.3/gallery-50-foss-release.apk",
         "mirrors": []
       }
     ],
@@ -7543,6 +7543,656 @@
         "size": 38725358,
         "sha256": "235caa1ca5dba9bfa0f08bff948d3ee8f03f42530a3397b0f1d09a5f9ae9c86b",
         "official": "https://github.com/tongfei11/TungBox/releases/download/v0.4.1/TungBox-0.4.1-macos-x86_64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "stats": {
+    "version": "3.1.0",
+    "released": "2026-11-15",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/exelban/stats/releases/tag/v3.1.0",
+    "changelog": "## Bug fixes\r\n- fix: fixed localized thousands and decimal separators in memory values (#3722)\r\n\r\n## New features\r\n- feat: added an option to open a full popup view in combined mode with key\r\n- feat: added an option to disable gradient fill in the Line chart widget (#3732)\r\n- feat: added an option to have one widget in the menu bar when combined option is enabled\r\n- feat: dropped render and tiler utilization from the GPU module\r\n- feat: initialized memory usage in the GPU module\r\n\r\n## Localization\r\n- lang: added translations for Memory usage history and Menu bar and removed the unused Show icon instead of widgets key\r\n- lang: fixed missing/old translations",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Stats.dmg",
+        "size": 8257600,
+        "sha256": "a5f16b6606c8bd1fc847439a3b4a507153837167cb333514954882c2bc31e0e7",
+        "official": "https://github.com/exelban/stats/releases/download/v3.1.0/Stats.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "maccy": {
+    "version": "2.8.0",
+    "released": "2026-10-26",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/p0deje/Maccy/releases/tag/2.8.0",
+    "changelog": "- Added VoiceOver accessibility (#1448).\r\n- Added drag and drop reordering of pinned items.\r\n- Added editing of pinned items inside the preview. The Pins settings pane is removed.\r\n- Added support for special symbols as pin keys (`[];'./-=\\`).\r\n- Added image size to the image preview (#1589).\r\n- Added support for ignoring apps outside /Applications (#1540).\r\n- Improved OCR accuracy with automatic language detection (#1586).\r\n- Removed Safari WebArchives and other unselected pasteboard types storage (#1543).\r\n- Fixed memory leak of every history item (#1552).\r\n- Fixed slow menu bar title rendering with large history (#1551).\r\n- Fixed orphaned history item content not being cleaned up (#1509).\r\n- Fixed hang on macOS 26 caused by U+FFFC in titles (#1524).\r\n- Fixed hidden footer warning not wrapping in long translations (#1592).\r\n- Fixed settings window being too narrow (#1505).\r\n- Migrated to Swift 6 (#1532).",
+    "downloads": [
+      {
+        "label": "macOS · ZIP",
+        "platform": "macOS",
+        "portable": true,
+        "file": "Maccy.app.zip",
+        "size": 5288775,
+        "sha256": "e684e1ce0c60d7cffd3a2b182dc37bd7e88c29967a64a431a2c71be65b1d27e0",
+        "official": "https://github.com/p0deje/Maccy/releases/download/2.8.0/Maccy.app.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "rectangle": {
+    "version": "2.0.5",
+    "released": "2026-11-20",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/rxhanson/Rectangle/releases/tag/v2.0.5",
+    "changelog": "## What's Changed\r\n* Free the Settings window when it closes by @zolferfigueiredo in https://github.com/rxhanson/Rectangle/pull/1930\r\n* Add a Terminal option to use the full screen height when the menu bar is hidden by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1934\r\n* Keep the stacked-window list highlight on the window at the front by @MyronKoch in https://github.com/rxhanson/Rectangle/pull/1938\r\n* Localize the remaining Settings labels for zh-Hans by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1939\r\n* Add a Snap Areas setting for restoring windows resized with Larger or Smaller by @SamuelAdigos in https://github.com/rxhanson/Rectangle/pull/1940\r\n* Skip the title bar double-click action for ignored apps by @SamuelAdigos in https://github.com/rxhanson/Rectangle/pull/1941\r\n* Complete the Spanish (es, es-419) localization by @SamuelAdigos in https://github.com/rxhanson/Rectangle/pull/1942\r\n* Ignore keyboard shortcuts while Mission Control is active by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1935\r\n* Add Hindi (hi) localization by @samanyudas in https://github.com/rxhanson/Rectangle/pull/1944\r\n* Complete the Traditional Chinese (zh-Hant) localization by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1946\r\n* Move thirds and fourths to the adjacent display on repeat by @tlq5l in https://github.com/rxhanson/Rectangle/pull/1937\r\n* Add a Terminal option to apply an action to every new window by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1945\r\n* Reflow Todo mode when the display configuration changes by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1947\r\n* Fix RectangleTests failing to compile on main by @yannickgloster in https://github.com/rxhanson/Rectangle/pull/1954\r\n* Keep drag-to-snap on the other displays while a window is fullscreen by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1949\r\n* Keep the Todo window on screen when its app enforces a wider minimum width by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1950\r\n* Support vertical display traversal on repeated half actions by @yannickgloster in https://github.com/rxhanson/Rectangle/pull/1952\r\n* Add a download and update section for mainland China users to README.zh-Hans.md by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1963\r\n* The `WindowManager` needs to be adjusted so that it can accommodate future changes by @rxhanson in https://github.com/rxhanson/Rectangle/pull/1967\r\n* Move window to the display under the cursor  by @Kiizon in https://github.com/rxhanson/Rectangle/pull/1913\r\n* Make the default display ordering deterministic by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1960\r\n* Floor the center third calculations to whole pixels by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1961\r\n* Keep zh-Hans up to date: README sync and translation fixes by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1964\r\n* Give the Todo side its own strings by @AkiyamaKunka in https://github.com/rxhanson/Rectangle/pull/1966\r\n* Don't show window size warning on terminal windows unnecessarily by @rxhanson in https://github.com/rxhanson/Rectangle/pull/1971\r\n* Complete the Italian, Brazilian Portuguese and Spanish translations by @zolferfigueiredo in https://github.com/rxhanson/Rectangle/pull/1957\r\n* Localize tests that fail when not run in English by @rxhanson in https://github.com/rxhanson/Rectangle/pull/1972\r\n* Add display-aware corner size cycling by @joseph-zhong in https://github.com/rxhanson/Rectangle/pull/1962\r\n* Complete the Japanese (ja) localization by @poife in https://github.com/rxhanson/Rectangle/pull/1970\r\n* Cycle vertical sixths through whole sixth, top half and bottom half on repeat by @ehippy in https://github.com/rxhanson/Rectangle/pull/1968\r\n* Split Rectangle tests into focused files by @rxhanson in https://github.com/rxhanson/Rectangle/pull/1975\r\n\r\n## New Contributors\r\n* @zolferfigueiredo made their first contribution in https://github.com/rxhanson/Rectangle/pull/1930\r\n* @SamuelAdigos made their first contribution in https://github.com/rxhanson/Rectangle/pull/1940\r\n* @samanyudas made their first contribution in https://github.com/rxhanson/Rectangle/pull/1944\r\n* @tlq5l made their first contribution in https://github.com/rxhanson/Rectangle/pull/1937\r\n* @yannickgloster made their first contribution in https://github.com/rxhanson/Rectangle/pull/1954\r\n* @Kiizon made their first contribution in https://github.com/rxhanson/Rectangle/pull/1913\r\n* @joseph-zhong made their first contribution in https://github.com/rxhanson/Rectangle/pull/1962\r\n* @poife made their first contribution in https://github.com/rxhanson/Rectangle/pull/1970\r\n\r\n**Full Changelog**: https://github.com/rxhanson/Rectangle/compare/v2.0.4...v2.0.5",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Rectangle2.0.5.dmg",
+        "size": 4940143,
+        "sha256": "4dec773a2f550d64147d88e07d987ce8119bdff045f1c6993a9a5eeb9f68496c",
+        "official": "https://github.com/rxhanson/Rectangle/releases/download/v2.0.5/Rectangle2.0.5.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "monitorcontrol": {
+    "version": "4.4.0",
+    "released": "2026-09-15",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/MonitorControl/MonitorControl/releases/tag/v4.4.0",
+    "changelog": "This is a maintenance update addressing compatibility issues with macOS 27 Golden Gate and macOS 26 Tahoe, helping keep our beloved MonitorControl going in its original glory.\r\n\r\nIt is for those who have grown attached to MonitorControl just the way it is, and still prefer its simple, familiar way of doing things over some of the fancier alternatives out there.\r\n\r\n## What's Changed\r\n\r\n- Restored the traditional OSD for macOS 26 and macOS 27.\r\n- Fixed app Settings appearing on every interaction with the macOS 27 Siri app.\r\n- Fixed custom keyboard shortcut recording issues on macOS 27.\r\n- Various minor bug fixes.\r\n\r\nIf you need more features please consider switching to **[BetterDisplay](https://betterdisplay.pro)**.",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "MonitorControl.4.4.0.dmg",
+        "size": 20391423,
+        "sha256": "e058da598b92f6ca674f4398c0b6fa49b3b5567ccfddccf6c6a5b23c5c625612",
+        "official": "https://github.com/MonitorControl/MonitorControl/releases/download/v4.4.0/MonitorControl.4.4.0.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "pearcleaner": {
+    "version": "5.4.3",
+    "released": "2025-11-26",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/alienator88/Pearcleaner/releases/tag/5.4.3",
+    "changelog": "### What's New\n\n- [x] Ability to hide unused utility pages from global menu in Settings > Interface > Startup View - #476\n- [x] \"Update All\" button now shows progress in toolbar for Updater view\n- [x] Add pinyin sorting to homebrew view and updater view - #479\n- [x] Warn if updating MAS app with a different source as it can break MAS connection - #484\n\n### Fixes\n\n- [x] Fix pear list-orphaned cli command - #472\n- [x] Fix owner of receipt to root:wheel for installd workaround - #475\n- [x] Add contentShape around sidebar toggle icons - #485\n- [x] Fix computed property not refreshing action buttons in some cases for Updater view\n- [x] Reorder some layout components in Updater view\n- [x] Translations\n",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Pearcleaner.dmg",
+        "size": 10597633,
+        "sha256": "fa14f2c7246109b3373b3462aa81717a5fa2488afa41ca5c5a87384c88749aa6",
+        "official": "https://github.com/alienator88/Pearcleaner/releases/download/5.4.3/Pearcleaner.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "iina": {
+    "version": "1.5.1",
+    "released": "2026-11-06",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/iina/iina/releases/tag/v1.5.1",
+    "changelog": "IINA 1.5.1 fixes several important issues in 1.5.0 and improves the overall user experience.\r\n\r\n## Bug fixes  \r\n- Fixed an issue where the player window is taller than expected.  \r\n- Fixed an issue where thumbnails try to show frame outside of video duration #6423.  \r\n- Fixed an issue where IINA doesn’t quit if using legacy full screen #6424.  \r\n- Fixed incorrect OSC size when using “Reduced Motion” #6440.  \r\n- Fixed quick setting controls not updated correctly #6455.  \r\n- Fixed Clear Playback History doesn’t work.  \r\n- Fixed wrong play slider orientation for RTL languages #6504.  \r\n- Fixed permissions/parsing issues of XMLPRC.  \r\n- Fixed plugin-managed players don’t prevent sleep #6449.  \r\n- Fixed Assrt online subtitle search doesn’t work #6564.  \r\n  \r\n## Improvements  \r\n- Clicking on the titlebar menu now highlights the next level folder/file #6448.  \r\n- Display more potential metadata as track title when the track title is missing #6453.  \r\n- Left click with ⌘ pressed on doc icon in titlebar shows path menu #6462.  \r\n- Non-ASCII keys can be now used as keybindings #6474.  \r\n- Show permission alert if an update changed allowed domain.  \r\n  \r\n## Plugin API  \r\n- Expose a new `getTheme()` api to get appearance info.  Please see the [type definition on npm](https://www.npmjs.com/package/iina-plugin-definition) and the [documentation](https://docs.iina.io/interfaces/IINA.API.Core.html#getTheme).\r\n\r\n---\r\n\r\nIn-app update will be available in 24 hours.",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "IINA.v1.5.1.dmg",
+        "size": 113092405,
+        "sha256": "f414507ec60bcfeda3a9f539f74470253e31b619d031e7a9e9a71519da1598cd",
+        "official": "https://github.com/iina/iina/releases/download/v1.5.1/IINA.v1.5.1.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "keka": {
+    "version": "1.6.8",
+    "released": "2026-09-24",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/aonez/Keka/releases/tag/v1.6.8",
+    "changelog": "👉 Do not miss [Keka for iOS](https://ios.keka.io) 🤩🤩🤩\r\n👉 Follow us on [Mastodon](https://techhub.social/@keka) and [X](https://x.com/kekaosx) to get all the Keka news\r\n\r\nThis is a maintenance release.\r\n\r\n## Fixes\r\n- Fixed custom task counter in the Dock not differentiating active/total tasks in some cases\r\n- Fixed password encoding detection in plain text (Thanks to @vollkommenIrrelevant) [#1774](https://github.com/aonez/Keka/issues/1774)\r\n- Fixed non tarball ZSTD extraction with very small sizes (Thanks to @ahaley2013) [#1777](https://github.com/aonez/Keka/issues/1777)\r\n\r\n## Formats\r\n- Updated 7ZZ from 26.02 to 26.03 (Thanks to Igor Pavlov)\r\n- Updated XZ from 5.8.3 to 5.8.4 (Thanks to Lasse Collin)\r\n- Updated UNRAR from 7.13 to 7.23 (Thanks to rarlab)\r\n- Updated BSDTAR from 3.8.7 to 3.8.9 (Thanks to Tim Kientzle and authors)\r\n\r\n## Translations\r\n- Simplified Chinese translation updated (Thanks to @maxsky from https://maxsky.cc) [#1764](https://github.com/aonez/Keka/issues/1764)\r\n- Korean translation updated (Thanks to @hooray804) [#1767](https://github.com/aonez/Keka/issues/1767)\r\n- Czech translation updated (Thanks to @ferben) [#1773](https://github.com/aonez/Keka/issues/1773)\r\n",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Keka-1.6.8.dmg",
+        "size": 34392393,
+        "sha256": "25a4daf0492b7e3bca043c8a7ba1ae97507dd8dbf872811daf74b01f16a12125",
+        "official": "https://github.com/aonez/Keka/releases/download/v1.6.8/Keka-1.6.8.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "ice-menubar": {
+    "version": "0.11.12",
+    "released": "2024-10-29",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/jordanbaird/Ice/releases/tag/0.11.12",
+    "changelog": "## What's New\r\n* Ice can now work in a limited mode without screen recording permissions.\r\n\r\n## Bug Fixes\r\n* Fixes a bug where Ice would think a modifier key was pressed and mistakenly prevent some users from moving items.\r\n\r\n## New Contributors\r\n* @michyprima made their first contribution in https://github.com/jordanbaird/Ice/pull/412\r\n\r\n**Full Changelog**: https://github.com/jordanbaird/Ice/compare/0.11.11...0.11.12",
+    "downloads": [
+      {
+        "label": "macOS · ZIP",
+        "platform": "macOS",
+        "portable": true,
+        "file": "Ice.zip",
+        "size": 3497507,
+        "sha256": "",
+        "official": "https://github.com/jordanbaird/Ice/releases/download/0.11.12/Ice.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "quickrecorder": {
+    "version": "1.6.9",
+    "released": "2025-06-11",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/lihaoyun6/QuickRecorder/releases/tag/1.6.9",
+    "changelog": "### QuickRecorder 更新日志:\r\n- 修复了在 Intel Mac 上的闪退问题.\r\n> **我的免费开发者证书将在6月14日过期, 请收藏此App的[主页](https://lihaoyun6.github.io/quickrecorder/)以随时下载最新版App**\r\n\r\n### QuickRecorder Changes:  \r\n- Fixed: Crash on Intel-based Macs\r\n> **My certificate will expire on June 14, bookmark this [page](https://lihaoyun6.github.io/quickrecorder/) to download QuickRecorder any time.**  \r\n\r\n### 用的开心就打赏点 / Buy me a cup of coffee\r\n<img src=\"https://github.com/lihaoyun6/QuickRecorder/raw/main/img/donate.png\" width=\"350\"/>",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "QuickRecorder_v1.6.9.dmg",
+        "size": 4651431,
+        "sha256": "5a5901ff071a8a081c13224ffa8fa749c73e107b05b856b37e4368ac03d70ed0",
+        "official": "https://github.com/lihaoyun6/QuickRecorder/releases/download/1.6.9/QuickRecorder_v1.6.9.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "linearmouse": {
+    "version": "0.13.0",
+    "released": "2026-11-15",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/linearmouse/linearmouse/releases/tag/v0.13.0",
+    "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v0.13.0 -->\r\n\r\n## What's Changed\r\n### New features\r\n* Add a hold trigger for converting pointer movement to scroll by @anandghegde in https://github.com/linearmouse/linearmouse/pull/1400\r\n* Lock the pointer during button mapping swipes by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1415\r\n* Add focus follows mouse without raising windows by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1419\r\n* Make swipe distance and pointer locking configurable by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1449\r\n* Auto Scroll indicator is smaller and matches the macOS look by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1481\r\n* Auto Scroll keeps scrolling the window it started in after the cursor leaves it by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1482\r\n* Auto Scroll speeds up more the farther the pointer moves, like Firefox by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1483\r\n* Auto Scroll can scroll in the reverse direction by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1485\r\n* Settings follow a Logitech mouse whether it uses a receiver or Bluetooth by @lujjjh and @reowens in https://github.com/linearmouse/linearmouse/pull/1488\r\n### Bug fixes\r\n* Fix swipe recording after a provisional long press by @lujjjh and @lamhoangtung in https://github.com/linearmouse/linearmouse/pull/1413\r\n* Fix receiver discovery with offline paired devices by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1421\r\n* Fix hover focus crash when opening settings by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1425\r\n* Fix high-resolution scroll direction in button mappings by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1429\r\n* Reduce repeated actions from high-resolution scrolling by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1433\r\n* Prevent accidental scroll recording with high-resolution wheels by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1444\r\n* Fix cursor jumping back after dragging a button used in mappings by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1447\r\n* Apply held keyboard modifiers to mouse and scroll events by @GtechGovind in https://github.com/linearmouse/linearmouse/pull/1438\r\n* Restore mappings for buttons recovered from HID reports by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1448\r\n* Fix mistranslated settings and button mapping guidance by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1450\r\n* Fix hover focus never leaving VS Code by @EduRomoGO in https://github.com/linearmouse/linearmouse/pull/1472\r\n* Don't set serial number for mouse button keybindings when All Mice is selected by @oliver-leung in https://github.com/linearmouse/linearmouse/pull/1456\r\n* Scrolling to change volume or brightness responds per wheel notch again by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1479\r\n* Auto Scroll triggered by a Logitech button starts at the cursor by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1480\r\n* Show the paired device's name after it reconnects to a receiver by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1486\r\n* Show the battery level of devices behind a receiver in the device picker by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1487\r\n* Receiver settings for parent or group apps keep applying after a mouse behind it gets its own settings by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1489\r\n* Middle-clicking a Safari Favorites bar icon opens the bookmark instead of starting Auto Scroll by @lujjjh and @kzaoaai in https://github.com/linearmouse/linearmouse/pull/1498\r\n* Memory no longer grows each time the keyboard input source changes by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1505\r\n* Unifying receivers no longer retry discovery forever while a paired device is offline by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1506\r\n### Other changes\r\n* Reduce CPU overhead from pointer motion events by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1412\r\n* Throttle scroll-triggered actions by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1414\r\n* Migrate legacy gesture buttons to button mappings by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1416\r\n* Avoid redundant settings updates with scheme diffs by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1422\r\n* Group pointer settings and scope tracking reset by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1424\r\n* Use the new permission name on macOS 27+ and improve permission setup by @lujjjh in https://github.com/linearmouse/linearmouse/pull/1442\r\n\r\n## New Contributors\r\n* @lamhoangtung made their first contribution in https://github.com/linearmouse/linearmouse/pull/1413\r\n* @GtechGovind made their first contribution in https://github.com/linearmouse/linearmouse/pull/1438\r\n* @EduRomoGO made their first contribution in https://github.com/linearmouse/linearmouse/pull/1472\r\n* @oliver-leung made their first contribution in https://github.com/linearmouse/linearmouse/pull/1456\r\n* @reowens made their first contribution in https://github.com/linearmouse/linearmouse/pull/1488\r\n* @kzaoaai made their first contribution in https://github.com/linearmouse/linearmouse/pull/1498\r\n\r\n**Full Changelog**: https://github.com/linearmouse/linearmouse/compare/v0.12.0...v0.13.0\r\n\r\n",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "LinearMouse.dmg",
+        "size": 6184959,
+        "sha256": "609276d5db79874034c9469a4eb56ccde6ed6fd01c52404f41fd4b493042789b",
+        "official": "https://github.com/linearmouse/linearmouse/releases/download/v0.13.0/LinearMouse.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "betterdisplay": {
+    "version": "5.2.1",
+    "released": "2026-10-29",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/waydabber/BetterDisplay/releases/tag/v5.2.1",
+    "changelog": "This version brings a larger collection of user requests from the enhancement backlog, focusing on everyday usability, alongside bug fixes and improved compatibility with macOS 27.2. A notable new feature is an **experimental, driverless Software Audio controller** that provides volume control for compatible displays whose audio cannot be controlled through DDC or network protocols.\r\n\r\nFor full **PROLED MacBook Pro** support with **macOS 27.3** beta - get the latest **[v5.3.x pre-release](https://github.com/waydabber/BetterDisplay/releases)** instead.\r\n\r\n### Upgrading to BetterDisplay 5\r\n\r\n**BetterDisplay 5 is a free upgrade for Pro licenses purchased on or after January 1, 2025.** Read the [BetterDisplay v5 upgrade FAQ](https://betterdisplay.pro/guide/licensing/v5-upgrade-faq/) for details about license coverage, existing activations, and upgrade options. **BetterDisplay 5 supports Apple silicon and Intel Macs running macOS 26.3 or later, including macOS 27.**\r\n\r\nExplore **[betterdisplay.pro/guide](https://betterdisplay.pro/guide/)** for a detailed [App Menu reference](https://betterdisplay.pro/guide/interface-reference/app-menu/) and [Settings reference](https://betterdisplay.pro/guide/interface-reference/settings/), [step-by-step tutorials](https://betterdisplay.pro/guide/tutorials/), and [answers to frequently asked questions](https://betterdisplay.pro/guide/faq/). Learn what each BetterDisplay 5 feature does, set up your displays, and find practical troubleshooting advice.\r\n\r\n### Experimental Software Audio\r\n\r\n- **Driverless software volume and mute.** Added a Software Audio controller for compatible audio outputs, including display speakers without usable DDC, network, or native volume control. Adjust volume and mute through BetterDisplay without installing an audio driver. (#5902)\r\n- **A quieter minimum volume.** Optional Combined Volume Control combines hardware and software adjustment, extending the quiet range for displays whose lowest hardware volume is still too loud. (#5910)\r\n- **Audio tuning and meters.** Added gain, bass and treble, balance, channel trims, stereo width, mono audio, channel swapping, polarity inversion, 10-band EQ, bass boost, loudness compensation, frequency filters, compressor, noise gate, soft clipping, and audio meters. Software volume and mute, gain, simple bass and treble, meters, and combined routing are available without Pro; advanced audio tuning requires Pro. (#5911)\r\n\r\nTo try it, open **Settings > Displays > [display] > Device Control > Add or Remove Controllers…** and add **Software Audio**. Configure its associated audio output and enable audio access. The controller is experimental, requires macOS audio-recording permission, and can display the macOS audio-capture indicator while active. Compatibility depends on the audio device. See the [Software Audio setup guide](https://betterdisplay.pro/guide/interface-reference/settings/displays/display/device-control/software-audio/).\r\n\r\n### Usability Improvements\r\n\r\n- **Put the current display first.** Added options to prioritize the display containing the app menu and automatically expand its controls when opening the menu. (#4789)\r\n- **Choose which quick toggles stay visible.** Customize individual toggles, including Auto Brightness, so frequently used controls can remain visible without expanding the display menu. (#5073)\r\n- **Easier-to-read sliders.** Added optional adaptive scale marks to suitable menu sliders, making common values and neutral positions easier to identify. (#5290)\r\n- **More flexible menu bar icons.** Set separate custom icons for light and dark appearance, choose an icon for the active display group, and optionally disable shaded SF Symbol rendering for a single-shade appearance. (#2170, #3944, #5888)\r\n- **Favorite color profiles.** Added favorite slots to the Color Profile menu, with keyboard shortcuts and CLI commands for quick switching. (#2393)\r\n- **Global Prevent Sleep control.** Keep the Mac awake using a new action in Tools or a keyboard shortcut, without configuring a particular display. (#3935)\r\n- **More selective screen-saver and lock dimming.** Added options to skip dimming the main display or the only connected display. (#1502)\r\n- **Precise HDR calibration.** Added numeric value entry to the HDR brightness upscaling calibration slider. (#4048)\r\n- **Smoother display corners.** Display corner rounding now uses a continuous curve, matching the style of macOS windows and improving the appearance at larger radii. (#5919)\r\n- **Separate keyboard targeting for mirror and stream destinations.** Added an option to exclude automatically included mirror and stream targets from brightness and other video adjustments. (#4614)\r\n- **Configurable media-key shortcuts.** Added controls for captured media-key combinations that open System Settings or toggle mirroring. (#5547)\r\n- **Floating remote controls.** Open supported TV and HDMI-CEC remotes in separate windows from the app menu, a keyboard shortcut, or the CLI. (#4766)\r\n- **Crop selected-content streams.** Added live crop editing to Stream Selected Content. (#5865)\r\n- **Clearer PiP and crop highlighting.** Added an optional highlight for the PiP window containing the pointer, plus accent-color and strength controls for window highlights and crop frames. (#4559, #5918)\r\n- **Disconnect virtual screens when PiP closes.** Added an option to disconnect a virtual screen when its automatically started PiP window is closed. (#5041)\r\n- **Visible paused-stream status.** Paused streaming is now reflected in the menu bar icon and the stream/PiP icons in the app menu. (#1940)\r\n- **Updated macOS 27.2 OSD details.** Updated filled icon variants and added appropriate Apple audio-device and headphone icons for native volume control. (#5889)\r\n- **Device names in the rounded OSD.** Added an option to identify the display or audio device being adjusted in the macOS 27.2-style OSD. (#5893)\r\n- **Fixed light or dark OSD appearance.** Added appearance choi",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "BetterDisplay-v5.2.1.dmg",
+        "size": 30039229,
+        "sha256": "b61f6f16d536a8eb98f3f6873faa65b0f8c8d8c03f5ad314f2addf630061710c",
+        "official": "https://github.com/waydabber/BetterDisplay/releases/download/v5.2.1/BetterDisplay-v5.2.1.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "alttab-macos": {
+    "version": "11.10.2",
+    "released": "2026-11-16",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/lwouis/alt-tab-macos/releases/tag/v11.10.2",
+    "changelog": "\n\n### Bug Fixes\n\n* avoid a rare extra permission prompt after setup (closes [#6116](https://github.com/lwouis/alt-tab-macos/issues/6116)) ([b10e070](https://github.com/lwouis/alt-tab-macos/commit/b10e070))\n* avoid an occasional brief flicker on the first switch after launch ([95629a4](https://github.com/lwouis/alt-tab-macos/commit/95629a4))\n* avoid Apple menu interference when icon is hidden (closes [#6142](https://github.com/lwouis/alt-tab-macos/issues/6142)) ([8c28031](https://github.com/lwouis/alt-tab-macos/commit/8c28031))\n* avoid intermittent command-line failures during restarts ([5505c1e](https://github.com/lwouis/alt-tab-macos/commit/5505c1e))\n* preserve recent order for apps with no windows (closes [#6154](https://github.com/lwouis/alt-tab-macos/issues/6154)) ([48f5212](https://github.com/lwouis/alt-tab-macos/commit/48f5212))\n* prevent rare tab mix-ups across Spaces (closes [#6146](https://github.com/lwouis/alt-tab-macos/issues/6146)) ([eb73576](https://github.com/lwouis/alt-tab-macos/commit/eb73576))\n* recover the trial welcome message if its display is interrupted ([b3a693d](https://github.com/lwouis/alt-tab-macos/commit/b3a693d))\n* reduce CPU usage with certain animated popups (closes [#6147](https://github.com/lwouis/alt-tab-macos/issues/6147)) ([d310a85](https://github.com/lwouis/alt-tab-macos/commit/d310a85))\n* restore Minecraft mouse capture after switching (closes [#6148](https://github.com/lwouis/alt-tab-macos/issues/6148)) ([8cccde9](https://github.com/lwouis/alt-tab-macos/commit/8cccde9)), closes [#6150](https://github.com/lwouis/alt-tab-macos/issues/6150)\n* stop restart loops after rare keyboard or mouse access failures ([a6942d8](https://github.com/lwouis/alt-tab-macos/commit/a6942d8))\n",
+    "downloads": [
+      {
+        "label": "macOS · ZIP",
+        "platform": "macOS",
+        "portable": true,
+        "file": "AltTab-11.10.2.zip",
+        "size": 4885500,
+        "sha256": "5a2a821a83be1092df0f63d2403359ef2f7d52ad39cec36d930e4c7554cc045b",
+        "official": "https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.2/AltTab-11.10.2.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "karabiner-elements": {
+    "version": "16.3.0",
+    "released": "2026-09-06",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/pqrs-org/Karabiner-Elements/releases/tag/v16.3.0",
+    "changelog": "- [📦 Download](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.3.0/Karabiner-Elements-16.3.0.dmg)\r\n- 📅 Release date\r\n    - Sep 6, 2026\r\n- 🐛 Bug Fixes\r\n    - Fixed an issue where modifier keys could become stuck when both the left and right Command or Shift keys were pressed while CGEventTap fallback was enabled.\r\n    - Fixed an issue where updates were checked every time the system woke from sleep.\r\n    - Fixed an issue where Karabiner-Elements would stop modifying keys for 30 seconds when the Mac woke immediately after going to sleep.\r\n- ⚡️ Improvements\r\n    - Added support for buttons 6–8 on the ELECOM HUGE trackballs. (Thanks to @BenjaminVanRyseghem)\r\n",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Karabiner-Elements-16.3.0.dmg",
+        "size": 42388528,
+        "sha256": "19cce7bed3d48a722242ca683bd1bae406b6a87fed520728d1c91dee175b75e4",
+        "official": "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.3.0/Karabiner-Elements-16.3.0.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "mos-macos": {
+    "version": "4.2.1",
+    "released": "2026-05-31",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/Caldis/Mos/releases/tag/4.2.1",
+    "changelog": "> 如果应用无法启动或遇到权限问题, 请参考 [Wiki: 如果应用无法正常运行](https://github.com/Caldis/Mos/wiki/%E5%A6%82%E6%9E%9C%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C)\n\n## 修复\n- 修复由于应用热键的输入检查导致的部分情况下的性能问题。\n\n---\n\n> If the application fails to start or encounters permission issues, please refer [Wiki: If the App not work properly](https://github.com/Caldis/Mos/wiki/If-the-App-not-work-properly)\n\n## Fixes\n- Fixed a performance issue in some cases caused by input checks for app hotkeys.\n",
+    "downloads": [
+      {
+        "label": "macOS · ZIP",
+        "platform": "macOS",
+        "portable": true,
+        "file": "Mos.Versions.4.2.1-20260531.1.zip",
+        "size": 12127893,
+        "sha256": "2ea69e96f092e44dada93a55bda1cddab3329c527bbd5f06e00dfb78e953960a",
+        "official": "https://github.com/Caldis/Mos/releases/download/4.2.1/Mos.Versions.4.2.1-20260531.1.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "battery-macos": {
+    "version": "1.4.0",
+    "released": "2026-02-25",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/actuallymentor/battery/releases/tag/v1.4.0",
+    "changelog": "This release implements a number of security hardenings and bugfixes thanks to the excellent work by @base47. Thanks for your excellent code and communication!\r\n\r\n## What's Changed\r\n* Fix security issues, simplify app setup/updates, fix calibrate and some minor issues by @base47 in https://github.com/actuallymentor/battery/pull/446\r\n\r\n\r\n**Full Changelog**: https://github.com/actuallymentor/battery/compare/v1.3.2...v1.4.0",
+    "downloads": [
+      {
+        "label": "macOS · Apple 芯片",
+        "platform": "macOS",
+        "portable": false,
+        "file": "battery-1.4.0-mac-arm64.dmg",
+        "size": 95941616,
+        "sha256": "5c51ba9ec86dd9fb14871da8ef3703c63cdf9bec3c2afe763ac05f519f105b94",
+        "official": "https://github.com/actuallymentor/battery/releases/download/v1.4.0/battery-1.4.0-mac-arm64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "netnewswire": {
+    "version": "7.3.1",
+    "released": "2026-11-20",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.3.1",
+    "changelog": "Changes since 7.3:\r\n\r\n- Fixed bug where smart feeds might not appear in the sidebar\r\n- Stopped refreshing Reddit feeds, since Reddit no longer offers RSS feeds\r\n- Renamed the feed notification setting to Notify About New Articles, in the inspector and in the sidebar’s contextual menu\r\n- Changed the Create button to Add when adding a Feedbin, NewsBlur, or Reader API account\r\n- Updated the Tiqoe Dark theme — styles for primary images, enclosures, and captions, and fixes for TechCrunch, Macworld, and the-ebook-reader articles\r\n",
+    "downloads": [
+      {
+        "label": "macOS · ZIP",
+        "platform": "macOS",
+        "portable": true,
+        "file": "NetNewsWire7.3.1.zip",
+        "size": 10473901,
+        "sha256": "280ffd15e2df86a39146410d362f2bafca2c559f33cab78cd538669e96245ab9",
+        "official": "https://github.com/Ranchero-Software/NetNewsWire/releases/download/mac-7.3.1/NetNewsWire7.3.1.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "boring-notch": {
+    "version": "2.7.3",
+    "released": "2025-11-24",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/TheBoredTeam/boring.notch/releases/tag/v2.7.3",
+    "changelog": "<h2>🚀 v2.7.3— Flying Rabbit 🐇🪽</h2>\r\n<h3> Fixes: </h3>\r\n<ul>\r\n    <li><strong>Fixed regression in album artwork view<strong></li>\r\n    <li><strong>Fixed HUD for older versions of macOS<strong></li>\r\n    <li><strong>Added volume feedback for HUD when enabled in macOS settings<strong></li>\r\n    <li><strong>Added option to display percentages for HUDs<strong></li>\r\n    <li><strong>Created a new custom HUD for when the notch is open<strong></li>\r\n    <li><strong>Fixed NowPlaying controller launching Apple Music by itself<strong></li>\r\n    <li><strong>Improved responsiveness of volume slider<strong></li>\r\n    <li><strong>Improved onboarding experience<strong></li>\r\n</ul>\r\n\r\n<h2>🚀 v2.7 — Flying Rabbit 🐇🪽</h2>\r\n<h3>Shelf 2.0</h3>\r\n<p>Major update with improved stability, enhanced functionality, and a refreshed UI.</p>\r\n<ul>\r\n    <li><strong>New Context Menu</strong> – Right-click in the notch to access various file actions</li>\r\n    <li><strong>Multi-Item Selection</strong> – Hold <kbd>⇧</kbd> for consecutive or <kbd>⌘</kbd> for non-consecutive\r\n        selections</li>\r\n    <li><strong>Double-Click to Open</strong> – Double-click on selected files to open them</li>\r\n    <li><strong>Move by Default</strong> – Dragging files now moves them; hold <kbd>⌥</kbd> to copy</li>\r\n    <li><strong>Simplified Removal</strong> – Files can be removed after dragging (configurable in Settings)</li>\r\n    <li><strong>Expanded Drag Detection</strong> – The shelf opens when files are dragged into the notch area</li>\r\n    <li><strong>Expanded Sharing</strong> – More sharing services available in Settings</li>\r\n</ul>\r\n<h3>Complete HUD Replacement</h3>\r\n<p>Full support for macOS system controls:</p>\r\n<ul>\r\n    <li><strong>Screen Brightness</strong>, <strong>Keyboard Brightness</strong>, and <strong>System Volume</strong>\r\n    </li>\r\n    <li><strong>Keyboard Brightness Controls:</strong> <kbd>⌘ + Brightness Down/Up</kbd></li>\r\n    <li><strong>Option (<kbd>⌥</kbd>)</strong> – Triggers alternate action configured in Settings</li>\r\n    <li><strong>Option + Shift (<kbd>⌥</kbd> <kbd>⇧</kbd>)</strong> – Adjustments in smaller increments</li>\r\n</ul>\r\n<h3>Music Enhancements</h3>\r\n<ul>\r\n    <li><strong>YouTube Music Support Rewritten</strong> – Now powered by WebSocket for better accuracy and performance\r\n    </li>\r\n</ul>\r\n<blockquote>\r\n    <p><strong>Note:</strong> Requires version <strong>3.11+</strong> of <a\r\n            href=\"https://github.com/pear-devs/pear-desktop\">YouTube Music/Pear Desktop</a>. Updating is strongly\r\n        recommended.</p>\r\n</blockquote>\r\n<ul>\r\n    <li><strong>Redesigned Music Controls</strong> – Fully customizable:\r\n        <ul>\r\n            <li>Skip backward/forward by 15 seconds</li>\r\n            <li>Adjust music app volume</li>\r\n            <li>Mark favorite songs  (Apple Music &amp;\r\n        YouTube MusiZ</li>\r\n            <li>Rearrange or remove existing controls</li>\r\n        </ul>\r\n    </li>\r\n    <li><strong>Optimized Spotify Artwork Cache</strong> – Significantly reduced storage usage with automatic cleanup\r\n    </li>\r\n    <li><strong>Lyrics (Beta)</strong> – View synchronized lyrics for currently playing songs</li>\r\n</ul>\r\n<h3>Calendar Improvements</h3>\r\n<ul>\r\n    <li>New setting to hide all-day events</li>\r\n    <li>New setting to auto-scroll to next current or upcoming event</li>\r\n    <li>New setting to prevent truncation of long event names</li>\r\n</ul>\r\n<h3>Improved Window Behavior</h3>\r\n<ul>\r\n    <li><strong>Enhanced Fullscreen Detection</strong> – Significantly more reliable</li>\r\n    <li><strong>Better Edge Handling</strong> – Fixed top edge cursor issues</li>\r\n    <li><strong>Reduced Title Bar Interference</strong> – Less intrusive during fullscreen</li>\r\n    <li><strong>Lock Screen Support</strong> – Notch now appears on lock screen</li>\r\n    <li><strong>Screenshot Privacy</strong> – Hide notch from screenshots and recordings</li>\r\n</ul>\r\n<h3>Advanced Settings</h3>\r\n<ul>\r\n    <li>Cleaner interface with lesser-used settings moved to Advanced</li>\r\n    <li>Accent color override reintroduced</li>\r\n</ul>\r\n<h3>General Enhancements</h3>\r\n<ul>\r\n    <li>Numerous UI fixes and polish</li>\r\n    <li>Localization updates across all supported languages</li>\r\n</ul>\r\n<hr>\r\n<h2>👋 New Contributors</h2>\r\n<p>@azhao4227 · @bueckerlars · @TheMalenia · @Corentin132 · @SupKittyMeow · @M7T5M3P · @charshith · @Decryptu ·\r\n    @EnesCinr · @lambegraham</p>\r\n<hr>\r\n<h3>📄 Full Changelog</h3>\r\n<p><a href=\"https://github.com/TheBoredTeam/boring.notch/compare/v2.7-rc.3...v2.7\">Compare v2.7-rc.3 → v2.7</a></p>",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "boringNotch.dmg",
+        "size": 9727030,
+        "sha256": "23786382548d33c59b309db558e513a92e3f95b63d611544dcddf5d196e46698",
+        "official": "https://github.com/TheBoredTeam/boring.notch/releases/download/v2.7.3/boringNotch.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "macpass": {
+    "version": "0.8.2",
+    "released": "2026-09-04",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/MacPass/MacPass/releases/tag/0.8.2",
+    "changelog": "# Attention\r\n\r\nThe previous domain https://macpassapp.org is no longer the official domain for MacPass. I am very sorry for any issues this has caused or might cause in the future. Please to not download any versions of MacPass or plugins from https://macpassapp.org.\r\nOnly use the new domain https://macpass.app for any downloads or GitHub release directly\r\n\r\n## Changelog\r\n\r\nVersion 0.8.2 changes all occurrences of macpassapp.org to macpass.app\r\n\r\nFor a complete list of changes see [0.8.1…0.8.2](https://github.com/mstarke/MacPass/compare/0.8.1...0.8.2) and the corresponding submodule commits\r\n",
+    "downloads": [
+      {
+        "label": "macOS · ZIP",
+        "platform": "macOS",
+        "portable": true,
+        "file": "MacPass-0.8.2.zip",
+        "size": 5652921,
+        "sha256": "1e130f5322329ee75ed39c921ed4ea366101cd4bfb5c495d15735db90b961a73",
+        "official": "https://github.com/MacPass/MacPass/releases/download/0.8.2/MacPass-0.8.2.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "copyq": {
+    "version": "17.0.0",
+    "released": "2026-10-06",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/hluk/CopyQ/releases/tag/v17.0.0",
+    "changelog": "## Added\r\n\r\n- Adds support for GNOME 50 (#3677).\r\n\r\n## Changed\r\n\r\n- Tab data and state files are moved to XDG-compliant directories,\r\n  `%LOCALAPPDATA%` on Windows and `~/Library/Application Support` on macOS\r\n  (#3692, #3693). State path can be changed using `COPYQ_STATE_PATH`\r\n  environment variable.\r\n\r\n  **Important**: This is backwards incompatible. The data and state files are\r\n  moved when the new app version starts. Older versions of the app will not see\r\n  these files and basically lose all items.\r\n\r\n- FakeVim is updated from upstream repository.\r\n\r\n## Fixed\r\n\r\n- Fixes audio engine always using a small amount of CPU and indicating (on KDE)\r\n  that it plays audio (#3684). The engine is initialized only when needed and\r\n  released after it stops playing all audio.\r\n\r\n- Fixes initial script dialog size (#3700). Thanks to @wyf-777.\r\n\r\n- Fixes slow tab icon lookups when the app contains many item tabs (#3721).\r\n  Thanks to @jkindrix (Justin Kindrix).\r\n\r\n- Fixes keeping old tabs in configuration (#3722). Thanks to @sakashimaa.\r\n\r\n- Windows: Prevents app from attempting (unsuccessfully) to paste to windows\r\n  the user cannot switch back to (#2556). Thanks to @ntzb.\r\n\r\n- Wayland: Fixes global shortcuts failing when portal service starts later or\r\n  restarts (#3616, #3680).\r\n\r\n- Wayland: Fixes global shortcuts in non-default sessions (#3713).\r\n\r\n- Wayland: Fixes rebinding global shortcuts on start (#3678).\r\n  Thanks to @Memoraike (Meow).\r\n\r\n- Synchronize plugin: Fixes GUI freeze when removing items and on startup and\r\n  retrying to remove absent files (#3629, #3697).",
+    "downloads": [
+      {
+        "label": "Windows · 安装程序",
+        "platform": "Windows",
+        "portable": false,
+        "file": "copyq-17.0.0-setup.exe",
+        "size": 19207133,
+        "sha256": "33585174067273b391df13c0332adb60a3797ec47bfff9c26ff7c26e7dcd85d8",
+        "official": "https://github.com/hluk/CopyQ/releases/download/v17.0.0/copyq-17.0.0-setup.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows · 便携 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "copyq-17.0.0.zip",
+        "size": 25129743,
+        "sha256": "1601e47339d4eda19b6f4890a00cbbe7fd00a7e5d5c3b613b9b2c8d3eeb04d19",
+        "official": "https://github.com/hluk/CopyQ/releases/download/v17.0.0/copyq-17.0.0.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS · Apple 芯片",
+        "platform": "macOS",
+        "portable": false,
+        "file": "CopyQ-17.0.0-macos-13-m1.dmg",
+        "size": 36751161,
+        "sha256": "d14ceb215821be1d127a4153f27b914b41d542749d92beb21e9446896db89346",
+        "official": "https://github.com/hluk/CopyQ/releases/download/v17.0.0/CopyQ-17.0.0-macos-13-m1.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "CopyQ-17.0.0-x86_64.AppImage",
+        "size": 46053880,
+        "sha256": "b63fb78eed3300af61ce2db7bf537bf12160ef86c7122147fc1c3cceb826c0d1",
+        "official": "https://github.com/hluk/CopyQ/releases/download/v17.0.0/CopyQ-17.0.0-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "memreduct": {
+    "version": "3.5.2",
+    "released": "2025-04-01",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/henrypp/memreduct/releases/tag/v.3.5.2",
+    "changelog": "## This is a maintenance release.\r\n\r\n- added modified file cache clean\r\n- fixed pagefile displays wrong information (issue #262)\r\n- improved dark theme support\r\n- updated localization\r\n- updated project sdk",
+    "downloads": [
+      {
+        "label": "Windows · 安装程序",
+        "platform": "Windows",
+        "portable": false,
+        "file": "memreduct-3.5.2-setup.exe",
+        "size": 381582,
+        "sha256": "",
+        "official": "https://github.com/henrypp/memreduct/releases/download/v.3.5.2/memreduct-3.5.2-setup.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows · 便携 7z",
+        "platform": "Windows",
+        "portable": true,
+        "file": "memreduct-3.5.2-bin.7z",
+        "size": 395161,
+        "sha256": "",
+        "official": "https://github.com/henrypp/memreduct/releases/download/v.3.5.2/memreduct-3.5.2-bin.7z",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "mihon": {
+    "version": "0.21.3",
+    "released": "2026-10-25",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/mihonapp/mihon/releases/tag/v0.21.3",
+    "changelog": "Consider supporting the development on [Patreon](https://www.patreon.com/mihon/membership) or [OpenCollective](https://opencollective.com/mihon/contribute) to keep Mihon improving!\r\n\r\nCheck out the [past release notes](https://github.com/mihonapp/mihon/releases) if you're upgrading from an earlier version.\r\n\r\n<!-->\r\n\r\n> [!NOTE]\r\n>\r\n> ### This is the last major version to support Tachiyomi's backup format (.tachibk) and extensions made for it.\r\n>\r\n> After this version, Mihon won't be able to restore backups in Tachiyomi's backup format (.tachibk). The next version will also drop compatibility with extensions made for Tachiyomi (1.4 extensions). This is being done to reduce maintenance burden and simplify things for upcoming features.\r\n>\r\n> From the next update, the only way to restore a .tachibk backup will be to restore it on this version and then update to the latest version.\r\n\r\n### ✨ New Features\r\n- Added a Time Format setting to show times in 12 or 24 hour format, or to follow your language or system (Settings → Appearance) (@MajorTanya)\r\n- Added a \"Redact sensitive headers\" setting (on by default) that hides login tokens from logs, so they are safe to share (Settings → Advanced) (@MajorTanya)\r\n\r\n### ⚙️ Changes\r\n- Library updates now start with the sources that have the most entries in your library (@AntsyLich)\r\n\r\n### 🚀 Improvements\r\n- Creating and restoring backups is faster and uses much less memory, so big libraries no longer run out of memory (@NGB-Was-Taken, @AntsyLich)\r\n\r\n### 🧩 Fixes\r\n- Fixed WebView crashing for sources that set an Origin header (@AntsyLich)\r\n- Fixed WebView sending a source's headers to other sites (@AntsyLich)\r\n- Fixed downloads not showing for entries of a source that shares its name with another source (@AntsyLich)\r\n- Fixed covers reloading when removing an entry from your library (@AntsyLich)\r\n- Fixed the More tab icon pausing and then bouncing back when leaving the tab (@AntsyLich)\r\n- Fixed the Shizuku extension installer not being available with Sui (@AntsyLich)\r\n- Fixed the extension update count being hidden when tab names are long, like in German (@Sahil-669, @AntsyLich)\r\n\r\n### 🧹 Removals\r\n- Removed the \"Split tall images\" download setting with it being handled in the reader directly (@AntsyLich)\r\n\r\n### 🔧 Under the hood\r\n- The download queue screen was rebuilt (@AntsyLich)\r\n- Updated OkHttp, which now blocks the compromised eMudhra certificates on devices without Google Play Services (@renovate)\r\n\r\n<!-->\r\n\r\n## And in [v0.21.2](https://github.com/mihonapp/mihon/releases/tag/v0.21.2)\r\n\r\n### 🧩 Fixes\r\n- Fixed Comick showing reading progress with long decimal numbers (@MajorTanya)\r\n- Fixed updating from v0.20.x failing on some older databases, which left the app on the updating screen or crashing on launch (@AntsyLich)\r\n- Fixed a crash when using the back gesture while the reader or a dialog was closing (@AntsyLich)\r\n- Fixed Kitsu login failing with \"Failed to bypass Cloudflare\" (@AntsyLich)\r\n- Fixed the tracker start date being a day off when adding tracking to an entry you already read, in some timezones (@hazptr)\r\n- Fixed the paged reader crashing when moving to another chapter with \"Split wide pages\" on (@AntsyLich)\r\n- Fixed a crash when opening the filters of some sources (@AntsyLich)\r\n- Fixed a crash when installing an extension on devices where the system installer can't ask for confirmation (@AntsyLich)\r\n- Fixed a crash when tapping in the long strip reader as it closed (@AntsyLich)\r\n- Fixed some chapters downloaded before v0.21.0 no longer showing as downloaded (@AntsyLich)\r\n- Fixed the app slowing down or running out of memory when many requests to a site hit a Cloudflare challenge at once (@tigeryu8900, @AntsyLich)\r\n\r\n<!-->\r\n\r\n## And in [v0.21.1](https://github.com/mihonapp/mihon/releases/tag/v0.21.1)\r\n\r\n### 🧩 Fixes\r\n- Fixed refreshing chapters failing with the app language set to Arabic or another language with its own digits (@AntsyLich)\r\n- Fixed a crash on launch on some Samsung devices running Android 9 to 11 (@AntsyLich)\r\n- Fixed the start and resume button going under the taskbar on tablets (@AntsyLich)\r\n- Fixed a crash when updating an extension while others were installing (@AntsyLich)\r\n- Fixed entries without a date added jumping to the top when sorting by date added after updating from v0.20.x (@AntsyLich)\r\n- Fixed the app closing when a WebView page crashed (@AntsyLich)\r\n- Fixed installing or updating an extension sometimes cancelling the install of another one (@AntsyLich)\r\n- Fixed updating from v0.20.x taking up to hours on libraries with many duplicate entries (@AntsyLich)\r\n- Fixed the app staying on the updating screen for good when updating its data failed, and updating failing on leftover data of deleted entries (@AntsyLich)\r\n- Fixed library updates ignoring the smart update restrictions for some entries (@AntsyLich)\r\n- Fixed resuming a chapter sometimes opening the next chapter partway through in the right to left reader (@AntsyLich)\r\n\r\n<!-->\r\n\r\n## And in [v0.21.0](https://github.com/mihonapp/mihon/releases/tag/v0.21.0)\r\n\r\n### ✨ New Features\r\n- Added [Comick](https://comick.dev) tracker support (@MajorTanya)\r\n- Added a \"Load ahead only on Wi-Fi\" reader option to save mobile data (@AntsyLich)\r\n- Added an option to skip an app update (@AntsyLich)\r\n- Added a progress screen while Mihon updates its data after an app update (@AntsyLich)\r\n- Added `id:` search to more trackers: AniList, Bangumi, Kitsu, MangaUpdates, Shikimori and Hikka (@MajorTanya, @BrutuZ)\r\n- Added refresh buttons in tracker settings to update your username and rating system (@MajorTanya)\r\n- Kitsu now uses the rating system you picked on Kitsu (@MajorTanya, @Secozzi)\r\n- Added an option to keep using installed extensions that don't match your content preferences (@AntsyLich)\r\n- Added an option to turn off the extra suffix in downloaded chapter folder names (Settings → Advanced) (@choppeh, @AntsyLich)\r\n- Local source now reads chapter dates from `ComicInfo.xml`, and d",
+    "downloads": [
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "mihon-arm64-v8a-v0.21.3.apk",
+        "size": 27755052,
+        "sha256": "0026bd25ce5b1c6bdc5bd2c9589a08a811ddc4fa7c994cf937729d5b7010619d",
+        "official": "https://github.com/mihonapp/mihon/releases/download/v0.21.3/mihon-arm64-v8a-v0.21.3.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "aves": {
+    "version": "1.15.10",
+    "released": "2026-11-10",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/deckerst/aves/releases/tag/v1.15.10",
+    "changelog": "[Changelog](https://github.com/deckerst/aves/blob/develop/CHANGELOG.md#v1.15.10)",
+    "downloads": [
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "app-libre-arm64-v8a-release.apk",
+        "size": 81589369,
+        "sha256": "4a980a60d297f32ae3bbc5d3d2333166e1a9231d995a58d98713cf29aabd1b6c",
+        "official": "https://github.com/deckerst/aves/releases/download/v1.15.10/app-libre-arm64-v8a-release.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "app-manager": {
+    "version": "4.1.1",
+    "released": "2026-09-04",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/MuntashirAkon/AppManager/releases/tag/v4.1.1",
+    "changelog": "App Manager v4.1.1 improves permissions, installation, ADB connectivity, and several other parts of the application. Visit Settings > About > Version/Changelog for details.\r\n\r\n**Revoke Internet Permission**\r\nApp Manager can now block internet for individual applications utilizing the eBPF rules in root or ADB mode. To block internet for an application, go to the \"Uses permissions\" tab and click on the toggle button next to `android.permission.INTERNET` to revoke the permission.\r\n  \r\n_Known Limitation._ The eBPF rules are lost after a reboot. App Manager attempts to restore the rules right after a reboot. However, in ADB mode, it might take a while to connect to wireless debugging depending on the availability of a Wi-Fi connection. This might allow applications that start after a reboot to use internet.  \r\n\r\n**Others**\r\n- Added support for editing `.bat` files  \r\n- Improved installation reliability and performance  \r\n- Improved permission management  \r\n- Improved ADB pairing, connections, and mode handling  \r\n- Improved settings transitions and startup messages  \r\n- Fixed displaying profiles after creating a profile for the first time  \r\n- Fixed intercepting browser URLs  \r\n- Fixed listing applications on Android 17  \r\n- Fixed title ordering in What's New dialog.  \r\n\r\n**Full Changelog**: https://github.com/MuntashirAkon/AppManager/compare/v4.1.0...v4.1.1",
+    "downloads": [
+      {
+        "label": "Android · APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "AppManager_v4.1.1.apk",
+        "size": 28270163,
+        "sha256": "2540d6d9352acd8b04d6210140630a380abb1bc46ad4745c89ad97603dee3c40",
+        "official": "https://github.com/MuntashirAkon/AppManager/releases/download/v4.1.1/AppManager_v4.1.1.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "utm": {
+    "version": "5.0.9-2",
+    "released": "2026-11-18",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/utmapp/UTM/releases/tag/v5.0.9-2",
+    "changelog": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk to each other with new networking modes.\n* (macOS) **Smoother displays**: VMs now follow your display's refresh rate, so motion is fluid at up to 120 Hz on ProMotion displays.\n* **More reliable USB**: Fast external SSDs can now be shared with a VM, and disconnecting a drive no longer freezes UTM. On macOS, drives are safely unmounted before they are handed to a VM.\n* (iOS) **Better touch controls**: Gestures respond immediately, with new middle-click and right-drag actions and a new drag-to-scroll touch mode.\n* (iOS) **iPhone Duo**: Fold your iPhone Duo like a laptop, and the bottom half becomes a keyboard or touchpad for your VM.\n\n## Notes\n* Suspended VMs may not resume correctly after updating. We recommend shutting down all VMs before you update UTM.\n* The minimum supported versions are now macOS 12 and iOS 15.\n* (macOS) Check out [UTM Games Database](https://db.getutm.app/) to see and report game compatibility for the experimental 3D driver. Re-install the Windows guest tools to get the latest driver.\n* We now have a [development blog](https://blog.getutm.app)! Follow us for in-depth technical deep dives such as how we brought DirectX to QEMU.\n* (macOS) To use the new graphics driver for Windows 11, we recommend a fresh install because the driver is still experimental and its use could lead to instability in the system. During the install of the guest tools, you will be prompted to select the experimental graphics driver. If you wish to install the new driver on a system that already is running the older display only driver, you need to run the uninstall script provided on the guest tools install ISO first.\n* (macOS) Apple CoreGL backend does not support Vulkan or DirectX.\n* Linux desktop rendering in Vulkan does not work due to lack of support for indirect draws for geometry shaders. Please configure your guest to use the older VirGL Gallium driver.\n* SCSI drives on ARM64 virtual machines now use a VirtIO SCSI controller. A VM with a SCSI drive that was suspended, or has a snapshot with saved state, from an earlier version cannot resume it: delete the saved state and start the VM again.\n\n## Changes (v5.0.9)\n* (macOS 14) Display: Reverted the fix for VM windows being limited to 60 fps on ProMotion displays, because it could crash a VM at startup (#8204) and blurred Retina mode (#8191). VM windows still run at 120 Hz on a ProMotion display, unless a slower external display is the main display (added 2026-11-18)\n* Fixed Windows games hanging at startup while compiling shaders, in-game videos stalling after the first frame, and a failed 3D command resetting the guest's display (#7984)\n* Fixed X11 apps under Xwayland not displaying with Vulkan on Linux\n* Updated the virglrenderer, MoltenVK and DXMT graphics backends\n* Security: Fixed memory corruption issues that could allow a malicious guest to gain sandboxed code execution in the isolated rendering process (thanks Xusheng Li at Vector 35 Inc)\n* Home: VM notes now render Markdown (#3547) (thanks @pingu-the-penguin)\n* Home: Fixed the confirmation for Clone, Stop or Move not appearing the second time it was requested for the same VM (thanks @ianplusplus)\n* Home: Fixed the screenshot in the VM details being covered by a flat color on iOS 26, macOS 26 and visionOS 26\n* Home: The size shown in the VM details now updates after the settings are closed (#7923)\n* Home: A VM on an external drive that is listed as unavailable now stays available after its .utm is opened again (#7762)\n* Home: Fixed one unreadable saved entry making every VM lose its saved location, window state and external drives\n* Config: SCSI drives on ARM64 virtual machines now use a VirtIO SCSI controller, so guests without an LSI driver such as Rocky Linux and RHEL can see them (#7712)\n* Config: Fixed PowerPC VMs created with the default settings failing to start because of too many CPU cores\n* Config: Fixed the default devices of the Heathrow PowerMac (g3beige) machine keeping the VM from starting (#7803)\n* Config: Fixed the default configuration of the Sam460ex machine failing to start (#7603)\n* Config: Fixed new PowerPC VMs such as pseries defaulting to a network card that the machine rejects (#7592)\n* Config: Fixed saving a VM failing after adding a TPM on RISC-V and LoongArch\n* Config: Fixed a crash opening the terminal window of a VM whose configuration has no terminal settings\n* Config: Fixed the host port of port forwards being replaced by the guest port when migrating a UTM 3 configuration\n* QEMU: Guests with a VirtIO GPU now use the host display's refresh rate instead of always 75 Hz (#7820) (thanks @dragoshont)\n* QEMU: Fixed saving a VM state that takes longer than 10 seconds being reported as \"Timed out waiting for RPC\" (#8052)\n* QEMU: Fixed networking and the guest agent stalling once QEMU holds about a thousand open files, such as with a busy shared directory or 3D acceleration (#7624)\n* QEMU: Fixed the display modes missing from the Monitors control panel of Mac OS guests on the mac99 machine (thanks @giovariot)\n* QEMU: Fixed sound in Mac OS 9 and a hang at startup in its sound driver (#8033)\n* QEMU: Fixed Mac OS 9 restarting to a black screen (#7999)\n* QEMU: Fixed sound crackling",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "UTM.dmg",
+        "size": 304699821,
+        "sha256": "1a76ddcf61ab424a5ae1d1b68a16a9b2e84b748716afce905ee77740d8e86127",
+        "official": "https://github.com/utmapp/UTM/releases/download/v5.0.9-2/UTM.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "iOS · IPA",
+        "platform": "iOS",
+        "portable": false,
+        "file": "UTM.ipa",
+        "size": 150730029,
+        "sha256": "81a01267b5785e10e868e6ad8a471efa66e267fb8f189fd971c6511a48bcc0c5",
+        "official": "https://github.com/utmapp/UTM/releases/download/v5.0.9-2/UTM.ipa",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "delta-ios": {
+    "version": "1.6",
+    "released": "2024-07-11",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/rileytestut/Delta/releases/tag/v1.6",
+    "changelog": "## New\r\n\r\nApp Icon\r\n* Brand new legally-compliant app icon (thanks Caroline Moore!)\r\n* Includes alternative app icons designed by community members:\r\n* \"Halogenide\" by Sebastiaan de With\r\n* \"Ketchup\" by Ben McCarthy\r\n* \"Microchip\" by Sean Fletcher\r\n\r\niPad Support\r\n* Play games full screen on iPad's beautiful display\r\n* Brand new controller skins designed specifically for iPad (thanks Caroline Moore!)\r\n* Supports multiple windows in Stage Manager and Split View\r\n* Automatically pauses games when switching windows (optional)\r\n\r\nHandoff\r\n* Seamlessly switch between iPhone and iPad\r\n* Continues playing exactly where you left off\r\n* Also supports Delta on Apple Silicon Macs via Mac App Store\r\n\r\nmelonDS 0.9.5\r\n* Improves DS game compatibility & performance\r\n* BIOS files are now optional!\r\n* Supports \"inserting\" GBA games into DS dual-slot\r\n* Increased Fast Forward speed to 3x (A15 processor or later)\r\n\r\nMenu Button Gestures\r\n* Use gestures while holding menu button to perform quick actions\r\n* Menu + Horizontal Swipe: Fast Forward\r\n* Menu + Any Button: Hold Button\r\n* Menu + Double-Tap: Quick Save\r\n* Menu + Long-Press: Quick Load\r\n\r\nExperimental Features\r\n* New section in Settings for features by third-party contributors\r\n* Features are WIP and should be used at user’s discretion\r\n* Available for Patrons on \"Beta Access\" tier or higher\r\n\r\nSave States\r\n* Sort save states by name\r\n* View all incompatible screenshots on a separate screen\r\n* Export save states to import into other emulators\r\n\r\n“Display Full Screen” AirPlay Setting\r\n* Control whether Delta shows games full screen on external displays\r\n* Disable to use multiple windows on external display with Stage Manager\r\n\r\nMisc.\r\n* Supports Game Mode on iOS 18+\r\n* Increased DS screen size for default edge-to-edge iPhone landscape skin\r\n\r\n## Fixed\r\n\r\n* Fixed exporting save file without file extension\r\n* Fixed interface rotating when playing WarioWare: Twisted!\r\n* Fixed Pokemon Black & White (2) freezing with C-Gear enabled",
+    "downloads": [
+      {
+        "label": "iOS · IPA",
+        "platform": "iOS",
+        "portable": false,
+        "file": "Delta_1_6.ipa",
+        "size": 87734964,
+        "sha256": "",
+        "official": "https://github.com/rileytestut/Delta/releases/download/v1.6/Delta_1_6.ipa",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "livecontainer": {
+    "version": "3.8.0",
+    "released": "2026-07-17",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/LiveContainer/LiveContainer/releases/tag/3.8.0",
+    "changelog": "# ⚠️This build is OUTDATED. Please use [nightly version](https://github.com/LiveContainer/LiveContainer/releases/tag/nightly) instead.\r\n\r\n# LiveContainer 3.8.0\r\n\r\n> [!Warning]\r\n> The standalone version requires **SideStore 0.6.2+** or **AltStore 2.2.1+** for installation.\r\n> To install LiveContainer with built-in SideStore (`LiveContainer+SideStore.ipa`), please use [Impactor](https://github.com/khcrysalis/Impactor) or [iloader](https://github.com/nab138/iloader). See [our installation guide](https://livecontainer.github.io/docs/installation/lc_sidestore) for details.\r\n\r\n# New Features\r\n\r\n## Storage Management\r\n\r\n- Added a new storage management view with a breakdown of app bundles, containers, temporary files, app group data, tweaks, and other files. (Hidden apps' size is included in \"other\" section until unlocked)\r\n- Added per-app storage details, including app bundle size, container sizes, and last-used date.\r\n- Added actions to clean temporary files and caches, including guest app caches and LiveContainer's own caches.\r\n\r\n## Multiple LiveContainers\r\n- Added configurable launch priority for multiple LiveContainer instances, making shared-app shortcuts choose available instances in the order you prefer. (#1367)\r\n\r\n## Share to Apps in LiveContainer\r\nAdded a share extension to LiveContainer. When you share a URL or a file from iOS's share sheet, LiveContainer will ask which app you would like to open the URL/file in, so the old share to LiveContainer shortcut method is no longer needed. When an ipa file is shared in this way, LiveContainer will ask if you want to install it in LiveContainer or in the built-in SideStore (if installed) (#1357)\r\n\r\n## Multitasking\r\n\r\n- Added per-app multitask preferences. Each app can now follow the global setting, always launch in multitask mode, or avoid multitask mode. (#1208)\r\n- Improved multitask dock behavior: the dock can be made smaller, hidden more cleanly, and has improved padding. (#1228, #1250)\r\n- Added more multitask window animations and improved native-window scene handling.\r\n- URL schemes and `open-url` payloads can be passed to already-running multitask apps and native windows.\r\n\r\n## JIT\r\n- Added StosDebug support as a JIT enabler.\r\n\r\n## TweakLoader\r\nYou can now disable tweaks in the \"Tweaks\" page in LiveContainer's UI. by @SAOMDVN\r\n\r\n# Improvements\r\n- Added support for manually setting a container's IDFV. (#1194)\r\n- IDFV spoofing works even when Tweakloader is not loaded.\r\n- Reworked signing logic for tweaks and app installation, with multithreaded signing support.\r\n- Download alerts now block tab switching while a download is in progress.\r\n- Crash reports are shown in a sheet instead of a large alert for better performance on newer iOS versions.\r\n- Add a \"Clear Notification\" button (#1388)\r\n- Added some popular NSBonjourServices keys so apps can discover AirPlay devices and remote pairing pairable hosts in the local network. (#1417)\r\n\r\n# Bug Fixes\r\n\r\n- Fixed `livecontainer://open-url` dropping the deep link when launching an app from a cold start. (#1339)\r\n- Fixed the Add to Home Screen menu failing or behaving incorrectly by replacing the SwiftUI context menu implementation. (#1209)\r\n- Fixed a crash when opening Container Preferences if the app did not contain an `en.lproj` path. (#1239)\r\n- Fixed apps and AltStore sources not being searchable in some cases. (#1365, #1368)\r\n- Fixed converting a shared app back to private after aborting an install with the same bundle identifier, which could leave stale container state behind. (#1347)\r\n- Fixed shortcuts and JIT flows getting stuck on a busy LiveContainer instance instead of using another available instance. (#1386)\r\n- Fixed file picker not workings for some apps because Tweakloader is not loaded after enabling \"Hide LiveContainer from dyld API\". (#1430)\r\n- Fixed several app launch compatibility issues on iOS 26.5 beta, and some multitask/JIT app launches. (#1300, #1310, #1329)\r\n- Fixed multitask keyboard focus issues on iOS 17.4+, including cases where the keyboard would not appear, Passwords would immediately close, or video playback would freeze in multitask mode. (#1402, #844, #870)\r\n- Added support for iOS 27 developer beta. (#1394, #1417, #1416)\r\n- Fix background downloads in multitask apps (choosing \"Keep App Extensions (Register App ID for Each Extension)\" is required). (#1415)\r\n\r\n# Localization\r\n\r\n- Updated translations. Added Spanish translation by @Deci8BelioS\r\n\r\n# Credits\r\n\r\nThanks to everyone who contributed code, fixes, testing, and reports for this release, including @boa-z, @ruri1208, @Project516, @yazdipour, @stossy11, and @SAOMDVN.\r\n\r\nGreat thanks to everyone who helped translate LiveContainer.",
+    "downloads": [
+      {
+        "label": "iOS · IPA",
+        "platform": "iOS",
+        "portable": false,
+        "file": "LiveContainer.ipa",
+        "size": 4707271,
+        "sha256": "b6fea95e30083382e29ffef88fa1aaa40b5069e1112e5307d490dab04648bba6",
+        "official": "https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer.ipa",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "yattee": {
+    "version": "1.5.1",
+    "released": "2024-01-28",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/yattee/yattee/releases/tag/v1.5.1",
+    "changelog": "## What's Changed\r\n\r\n* support for private instances by @stonerl in https://github.com/yattee/yattee/pull/565\r\n* honour the aspect ratio when resizing by @stonerl in https://github.com/yattee/yattee/pull/562\r\n* make links in description clickable by @stonerl in https://github.com/yattee/yattee/pull/560\r\n* make description collapsible by @stonerl in https://github.com/yattee/yattee/pull/559\r\n* macOS: disable hit testing when not expanded by @stonerl in https://github.com/yattee/yattee/pull/578\r\n* disable portraitUpsideDown on iPhones by @stonerl in https://github.com/yattee/yattee/pull/569\r\n* make chapters collapsible and highlight current chapter by @stonerl in https://github.com/yattee/yattee/pull/564\r\n* more robust regex for chapters from description by @stonerl in https://github.com/yattee/yattee/pull/597\r\n* Translations update from Weblate\r\n* Added Persian, Spanish, Turkish and Russian localizations\r\n* Other changes and improvements\r\n## New Contributors\r\n* @stonerl made their first contribution in https://github.com/yattee/yattee/pull/565\r\n\r\n**Full Changelog**: https://github.com/yattee/yattee/compare/v1.5...v1.5.1",
+    "downloads": [
+      {
+        "label": "iOS · IPA",
+        "platform": "iOS",
+        "portable": false,
+        "file": "Yattee-1.5.1-iOS.ipa",
+        "size": 20792685,
+        "sha256": "",
+        "official": "https://github.com/yattee/yattee/releases/download/v1.5.1/Yattee-1.5.1-iOS.ipa",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "sidestore": {
+    "version": "0.7.0-alpha",
+    "released": "2026-09-15",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/SideStore/SideStore/releases/tag/0.7.0-alpha",
+    "changelog": "## Build Info\r\n\r\nBuilt at (UTC): `Fri Sep 11 21:25:58 2026`\r\nBuilt at (UTC date): `2026-09-11`\r\nCommit SHA: `6032424a0e56c1c319762e786099bdd9186a238b`\r\nVersion: `0.7.0-20260911.328+6032424a`\r\n\r\n#### What's Changed:\r\n- **fixes for 503 during sign-in**: There were some changes from apple server side which broke 0.6.4 and prior versions and prevent them from signing into sidestore. This temporary version addresses the sign-in issue with 503 status code\r\n\r\n#### Full Changelog: [0.6.4...0.7.0-alpha](https://github.com/SideStore/SideStore/compare/0.6.4...0.7.0-alpha)",
+    "downloads": [
+      {
+        "label": "iOS · IPA",
+        "platform": "iOS",
+        "portable": false,
+        "file": "SideStore.ipa",
+        "size": 27770821,
+        "sha256": "e334f86e6ceeab2e0d886c07611246533f474bb18838cf13ebc09ed1f0d622b5",
+        "official": "https://github.com/SideStore/SideStore/releases/download/0.7.0-alpha/SideStore.ipa",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "provenance": {
+    "version": "3.3.0",
+    "released": "2026-03-14",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/Provenance-Emu/Provenance/releases/tag/3.3.0",
+    "changelog": "## What's New in 3.3.0\n\nThis is a big one. Four months of work since 3.2.1 covering iCloud sync, a completely revamped tvOS interface, video filters, and a ton of core and stability fixes.\n\n### ☁️ iCloud / CloudKit Sync\n- ROMs, save states, BIOS files, and artwork now sync across devices via iCloud\n- Real-time download progress indicators when loading cloud save states\n- Auto BIOS sync on game load when available in iCloud\n- ROM metadata syncs alongside files\n- Artwork syncs after library updates\n- CloudKit records management tab in Settings\n- iCloud upsell UI for new users with empty libraries\n- Sync queue pauses during emulation and resumes after\n\n### 📺 New tvOS UI (Default)\n- Completely redesigned tvOS interface now enabled by default\n- RetroWave-themed side menu with smooth animations\n- Save states browser accessible from the main UI with artwork and core name\n- \"View All\" saves section with per-system filtering\n- TopShelf v2: recent games and save states with artwork and timestamps\n- Cheats UI in the pause menu\n- Game \"More Info\" panel\n- Log viewer tab\n- Import status view in side menu\n- Search with persistent history\n- Dozens of focus, navigation, and theming fixes throughout\n\n### 🎨 Video Filters & Shaders\n- Unified filter pipeline works across native and RetroArch cores\n- GB and VHS filters improved\n- Filters accessible from the pause menu\n- RetroArch GLES 3D cores now supported (Vecx/GLiden, etc.)\n- Dolphin shader/filter support\n- PPSSPP filter support\n\n### 🎮 Core & Controller Fixes\n- **RetroArch**: Fixed player index mapping for MFi, PS4, and Xbox controllers; PS4 start/select fixed; 32x controls added; GameCube controller responder added\n- **Mupen64Plus**: Fixed PS4 start button; fixed tvOS scaling and placement; better save error messages\n- **Dolphin**: Fixed Vulkan landscape rendering\n- **GenPluGX**: Added CHD support; added wide-screen GameGear core\n- **PicoDrive**: Fixed crash on unload; fixed 32x controller mapping\n- **FCEUmm**: Fixed start/select button mapping\n- **Mednafen**: Fixed DualShock/DualSense pause/play button mapping\n- **GameBatte / TGDB Dual**: Fixed PSX/Xbox pause/select button mapping\n\n### 🐛 Bug Fixes & Stability\n- Fixed multiple app hangs from main-thread Realm access (moved to background)\n- Fixed crash in pause menu when closing core\n- Fixed potential crash if audio ring buffer init fails\n- Fixed crash in share/import extension\n- Fixed aspect ratio issues in Stella and some other cores\n- Fixed FPS label appearing in screenshots\n- Fixed artwork not refreshing in game library after sync\n- Fixed game importer re-queuing already-imported items\n- Fixed Realm contentless core crash\n- Fixed \"Continue\" carousel metadata mismatch\n- Skin selector refreshes orientation previews on rotation change\n- ManicSkin/DeltaSkin files can now be opened directly from Safari\n- iPad import status modal clipped layout fixed\n- DSP audio engine fixes\n\n### ⚡ Performance\n- Artwork loading significantly faster\n- Game library UI rendering optimizations (removed unnecessary Observable wrappers)\n- Async tab bar icon loading\n- CloudKit sync deduplication and repeat-lookup fixes\n- Game importer skips MD5 hashing for large non-BIOS files\n\n**Full Changelog**: https://github.com/Provenance-Emu/Provenance/compare/3.2.1...3.3.0",
+    "downloads": [
+      {
+        "label": "iOS · IPA",
+        "platform": "iOS",
+        "portable": false,
+        "file": "Provenance-3.3.0-iOS.ipa",
+        "size": 1076407494,
+        "sha256": "2aaf7fe05cbe86a5d8c5c012c4b87a688d68fd160f53cca1f486d2e7d0f70f8c",
+        "official": "https://github.com/Provenance-Emu/Provenance/releases/download/3.3.0/Provenance-3.3.0-iOS.ipa",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "trollstore": {
+    "version": "2.1.1",
+    "released": "2026-04-01",
+    "verified": "2026-11-21",
+    "release_url": "https://github.com/opa334/TrollStore/releases/tag/2.1.1",
+    "changelog": "- TrollStore Lite: Fix a typo in an entitlement that would make installed apps not work as excepted when the device is jailbroken with Dopamine",
+    "downloads": [
+      {
+        "label": "iOS · 安装包",
+        "platform": "iOS",
+        "portable": false,
+        "file": "TrollStore.tar",
+        "size": 2429438,
+        "sha256": "144dc741d1b74d582c861e6ed504ddced3745724e216e3de79ab7d37b27d0551",
+        "official": "https://github.com/opa334/TrollStore/releases/download/2.1.1/TrollStore.tar",
         "mirrors": []
       }
     ],
