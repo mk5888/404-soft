@@ -109,6 +109,7 @@ def layout(title, body, desc=SLOGAN, active="", path="/"):
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="theme-color" content="#16a34a">
+<meta name="google-adsense-account" content="ca-pub-7104675334200762">
 {f'<link rel="canonical" href="{e(SITE_URL + path)}">' if SITE_URL else ''}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{SITE}">
@@ -394,6 +395,7 @@ def main():
     paths = ["/", "/about/"] + [f"/category/{k}/" for k in USED_CATS] + [f"/software/{i['slug']}/" for i in items]
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{SITE_URL}{p}</loc></url>" for p in paths) + "</urlset>")
+    write("/ads.txt", "google.com, pub-7104675334200762, DIRECT, f08c47fec0942fa0\n")
     write("/robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
     open(os.path.join(DIST, ".nojekyll"), "w").close()
     print(f"已生成 {len(paths)} 个页面 -> dist/")
