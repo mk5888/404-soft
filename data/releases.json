@@ -2997,20 +2997,20 @@
     "mirrored": false
   },
   "xpipe": {
-    "version": "24.12",
-    "released": "2026-11-15",
+    "version": "24.13",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/xpipe-io/xpipe/releases/tag/24.12",
-    "changelog": "- Fix slow terminal and CLI startup since v24.0 due to inefficient initialization\n\n\n## Downloads\n\nYou can find all downloadable artifacts below attached to this release. For installation instructions, see the [installation guide](https://docs.xpipe.io/guide/installation).\n\nAll artifacts are signed by [Christopher Schnick (BBDA 885A DD3E 0AD0)](https://xpipe.io/signatures/0xDD3E0AD0.asc)\n",
+    "release_url": "https://github.com/xpipe-io/xpipe/releases/tag/24.13",
+    "changelog": "- Fix the webtop deployment generator dialog using the PTB image instead of the stable one\n- Fix generating the public key of a passphrase-protected private key failing\n- Fix Konsole sessions not starting in the home directory\n- Fix the XPIPE_API_SERVER environment variable for the webtop not being respected\n- Fix Homebrew installations not being detected on Intel Macs\n- Fix the AUR desktop entry not being associated with the app window and icons being broken\n\n\n## Downloads\n\nYou can find all downloadable artifacts below attached to this release. For installation instructions, see the [installation guide](https://docs.xpipe.io/guide/installation).\n\nAll artifacts are signed by [Christopher Schnick (BBDA 885A DD3E 0AD0)](https://xpipe.io/signatures/0xDD3E0AD0.asc)\n",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "xpipe-portable-windows-x86_64.zip",
-        "size": 161021872,
-        "sha256": "6b1725de09985bb63d6bd9240a5547698353dca2fed7862636f5c738a79561e0",
-        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.12/xpipe-portable-windows-x86_64.zip",
+        "size": 161082189,
+        "sha256": "5681b4d39abc31fa3333ba361e402b9f6c29a21bf0e3b2975c078993f801f92a",
+        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.13/xpipe-portable-windows-x86_64.zip",
         "mirrors": []
       },
       {
@@ -3018,9 +3018,9 @@
         "platform": "Windows",
         "portable": false,
         "file": "xpipe-installer-windows-arm64.msi",
-        "size": 104079360,
-        "sha256": "e361f50d23e3f698a60bd5e2e774b3299d8903e328b31e85a0cfa18afaf8cfff",
-        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.12/xpipe-installer-windows-arm64.msi",
+        "size": 104173568,
+        "sha256": "7870f8b945c36bfb19879ede84599b553e65699f498543bcb6debfa3c286d782",
+        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.13/xpipe-installer-windows-arm64.msi",
         "mirrors": []
       }
     ],
@@ -4896,20 +4896,20 @@
     "mirrored": false
   },
   "xdm": {
-    "version": "9.0.11",
-    "released": "2026-11-15",
+    "version": "9.0.12",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/subhra74/xdm/releases/tag/9.0.11",
-    "changelog": "## Downloads\n\n| Installer | Notes |\n|---|---|\n| [xdm-app-9.0.11-arm64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-arm64.dmg) | For Apple Silicon (M1 or later) mac |\n| [xdm-app-9.0.11-x64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-x64.dmg) | For Intel mac |\n| [xdm-9.0.11-arm64.msi](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-9.0.11-arm64.msi) | For Windows ARM (Windows 10/11) |\n| [xdm-9.0.11-x64.msi](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-9.0.11-x64.msi) | For Windows x64 (Windows 10/11) |\n| [xdmsetup-9.0.11.msi](https://github.com/subhra74/xdm/releases/download/9.0.11/xdmsetup-9.0.11.msi) | Same as the x64 MSI; for XDM 8 (Microsoft Store) update notices |\n| [xdm-app_9.0.11_amd64.deb](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app_9.0.11_amd64.deb) | For Debian / Ubuntu / Linux Mint x64 |\n| [xdm-app_9.0.11_arm64.deb](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app_9.0.11_arm64.deb) | For Debian / Ubuntu / Linux Mint ARM |\n| [xdm-app-9.0.11-1.aarch64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1.aarch64.rpm) | For Fedora / RHEL / openSUSE ARM |\n| [xdm-app-9.0.11-1.x86_64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1.x86_64.rpm) | For Fedora / RHEL / openSUSE x64 |\n| [xdm-app-9.0.11-1-aarch64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1-aarch64.pkg.tar.zst) | For Arch Linux / Manjaro ARM |\n| [xdm-app-9.0.11-1-x86_64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1-x86_64.pkg.tar.zst) | For Arch Linux / Manjaro x64 |\n| [xdm-app-9.0.11-linux-arm64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-linux-arm64.tar.gz) | For any Linux ARM (portable, no install) |\n| [xdm-app-9.0.11-linux-x64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-linux-x64.tar.gz) | For any Linux x64 (portable, no install) |\n\n[Code signing policy](https://github.com/subhra74/xdm/blob/master/CODE_SIGNING_POLICY.md)\n\n## What's Changed\n\n### Video downloads (HLS / DASH)\n- New **\"Save as MP4 where possible\"** option in the video download dialog (on by default, remembered). Turn it off to keep an HLS stream as `.ts`, joined with its audio track as-is.\n- Better quality picks for HLS videos on sites whose playlist links work only once: the browser extension now passes the playlist it already loaded, so all resolutions show up.\n- Opus-only audio is now saved as a real `.opus` file instead of `.webm`.\n- Many fixes in the built-in muxer, checked against ffmpeg's output: videos no longer start with broken frames, correct timing for streams with missing or reordered timestamps (fixes frames shown one picture late and decode errors on some Apple-packaged streams), HEVC saved as `hvc1`, better playback in Windows/macOS system players, correct colour and aspect-ratio info, AV1-in-TS detection, AC-3/E-AC-3 fixes, 33-bit timestamp wrap handling, and no more silent audio track when a stream declares audio it never carries.\n- Fixed using an external ffmpeg for muxing when the file path contains spaces, quotes or backslashes.\n- The video download dialog's \"Check for updates\" now shows progress and a clearer result.\n\n### Download progress\n- The progress window now shows one row per connection that stays in place for the whole download, with total bytes per connection.\n- Segments show **Downloading** as soon as they connect instead of staying on \"Connecting\".\n\n### Torrents\n- Add-torrent dialog: search box and Expand all / Collapse all for the file list, plus file-selection fixes.\n\n### Browser extensions\n- Chrome extension 3.6, Firefox extension 1.2 (HLS playlist capture as above).\n- Firefox extension now leaves YouTube alone, as the Chrome one does.\n- Fixed media preview in the extension popup, and a current extension no longer shows as outdated.\n\n### Other\n- New bug report form on GitHub; logs are flushed before the log folder opens.\n\n**Full Changelog**: https://github.com/subhra74/xdm/compare/v9.0.10...9.0.11\n\n",
+    "release_url": "https://github.com/subhra74/xdm/releases/tag/9.0.12",
+    "changelog": "## Downloads\n\n| Installer | Notes |\n|---|---|\n| [xdm-9.0.12-x64.msi](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-9.0.12-x64.msi) | For Windows x64 (Windows 10/11) |\n| [xdm-9.0.12-arm64.msi](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-9.0.12-arm64.msi) | For Windows ARM (Windows 10/11) |\n| [xdmsetup-9.0.12.msi](https://github.com/subhra74/xdm/releases/download/9.0.12/xdmsetup-9.0.12.msi) | Same as the x64 MSI; for XDM 8 (Microsoft Store) update notices |\n| [xdm-app-9.0.12-linux-x64.flatpak](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-x64.flatpak) | For any Linux x64 (Flatpak bundle; runtime installs from Flathub) |\n| [xdm-app-9.0.12-linux-arm64.flatpak](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-arm64.flatpak) | For any Linux ARM (Flatpak bundle; runtime installs from Flathub) |\n| [xdm-app_9.0.12_amd64.deb](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app_9.0.12_amd64.deb) | For Debian / Ubuntu / Linux Mint x64 |\n| [xdm-app_9.0.12_arm64.deb](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app_9.0.12_arm64.deb) | For Debian / Ubuntu / Linux Mint ARM |\n| [xdm-app-9.0.12-1.x86_64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1.x86_64.rpm) | For Fedora / RHEL / openSUSE x64 |\n| [xdm-app-9.0.12-1.aarch64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1.aarch64.rpm) | For Fedora / RHEL / openSUSE ARM |\n| [xdm-app-9.0.12-1-x86_64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1-x86_64.pkg.tar.zst) | For Arch Linux / Manjaro x64 |\n| [xdm-app-9.0.12-1-aarch64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1-aarch64.pkg.tar.zst) | For Arch Linux / Manjaro ARM |\n| [xdm-app-9.0.12-linux-x64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-x64.tar.gz) | For any Linux x64 (portable, no install) |\n| [xdm-app-9.0.12-linux-arm64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-arm64.tar.gz) | For any Linux ARM (portable, no install) |\n| [xdm-app-9.0.12-arm64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-arm64.dmg) | For Apple Silicon (M1 or later) mac |\n| [xdm-app-9.0.12-x64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-x64.dmg) | For Intel mac |\n\n[Code signing policy](https://github.com/subhra74/xdm/blob/master/CODE_SIGNING_POLICY.md)\n\n## What's Changed\n\n### Downloads\n- Better handling of busy servers: a download keeps going while a server limits or refuses its extra connections, and waits as long as the server asks (`Retry-After`, up to 5 minutes). When every connection is waiting, the list and progress window show **\"Server busy, retrying at …\"**. After 5 minutes with no data it stops with \"The server is busy. Try again later.\"\n- HLS videos from sites whose playlist link works only once now download: XDM uses the playlist the browser already loaded instead of fetching it again.\n- Fixed a CDN refusing every request (HTTP 410) because of the order and case of request headers.\n- **\"Start downloads immediately\"** now covers captured videos too: they start with the video dialog's usual choices (category and folder rules, segment count, default subtitle, Save as SRT) instead of always showing the dialog (#1426).\n- Changing the default download folder now offers to move category folders that sit inside the old one. Files already downloaded stay where they are.\n- Refresh link: the window now shows the page address with a copy button, so you can open it in the browser that has the XDM extension.\n\n### Linux\n- New **Flatpak** bundle for x64 and ARM. Double-click it to install in GNOME Software or KDE Discover, or run `flatpak install --user <file>`. The first install also downloads the Flatpak runtime from Flathub; XDM updates still come from this page.\n- \"Keep the computer awake\" now uses the desktop's sleep-inhibit portal on every Linux install, with `systemd-inhibit` as the fallback.\n- \"Shut down when downloads finish\" also tries logind, so it works on more desktops.\n\n### Windows\n- Fixed **\"Failed to launch JVM\"** at startup when the Java Access Bridge (screen reader support) is enabled (#1456).\n- Installer: clearer wording on the Windows Firewall page.\n\n### Look and feel\n- Brighter selection in the sidebar and Classic list in both themes, with subtitle and count colours that meet the 4.5:1 contrast ratio.\n- Dark theme improvements, including white button text and a dimmer disabled button.\n\n### Bundled Java runtime\n- Windows and macOS: updated to Liberica JDK 25.0.5.1, which fixes CVE-2026-114938 (a JIT Base64 bug on x86-64 CPUs with AVX-512 VBMI). Linux keeps JBR 25.0.4.1 with the affected JIT code turned off until a fixed JBR is released.\n\n**Full Changelog**: https://github.com/subhra74/xdm/compare/9.0.11...9.0.12\n",
     "downloads": [
       {
         "label": "Windows x64 · 安装包 MSI",
         "platform": "Windows",
         "portable": false,
-        "file": "xdm-9.0.11-x64.msi",
-        "size": 66311962,
-        "sha256": "25d30ca560a854080c3841659fd3e30a06a28981bcf9fc4085a3a564fb893e0b",
-        "official": "https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-9.0.11-x64.msi",
+        "file": "xdm-9.0.12-x64.msi",
+        "size": 66898479,
+        "sha256": "6e536338bd3ace9880b5343d7a5b7c88f9bfeddf3e124bce13ea2e2c26cee284",
+        "official": "https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-9.0.12-x64.msi",
         "mirrors": []
       }
     ],
@@ -5592,20 +5592,20 @@
     "mirrored": false
   },
   "rime-frost": {
-    "version": "1.0.4",
-    "released": "2026-05-08",
+    "version": "1.0.5",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/gaboolic/rime-frost/releases/tag/1.0.4",
-    "changelog": "支持墨奇输入法安卓版\r\n修复一些bug",
+    "release_url": "https://github.com/gaboolic/rime-frost/releases/tag/1.0.5",
+    "changelog": "",
     "downloads": [
       {
         "label": "配置方案 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "rime-frost-schemas.zip",
-        "size": 44008360,
-        "sha256": "4f4998ae83f63d757c0a4ace192f69d48265bddfabe231642b73e3739ed0f2f5",
-        "official": "https://github.com/gaboolic/rime-frost/releases/download/1.0.4/rime-frost-schemas.zip",
+        "size": 44256397,
+        "sha256": "7fa617d6e718def0963ed1cf0421d5ea662db2e72e7bcf4309f4095597c5c74b",
+        "official": "https://github.com/gaboolic/rime-frost/releases/download/1.0.5/rime-frost-schemas.zip",
         "mirrors": []
       }
     ],
@@ -5903,30 +5903,30 @@
     "mirrored": false
   },
   "exclave": {
-    "version": "0.17.68",
-    "released": "2026-11-10",
+    "version": "0.17.69",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/ExclaveNetwork/Exclave/releases/tag/0.17.68",
-    "changelog": "- Update Go to 1.27.4 and ML-DSA is no longer advertised in `signature_algorithm_cert` in TLS Client Hello. Exclave's non-uTLS REALITY implementation also no longer advertises ML-DSA in `signature_algorithm_cert` to match the behavior of Go TLS.\r\n- Update uTLS to latest commit and fingerprint \"Chrome\" now matches Chrome 155. uTLS latest commit requires Go 1.27, so Go 1.26 support is dropped and compiling Exclave now requires at least Go 1.27.\r\n- For Snell protocol, domain address is no longer resolved to IP when sending UDP packets.\r\n- Update Mozilla CA certificate store and 6 CA certificates are removed.\r\n- The memory usage of rule matcher is reduced (maybe).",
+    "release_url": "https://github.com/ExclaveNetwork/Exclave/releases/tag/0.17.69",
+    "changelog": "- Improve file verification of the route asset updater (by [@lingyicute](https://github.com/lingyicute)). Before replacing the old files, for preset route asset providers, SHA-256 checksum is verified; for all files, the basic file structure is validated.\r\n- Publish shortcuts dynamically to better work with some automation tools (#516, by [@lingyicute](https://github.com/lingyicute)).\r\n- Many fixes for share link import and export (by [@lingyicute](https://github.com/lingyicute)).\r\n- Fix connection failure caused by clearing the cache of the app.\r\n- Fix some REALITY fingerprint values in UI not matching with the actual values.",
     "downloads": [
       {
         "label": "Android · arm64 APK",
         "platform": "Android",
         "portable": false,
-        "file": "Exclave-0.17.68-arm64-v8a.apk",
-        "size": 25392052,
-        "sha256": "1703ff23debd436223e3f1502d294b52705b451f323dd0ec500e223aa0248c1e",
-        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.68/Exclave-0.17.68-arm64-v8a.apk",
+        "file": "Exclave-0.17.69-arm64-v8a.apk",
+        "size": 25464512,
+        "sha256": "45a6cda7e71d0145df6625d351b6c8978bac6ba71d3d9f3b00e03b4be669a734",
+        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.69/Exclave-0.17.69-arm64-v8a.apk",
         "mirrors": []
       },
       {
         "label": "Android · armv7 APK",
         "platform": "Android",
         "portable": false,
-        "file": "Exclave-0.17.68-armeabi-v7a.apk",
-        "size": 26055702,
-        "sha256": "442c17453d70a4eff600f8729c0e981b174c828fb9c76aad9aed1e4a9e61ae9f",
-        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.68/Exclave-0.17.68-armeabi-v7a.apk",
+        "file": "Exclave-0.17.69-armeabi-v7a.apk",
+        "size": 26137754,
+        "sha256": "664d9b8196ff34b73222b3ba620f53f186a8d65742d5fe7f44fbb356c076db8b",
+        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.69/Exclave-0.17.69-armeabi-v7a.apk",
         "mirrors": []
       }
     ],
@@ -6353,40 +6353,40 @@
     "mirrored": false
   },
   "clash-mi": {
-    "version": "1.0.32.1803",
-    "released": "2026-11-03",
+    "version": "1.0.33.1905",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.32.1803",
-    "changelog": "1. Windows: Added UWP tools under 'Help' #613\r\n2. PC: Window position persistence\r\n3. Profiles now support individual configuration of latency test URLs and timeout durations\r\n4. Linux: Reverted tray_manager. The package has been re-uploaded. If you have already installed version 2928, please download the package again and reinstall it.\r\n\r\nios appstore: https://apps.apple.com/us/app/clash-mi/id6744321968",
+    "release_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.33.1905",
+    "changelog": "1. Remove concatenated subscription addresses from the profile file #633\r\n\r\nios appstore: https://apps.apple.com/us/app/clash-mi/id6744321968",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "clashmi_1.0.32.1803_windows_x64.zip",
-        "size": 66998010,
-        "sha256": "2e2ab2ce0b90ef627ecf7232cf7b71fb482a716ac8378f91d6d22fa926d73351",
-        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_windows_x64.zip",
+        "file": "clashmi_1.0.33.1905_windows_x64.zip",
+        "size": 67218011,
+        "sha256": "3fca0fcf05d0b9f82fcc383c577f3dd47de5c1fd5862dfc1a00ef7618ca312b1",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.33.1905/clashmi_1.0.33.1905_windows_x64.zip",
         "mirrors": []
       },
       {
         "label": "Android · arm64 APK",
         "platform": "Android",
         "portable": false,
-        "file": "clashmi_1.0.32.1803_android_arm64-v8a.apk",
-        "size": 52610081,
-        "sha256": "6cedd17107d0b95774430a4a63a73cffeb115e1a62b1a37d8811aba9ec03510d",
-        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_android_arm64-v8a.apk",
+        "file": "clashmi_1.0.33.1905_android_arm64-v8a.apk",
+        "size": 53433001,
+        "sha256": "c9e32085d5fd1f920ffa17c6f98f1a2ba438f7910a5ef9ec2683fe8a2f266abf",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.33.1905/clashmi_1.0.33.1905_android_arm64-v8a.apk",
         "mirrors": []
       },
       {
         "label": "macOS · 通用 DMG",
         "platform": "macOS",
         "portable": false,
-        "file": "clashmi_1.0.32.1803_macos_universal.dmg",
-        "size": 97071257,
-        "sha256": "fd0382f8d996f97ed65eadf634967e9c1eed4909ec181cd2a53d81b6280e5c17",
-        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_macos_universal.dmg",
+        "file": "clashmi_1.0.33.1905_macos_universal.dmg",
+        "size": 95764960,
+        "sha256": "ce582b557fc954e51e4c9e8612f0075b0fb13dcd250c5c63cc30fef2ca3525f7",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.33.1905/clashmi_1.0.33.1905_macos_universal.dmg",
         "mirrors": []
       }
     ],
@@ -6735,20 +6735,20 @@
     "mirrored": false
   },
   "qownnotes": {
-    "version": "26.11.12",
-    "released": "2026-11-19",
+    "version": "26.11.13",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/pbek/QOwnNotes/releases/tag/v26.11.12",
-    "changelog": "## 26.11.12\n\n- Avoided unnecessary full note-folder scans on Windows when a watched subfolder's\n  notes are unchanged, reducing stalls after OneDrive sync notifications\n  (for [#3847](https://github.com/pbek/QOwnNotes/issues/3847))\n  - Nearby directory notifications share a delayed check, which still handles notes\n    that synchronization clients update by replacing the file\n- Fixed **Git versioning in the Snap** failing when a host `~/.gitconfig` is present\n  by using the Snap's private Git config\n  (for [#3857](https://github.com/pbek/QOwnNotes/issues/3857))\n- Added a **time picker** next to the due date of the **Nextcloud Deck** card dialog,\n  so the time no longer needs to be typed\n  (for [#3856](https://github.com/pbek/QOwnNotes/issues/3856))\n  - The due date and the due time now have separate fields, the date keeps its calendar\n    and the time gets the new clock picker\n  - The picker follows the light and dark mode and the accent color\n  - New **Today**, **Tomorrow** and **Next week** buttons set the due date and keep the time,\n    the buttons that move the due date earlier or later are now labeled\n  - The clock face shows hours on two rings and switches to the minutes after an hour was picked\n  - Quick presets for 09:00, 12:00, 15:00 and 18:00 and a **Now** button set common times\n  - The picked time is shown right away, **Escape** restores the previous time\n  - The mouse wheel, the arrow keys and **Tab** allow fine adjustments with the keyboard\n- Added a **Done** checkbox to the **Nextcloud Deck** card dialog to mark cards as done\n  (for [#3827](https://github.com/pbek/QOwnNotes/issues/3827))\n  - Multiple cards can be marked as done or not done from the context menu of the card list\n  - Done cards are struck through in the card list, show when they were done in their tooltip,\n    and their due date is no longer highlighted as overdue\n  - If a done stack is configured for the board in Nextcloud Deck, Deck moves cards\n    that are marked as done into it, and you are told where they went\n  - Saving a card no longer clears its done state in Nextcloud Deck\n  - Done and archived cards and missing due dates are now muted in a way that stays\n    readable in dark mode, including on alternating rows\n- Added **drag and drop** for copying and moving notes and subfolders in the note list and folder\n  panel, including mixed selections when the **note tree** is enabled\n  (for [#3854](https://github.com/pbek/QOwnNotes/issues/3854))\n  - Moves use the existing confirmation dialogs on drop, with **Don't ask again**\n    options; starting a drag does not show a dialog\n  - Internal drops offer a **Copy / Move** context menu at the drop position; **Ctrl-drag** selects Copy and\n    **Shift-drag** selects Move without the chooser, while confirmations remain enabled\n  - Notes cannot be dropped into their current subfolder; mixed selections skip notes\n    that are already in the destination\n  - **Shift-drag** shows a move cursor over internal targets instead of the copy cursor\n  - Folder copies include their contents and preserve note tags, never overwrite existing\n    folders, and do not follow symbolic links; links outside the copied tree may need adjustment\n  - Drags can also **copy** notes and folders to a file browser without\n    moving the originals\n  - Fixed a crash when cancelling a drop confirmation with **Escape**, caused by\n    incorrect ownership of the drag object during Qt's cleanup\n\n## Released files\n\n- QOwnNotes-x86_64.AppImage: Portable Linux AppImage build with Qt 6\n- QOwnNotes-x86_64.AppImage.zsync: Metadata for AppImage delta updates\n- QOwnNotes-x86_64.AppImage.sha256sum: SHA-256 checksum for the AppImage\n- QOwnNotes-amd64.snap: Linux Snap build with Qt 6\n- QOwnNotes-amd64.snap.sha256sum: SHA-256 checksum for the Qt 6 Snap package\n- QOwnNotes.zip: Windows ZIP package built with Qt 6\n- QOwnNotes.zip.sha256: SHA-256 checksum for the Qt 6 Windows ZIP package\n- QOwnNotes.zip.sha256sum: Alternative SHA-256 checksum file for the Qt 6 Windows ZIP package\n- QOwnNotes.msi: Windows installer built with Qt 6\n- QOwnNotes.msi.sha256sum: SHA-256 checksum for the Qt 6 Windows installer\n- QOwnNotes.dmg: macOS disk image built with Qt 6\n- QOwnNotesQt5.dmg: macOS disk image built with Qt 5 for older systems",
+    "release_url": "https://github.com/pbek/QOwnNotes/releases/tag/v26.11.13",
+    "changelog": "## 26.11.13\n\n- Fixed the **Share note** dialog opening or resizing too short to show the full\n  public sharing description\n- Added optional **Nextcloud Deck** card list columns for ID, start date, attachment\n  count, dependencies, assignees, last modified date, and card color\n  (for [#3860](https://github.com/pbek/QOwnNotes/issues/3860))\n  - The **Columns** menu remembers your choices without changing the default view\n  - Editing a card preserves the start date and color set in Deck\n  - When the **Assignees** column is shown, the search also finds cards by assignee\n  - Assignees and dependencies that Deck doesn't provide, like for archived cards,\n    are shown as \"—\" instead of looking empty\n  - Menu arrows of buttons in dark mode are now vertically centered\n\n## Released files\n\n- QOwnNotes-x86_64.AppImage: Portable Linux AppImage build with Qt 6\n- QOwnNotes-x86_64.AppImage.zsync: Metadata for AppImage delta updates\n- QOwnNotes-x86_64.AppImage.sha256sum: SHA-256 checksum for the AppImage\n- QOwnNotes-amd64.snap: Linux Snap build with Qt 6\n- QOwnNotes-amd64.snap.sha256sum: SHA-256 checksum for the Qt 6 Snap package\n- QOwnNotes.zip: Windows ZIP package built with Qt 6\n- QOwnNotes.zip.sha256: SHA-256 checksum for the Qt 6 Windows ZIP package\n- QOwnNotes.zip.sha256sum: Alternative SHA-256 checksum file for the Qt 6 Windows ZIP package\n- QOwnNotes.msi: Windows installer built with Qt 6\n- QOwnNotes.msi.sha256sum: SHA-256 checksum for the Qt 6 Windows installer\n- QOwnNotes.dmg: macOS disk image built with Qt 6\n- QOwnNotesQt5.dmg: macOS disk image built with Qt 5 for older systems",
     "downloads": [
       {
         "label": "Windows · 安裝包 MSI",
         "platform": "Windows",
         "portable": false,
         "file": "QOwnNotes.msi",
-        "size": 39215104,
-        "sha256": "61cb56754623fa4e83f893850feba33750bdff95c723c081b1e44224f997ae36",
-        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.12/QOwnNotes.msi",
+        "size": 39223296,
+        "sha256": "a15ed22e6d2139a94000e8740746b255de0fd7bbf84b9058beef3567eaf94662",
+        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.13/QOwnNotes.msi",
         "mirrors": []
       },
       {
@@ -6756,9 +6756,9 @@
         "platform": "Windows",
         "portable": true,
         "file": "QOwnNotes.zip",
-        "size": 55763623,
-        "sha256": "a33fa55b7c47754da3b88a0f5f9fd70fe6750dc27b0f323772c5fc6ab9010946",
-        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.12/QOwnNotes.zip",
+        "size": 55770107,
+        "sha256": "020f818e15df11c905f14458430281ace079a13946b8f288aef9f96cd8485963",
+        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.13/QOwnNotes.zip",
         "mirrors": []
       }
     ],
@@ -7549,20 +7549,20 @@
     "mirrored": false
   },
   "stats": {
-    "version": "3.1.0",
-    "released": "2026-11-15",
+    "version": "3.1.1",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/exelban/stats/releases/tag/v3.1.0",
-    "changelog": "## Bug fixes\r\n- fix: fixed localized thousands and decimal separators in memory values (#3722)\r\n\r\n## New features\r\n- feat: added an option to open a full popup view in combined mode with key\r\n- feat: added an option to disable gradient fill in the Line chart widget (#3732)\r\n- feat: added an option to have one widget in the menu bar when combined option is enabled\r\n- feat: dropped render and tiler utilization from the GPU module\r\n- feat: initialized memory usage in the GPU module\r\n\r\n## Localization\r\n- lang: added translations for Memory usage history and Menu bar and removed the unused Show icon instead of widgets key\r\n- lang: fixed missing/old translations",
+    "release_url": "https://github.com/exelban/stats/releases/tag/v3.1.1",
+    "changelog": "## Bug fixes\r\n- fix: fixed popup staying open after clicking the button/link that should close popup after\r\n- fix: fixed fan helper removal when the helper fails to respond\r\n- fix: fixed zero memory formatting to show 0 KB (#3750)\r\n\r\n## New features\r\n- feat: added SwiftLint rules and fixed the resulting warnings\r\n- feat: shared Remote snapshots and reduced sensor payload size\r\n- feat: added a gradient fill option to the Network chart widget (#3755)\r\n- feat: optimized widget previews and database operations\r\n- feat: loaded module previews on demand while preserving readings and chart history\r\n- feat: reduced memory usage by loading windows on demand and releasing hidden popup content\r\n\r\n## Localization\r\n- lang: added missing translations",
     "downloads": [
       {
         "label": "macOS · DMG",
         "platform": "macOS",
         "portable": false,
         "file": "Stats.dmg",
-        "size": 8257600,
-        "sha256": "a5f16b6606c8bd1fc847439a3b4a507153837167cb333514954882c2bc31e0e7",
-        "official": "https://github.com/exelban/stats/releases/download/v3.1.0/Stats.dmg",
+        "size": 8386915,
+        "sha256": "2fbe64690251e5c92102a2091052c76f440561397fcb7e0246821c331386bdd9",
+        "official": "https://github.com/exelban/stats/releases/download/v3.1.1/Stats.dmg",
         "mirrors": []
       }
     ],
