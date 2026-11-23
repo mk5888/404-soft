@@ -3,7 +3,7 @@
 
 环境变量：
   BASE_PATH  站点子路径。GitHub Pages 项目站填 "/404-soft"，自定义域名或 Cloudflare Pages 留空。
-  SITE_URL   站点完整地址（用于 sitemap），例：https://soft.896404.xyz
+  SITE_URL   站点完整地址（用于 sitemap），例：https://soft.life404.cc
 """
 import datetime
 import html
