@@ -631,20 +631,20 @@
     "source": "winget"
   },
   "qq": {
-    "version": "9.9.33.52230",
-    "released": "2026-08-13",
+    "version": "9.9.37.54395",
+    "released": "2026-11-03",
     "verified": "2026-11-23",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/QQ/NT/9.9.33.52230",
-    "changelog": "本次更新：\n- 录屏体验升级，支持截取 MP4、GIF 片段；\n- 优化消息提醒能力，好友通知、群通知及时知晓；\n- 修复了一些已知问题。\n近期更新：\n- 截图体验升级，长截图支持编辑裁剪；\n- 新增「戳一戳」互动，让聊天更有趣；\n- 新增「语音输入文字」功能，输入更高效。",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/QQ/NT/9.9.37.54395",
+    "changelog": "本次更新：\n- 截图与录屏支持自动保存到本地，使用更高效；\n- 新增音视频设置，支持识别虚拟摄像头，视频聊天更有趣；\n- 修复了一些已知问题。\n近期更新：\n- 经典模式上线「迷你窗」，透明度随心调，聊天更私密；\n- 优化消息通知设置，精准管理各类消息提醒；\n- 新增「戳一戳」互动，让聊天更有趣",
     "downloads": [
       {
         "label": "Windows x64 · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "QQ_9.9.33_260813_x64_01.exe",
+        "file": "QQ9.9.37.54395_x64.exe",
         "size": null,
-        "sha256": "b25c0d3ce9df764074a9118d0ded927e1b2d7ebf60e306112e8df18a040ec492",
-        "official": "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.33/release/497e2f1f/QQ_9.9.33_260813_x64_01.exe",
+        "sha256": "5cd7c13e36b391f88b2ad272fa870d74f476135b64244844ec0ad7ac7b411b48",
+        "official": "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.37/beta/a2ca1b61/QQ9.9.37.54395_x64.exe",
         "mirrors": []
       }
     ],
@@ -5541,20 +5541,20 @@
     "source": "winget"
   },
   "doubao-ime": {
-    "version": "1.0.0.23",
-    "released": "2026-11-02",
+    "version": "1.1.1.12",
+    "released": "2026-11-23",
     "verified": "2026-11-23",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/DoubaoInputMethod/1.0.0.23",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/DoubaoInputMethod/1.1.1.12",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "DoubaoIME_Installer_1.0.0.23_release.exe",
+        "file": "DoubaoIME_Installer_1.1.1.12_release.exe",
         "size": null,
-        "sha256": "16cc266ca5818af98c3c8320478aa9e188ff93e36b5beefbbfa88405586c7e72",
-        "official": "https://lf-wave.doubaocdn.com/obj/doubao-ime/app/windows/DoubaoIME_Installer_1.0.0.23_release.exe",
+        "sha256": "296e5c334395cf230655d8835542dc7b8c4a1e6eb2a22d22213b5282b1c7b0db",
+        "official": "https://lf-wave.doubaocdn.com/obj/doubao-ime/app/windows/DoubaoIME_Installer_1.1.1.12_release.exe",
         "mirrors": []
       }
     ],
@@ -6735,20 +6735,20 @@
     "mirrored": false
   },
   "qownnotes": {
-    "version": "26.11.13",
-    "released": "2026-11-22",
+    "version": "26.11.14",
+    "released": "2026-11-23",
     "verified": "2026-11-23",
-    "release_url": "https://github.com/pbek/QOwnNotes/releases/tag/v26.11.13",
-    "changelog": "## 26.11.13\n\n- Fixed the **Share note** dialog opening or resizing too short to show the full\n  public sharing description\n- Added optional **Nextcloud Deck** card list columns for ID, start date, attachment\n  count, dependencies, assignees, last modified date, and card color\n  (for [#3860](https://github.com/pbek/QOwnNotes/issues/3860))\n  - The **Columns** menu remembers your choices without changing the default view\n  - Editing a card preserves the start date and color set in Deck\n  - When the **Assignees** column is shown, the search also finds cards by assignee\n  - Assignees and dependencies that Deck doesn't provide, like for archived cards,\n    are shown as \"—\" instead of looking empty\n  - Menu arrows of buttons in dark mode are now vertically centered\n\n## Released files\n\n- QOwnNotes-x86_64.AppImage: Portable Linux AppImage build with Qt 6\n- QOwnNotes-x86_64.AppImage.zsync: Metadata for AppImage delta updates\n- QOwnNotes-x86_64.AppImage.sha256sum: SHA-256 checksum for the AppImage\n- QOwnNotes-amd64.snap: Linux Snap build with Qt 6\n- QOwnNotes-amd64.snap.sha256sum: SHA-256 checksum for the Qt 6 Snap package\n- QOwnNotes.zip: Windows ZIP package built with Qt 6\n- QOwnNotes.zip.sha256: SHA-256 checksum for the Qt 6 Windows ZIP package\n- QOwnNotes.zip.sha256sum: Alternative SHA-256 checksum file for the Qt 6 Windows ZIP package\n- QOwnNotes.msi: Windows installer built with Qt 6\n- QOwnNotes.msi.sha256sum: SHA-256 checksum for the Qt 6 Windows installer\n- QOwnNotes.dmg: macOS disk image built with Qt 6\n- QOwnNotesQt5.dmg: macOS disk image built with Qt 5 for older systems",
+    "release_url": "https://github.com/pbek/QOwnNotes/releases/tag/v26.11.14",
+    "changelog": "## 26.11.14\n\n- Improved startup with large note folders by avoiding a second rebuild of the\n  note list (for [#3858](https://github.com/pbek/QOwnNotes/issues/3858))\n- Changes in [QOwnNotes for Android](https://github.com/qownnotes/qownnotes-android)\n  [v26.11.3](https://github.com/qownnotes/qownnotes-android/releases/tag/v26.11.3):\n  - The editor's **Insert date** and **Insert date and time** tools now support custom\n    formats with a live preview in **Date formats** settings. The defaults are unchanged\n  - Tapping **Clear** or **Filter** in compact note search no longer expands the search\n    field or shifts the buttons\n    ([fix commit](https://github.com/qownnotes/qownnotes-android/commit/6eb152b5aedc601ae1ef13090bf1afc165661cbe))\n  - Updated Jetpack Compose and the Android build tools without changing the minimum\n    or target Android versions\n\n## Released files\n\n- QOwnNotes-x86_64.AppImage: Portable Linux AppImage build with Qt 6\n- QOwnNotes-x86_64.AppImage.zsync: Metadata for AppImage delta updates\n- QOwnNotes-x86_64.AppImage.sha256sum: SHA-256 checksum for the AppImage\n- QOwnNotes-amd64.snap: Linux Snap build with Qt 6\n- QOwnNotes-amd64.snap.sha256sum: SHA-256 checksum for the Qt 6 Snap package\n- QOwnNotes.zip: Windows ZIP package built with Qt 6\n- QOwnNotes.zip.sha256: SHA-256 checksum for the Qt 6 Windows ZIP package\n- QOwnNotes.zip.sha256sum: Alternative SHA-256 checksum file for the Qt 6 Windows ZIP package\n- QOwnNotes.msi: Windows installer built with Qt 6\n- QOwnNotes.msi.sha256sum: SHA-256 checksum for the Qt 6 Windows installer\n- QOwnNotes.dmg: macOS disk image built with Qt 6\n- QOwnNotesQt5.dmg: macOS disk image built with Qt 5 for older systems",
     "downloads": [
       {
         "label": "Windows · 安裝包 MSI",
         "platform": "Windows",
         "portable": false,
         "file": "QOwnNotes.msi",
-        "size": 39223296,
-        "sha256": "a15ed22e6d2139a94000e8740746b255de0fd7bbf84b9058beef3567eaf94662",
-        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.13/QOwnNotes.msi",
+        "size": 39243776,
+        "sha256": "34c13793a47cb6bb1cd8e4c016e31e7375f139f0e1aa5f024916e9fc171d7989",
+        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.14/QOwnNotes.msi",
         "mirrors": []
       },
       {
@@ -6756,9 +6756,9 @@
         "platform": "Windows",
         "portable": true,
         "file": "QOwnNotes.zip",
-        "size": 55770107,
-        "sha256": "020f818e15df11c905f14458430281ace079a13946b8f288aef9f96cd8485963",
-        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.13/QOwnNotes.zip",
+        "size": 55770283,
+        "sha256": "947a0661d481f72ec767d5e5fd9dc9fb42d3fb18df40f8a56e379bcf8c864a4e",
+        "official": "https://github.com/pbek/QOwnNotes/releases/download/v26.11.14/QOwnNotes.zip",
         "mirrors": []
       }
     ],
