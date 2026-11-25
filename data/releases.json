@@ -8176,5 +8176,175 @@
       }
     ],
     "mirrored": false
+  },
+  "super-productivity": {
+    "version": "20.1.0",
+    "released": "2026-11-21",
+    "verified": "2026-11-25",
+    "release_url": "https://github.com/super-productivity/super-productivity/releases/tag/v20.1.0",
+    "changelog": "For all current downloads, package links, and platform-specific notes: [see the docs](https://super-productivity.com/docs/how-to/downloads-and-install/).\r\n\r\n### Planning and tasks\r\n\r\n- Drag selected tasks together in Today, tag views and the planner.\r\n- Set recurring deadlines or turn a future repeating occurrence into a normal task.\r\n- Use the schedule's new tray mode for tasks without a time, and see overdue tasks in the day panel.\r\n- See deadlines on board cards and open tasks from planner deadline cards.\r\n- Add tasks from section and group headers, and search by attached link URLs.\r\n- Hide sidebar task counts with a new option. Boards is now called Views.\r\n- Fixed drops into empty sections, multi-select shortcuts, Markdown checklist pasting and Escape to cancel dragging.\r\n\r\n### Time tracking and focus\r\n\r\n- Optionally bring the window forward when a focus session or break ends.\r\n- See an indicator on the play button when another device is tracking time.\r\n- View time per project in the worklog export dialog.\r\n- Fixed tracked-time saving when hiding the page, quitting the desktop app or choosing “finish day and close.”\r\n- Fixed lost time around sleep and backward clock changes; desktop sleep now counts as a break for break reminders.\r\n- Improved duration parsing for spaces, spelled-out units and decimal commas.\r\n\r\n### Sync and integrations\r\n\r\n- See local changes in the sync import conflict dialog, a distinct syncing icon and clearer error guidance.\r\n- Fixed cases where concurrent edits, task completion, notes or tracked time could be lost during sync.\r\n- Manual-only sync no longer runs on desktop quit, while tracked time is still saved.\r\n- Added a Microsoft To Do importer and support for importing Todoist repeats.\r\n- Added a bundled invoicing plugin, disabled by default, and listed Cat Court, Desk Pet and Gamify community plugins.\r\n- New CalDAV providers import todos automatically by default. Fixed polling intervals and handling of deleted todos.\r\n- Fixed calendar updates overwriting task notes and issue refreshes deleting tasks when an issue is not found.\r\n\r\n### Mobile\r\n\r\n- Open the navigation drawer with a swipe from the right edge.\r\n- Android repeating reminders stay visible after firing, and reminders are skipped for the task currently being tracked.\r\n- Fixed Android focus breaks automatically starting work when they finish.\r\n- Added iOS background focus-session notifications and prioritized the soonest reminders within the notification limit.\r\n- Fixed mobile SuperSync sign-in and request timeouts.\r\n\r\n### Other improvements\r\n\r\n- In-app help now opens the website documentation.\r\n- Updated Dutch and Simplified Chinese translations and fixed missing plural forms.\r\n- Reduced the initial app bundle by 197 kB and unnecessary planner processing.\r\n\r\n### Contributors\r\n\r\nThanks to everyone who contributed to this release: @ahanel13 @akiledal @aryasetiap @bellussi1 @davidvornholt @dionzz @Drewlius @dschodits @evangeliontkn @florianaltendorfer @georgekhananaev @GiovanH @hector2394 @hskl18 @inverteum @IshanKale @JehandadK @johannesjo @Jojoussef @Murat65536 @PloneMraz @ptrckmgl @suitably @tiliakoos @Xnadir @yuki-uix @ZainnQureshii @zenoprax @Zoriot\r\n\r\n### New Contributors\r\n* @georgekhananaev made their first contribution in https://github.com/super-productivity/super-productivity/pull/11725\r\n* @hector2394 made their first contribution in https://github.com/super-productivity/super-productivity/pull/11557\r\n* @ptrckmgl made their first contribution in https://github.com/super-productivity/super-productivity/pull/11680\r\n* @ZainnQureshii made their first contribution in https://github.com/super-productivity/super-productivity/pull/11581\r\n* @evangeliontkn made their first contribution in https://github.com/super-productivity/super-productivity/pull/11647\r\n* @Murat65536 made their first contribution in https://github.com/super-productivity/super-productivity/pull/11593\r\n* @florianaltendorfer made their first contribution in https://github.com/super-productivity/super-productivity/pull/11059\r\n* @Drewlius made their first contribution in https://github.com/super-productivity/super-productivity/pull/11803\r\n* @PloneMraz made their first contribution in https://github.com/super-productivity/super-productivity/pull/10168\r\n* @Xnadir made their first contribution in https://github.com/super-productivity/super-productivity/pull/11757\r\n* @akiledal made their first contribution in https://github.com/super-productivity/super-productivity/pull/11635\r\n* @aryasetiap made their first contribution in https://github.com/super-productivity/super-productivity/pull/11822\r\n* @hskl18 made their first contribution in https://github.com/super-productivity/super-productivity/pull/11434\r\n* @yuki-uix made their first contribution in https://github.com/super-productivity/super-productivity/pull/11844\r\n* @bellussi1 made their first contribution in https://github.com/super-productivity/super-productivity/pull/11849\r\n* @dionzz made their first contribution in https://github.com/super-productivity/super-productivity/pull/11804\r\n* @IshanKale made their first contribution in https://github.com/super-productivity/super-productivity/pull/11813\r\n* @GiovanH made their first contribution in https://github.com/super-productivity/super-productivity/pull/11870\r\n* @Jojoussef made their first contribution in https://github.com/super-productivity/super-productivity/pull/11794\r\n* @inverteum made their first contribution in https://github.com/super-productivity/super-productivity/pull/11858\r\n\r\n**Full Changelog**: https://github.com/super-productivity/super-productivity/compare/v20.0.0...v20.1.0\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Super-Productivity-Setup-x64.exe",
+        "size": 261870992,
+        "sha256": "0996fb9696c5180c6e48be422ebdd19431de5e8778a2a0e0888ec922eeec5bbd",
+        "official": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/Super-Productivity-Setup-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows ARM64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Super-Productivity-Setup-arm64.exe",
+        "size": 261870992,
+        "sha256": "0996fb9696c5180c6e48be422ebdd19431de5e8778a2a0e0888ec922eeec5bbd",
+        "official": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/Super-Productivity-Setup-arm64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS · 通用 DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "superProductivity-universal.dmg",
+        "size": 250660105,
+        "sha256": "48abec764449b579d7ef9e86f53c87de792cf737c03e270dce7cfcd257d7000e",
+        "official": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-universal.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "superProductivity-x86_64.AppImage",
+        "size": 142976893,
+        "sha256": "bdb372be0ac0fe4b8822d6e4803473ab67677ace18674ae6c2e1e9223eecc3cb",
+        "official": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-x86_64.AppImage",
+        "mirrors": []
+      },
+      {
+        "label": "Android · APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "app-play-release.apk",
+        "size": 24463831,
+        "sha256": "cc509b8d8db6587aa4f90bf9f293bdb7b9afeb4456a7865e4dff887ba5f496a3",
+        "official": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/app-play-release.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "librecad": {
+    "version": "2.2.1.6",
+    "released": "2026-10-17",
+    "verified": "2026-11-25",
+    "release_url": "https://github.com/LibreCAD/LibreCAD/releases/tag/v2.2.1.6",
+    "changelog": "LibreCAD 2.2.1.6 is a maintenance release for the stable 2.2.1 series. It brings selected backported features alongside important fixes for drawing integrity, Undo/Redo, geometry, text, printing, and packaging.\r\n\r\n## Downloads\r\n\r\n| Package | Versioned Filename |\r\n| --- | --- |\r\n| Windows x86 (32-bit) | [LibreCAD-v2.2.1.6-msvc.exe](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-msvc.exe) |\r\n| Windows x86-64 (64-bit) | [LibreCAD-v2.2.1.6-win64-msvc.exe](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-win64-msvc.exe) |\r\n| macOS Intel (x86-64) | [LibreCAD-v2.2.1.6.dmg](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6.dmg) |\r\n| macOS Apple Silicon (ARM64) | [LibreCAD-v2.2.1.6-arm64.dmg](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-arm64.dmg) |\r\n| Linux x86-64 AppImage | [LibreCAD-v2.2.1.6-x86_64.AppImage](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-x86_64.AppImage) |\r\n| Linux ARM64 AppImage | [LibreCAD-v2.2.1.6-aarch64.AppImage](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-aarch64.AppImage) |\r\n| Linux x86-64 Snap | [LibreCAD-v2.2.1.6.snap](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6.snap) |\r\n| Source code ZIP | [LibreCAD-v2.2.1.6.zip](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6.zip) |\r\n| Source code tarball | [LibreCAD-v2.2.1.6.tar.gz](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6.tar.gz) |\r\n\r\n## SHA256 Checksums\r\n\r\nDownload [SHA256SUMS](https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/SHA256SUMS) for verification. These checksums cover the attached release files, not GitHub's automatically generated source archives.\r\n\r\n| File | SHA256 |\r\n| --- | --- |\r\n| `LICENSE` | `211000d6635a62c76ae212baf868d6f0bce38bee11ac68100325f3dfae826197` |\r\n| `LibreCAD-v2.2.1.6-aarch64.AppImage` | `6784e54d8c476bc6cee898ebf3348ea0c46f83a815c3c4276c17a18d3558a9ce` |\r\n| `LibreCAD-v2.2.1.6-arm64.dmg` | `2c5049f5d38346b6152e5b000bb60060f3a2113484bba4bcb388cb690f275879` |\r\n| `LibreCAD-v2.2.1.6-msvc.exe` | `d55588f6bbe59e2512ef0f1681246cfff302b0ee78d9dc69b709f51fc917c207` |\r\n| `LibreCAD-v2.2.1.6-win64-msvc.exe` | `0cd876d0e3fbfcdcdb85e5019080aca243908f4ad5c3b3c93a55ee9ba154f95b` |\r\n| `LibreCAD-v2.2.1.6-x86_64.AppImage` | `f2d86e6a40ec684b758c821eff3496a7d36e69f17519cde0b508a66d72c5754c` |\r\n| `LibreCAD-v2.2.1.6.dmg` | `b46eb69effae096b1fd1e85d0aa1b037a71661617ca733f607f4e9d681c9c770` |\r\n| `LibreCAD-v2.2.1.6.snap` | `aa9d67e3ae129130e9ad33834431f008ee830c01534befc9703c317229abba2e` |\r\n| `LibreCAD-v2.2.1.6.tar.gz` | `645e26b5ce81f862760edd63c76ca31c3ce9485302146465d373c976d661f768` |\r\n| `LibreCAD-v2.2.1.6.zip` | `98828e4e07ae1a0a86ce0c5ee1fbdd28ec3c898ff908e3a571a302e35b18d1a6` |\r\n\r\nWith the downloaded files and `SHA256SUMS` in the same folder, run `sha256sum -c SHA256SUMS` on Linux or `shasum -a 256 -c SHA256SUMS` on macOS.\r\n\r\n## Backported Features\r\n\r\n- **Bounded hyperbolas:** Draw hyperbola arcs from two foci and start/end points, with snapping, tangent construction, transformations, and trimming. Bounded arcs can be saved and read through rational DXF spline conversion. [#2827](https://github.com/LibreCAD/LibreCAD/pull/2827)\r\n- **Right-to-left MText:** Backported drawing-direction support in the MText editor, including direction handling when importing DWG and preserving the RTL setting when saving and reopening LibreCAD DXF files. [#2553](https://github.com/LibreCAD/LibreCAD/pull/2553)\r\n- **CJK fonts and localization:** Added Noto Sans SC, Noto Sans TC, and WenQuanYi Micro Hei fonts; corrected LFF glyph loading/saving across the Unicode code-point range to avoid truncated or misidentified glyphs. Includes Lao language support, updated Japanese and Traditional Chinese translations, and other translation corrections. [#2991](https://github.com/LibreCAD/LibreCAD/pull/2991), [#2729](https://github.com/LibreCAD/LibreCAD/pull/2729), [#2735](https://github.com/LibreCAD/LibreCAD/pull/2735), [#3143](https://github.com/LibreCAD/LibreCAD/pull/3143)\r\n- **Small-display layouts:** Improved main-window and dock fitting on small screens, with compact default right-dock widths and layout adjustments when the available screen area changes. [#2989](https://github.com/LibreCAD/LibreCAD/pull/2989), [#3149](https://github.com/LibreCAD/LibreCAD/pull/3149)\r\n\r\n## Critical Fixes\r\n\r\n- **Undo/Redo and entity ownership:** Fix crashes and unintended changes when property dialogs or modify tools encounter generated text/dimension geometry or block children, and make re-filleting corners safe for Undo/Redo. [#2878](https://github.com/LibreCAD/LibreCAD/pull/2878)\r\n- **Clipboard and library blocks:** Preserve layers and nested block definitions during copy/paste, restore Undo for Cut, guard against recursive block references, and prevent empty or incorrect library imports caused by block-name collisions. [#2930](https://github.com/LibreCAD/LibreCAD/pull/2930), [#3147](https://github.com/LibreCAD/LibreCAD/pull/3147)\r\n- **Hatch reliability and area:** Avoid assertions or hangs on degenerate boundary edges, retain valid hatches containing duplicate edges, and correctly subtract holes when computing hatch area. [#2856](https://github.com/LibreCAD/LibreCAD/pull/2856), [#2858](https://github.com/LibreCAD/LibreCAD/pull/2858), [#2859](https://github.com/LibreCAD/LibreCAD/pull/2859)\r\n- **Snapping and intersections:** Prevent recursive snapping crashes inside filled hatches, correct ellipse vertex snapping and scale-sensitive circle/ellipse intersections, and keep hyperbola trimming and previews on the intended branches. [#2671](https://github.com/LibreCAD/LibreCAD/pull/2671), [#2946](https://github.com/LibreCAD/LibreCAD/pull/2946), [#3148](https://github.com/LibreCAD/LibreCAD/pull/3148)\r\n- **Drawing appearance and text:** Pre",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "LibreCAD-v2.2.1.6-win64-msvc.exe",
+        "size": 84583257,
+        "sha256": "0cd876d0e3fbfcdcdb85e5019080aca243908f4ad5c3b3c93a55ee9ba154f95b",
+        "official": "https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-win64-msvc.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "LibreCAD-v2.2.1.6-arm64.dmg",
+        "size": 98795332,
+        "sha256": "2c5049f5d38346b6152e5b000bb60060f3a2113484bba4bcb388cb690f275879",
+        "official": "https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "LibreCAD-v2.2.1.6.dmg",
+        "size": 92506713,
+        "sha256": "b46eb69effae096b1fd1e85d0aa1b037a71661617ca733f607f4e9d681c9c770",
+        "official": "https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "LibreCAD-v2.2.1.6-x86_64.AppImage",
+        "size": 82846008,
+        "sha256": "f2d86e6a40ec684b758c821eff3496a7d36e69f17519cde0b508a66d72c5754c",
+        "official": "https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.6/LibreCAD-v2.2.1.6-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "ferdium": {
+    "version": "7.2.3",
+    "released": "2026-09-07",
+    "verified": "2026-11-25",
+    "release_url": "https://github.com/ferdium/ferdium-app/releases/tag/v7.2.3",
+    "changelog": "# What's Changed\r\n\r\n## App Changes\r\n\r\n### ⚠️ Breaking Changes (from `7.2.0`)\r\n\r\n* macOS 11 Big Sur is no longer supported. macOS 12 Monterey or newer is now required due to the upgrade to Electron 43.\r\n* Linux/Wayland: Electron now defaults to native Wayland on Wayland sessions. `ELECTRON_OZONE_PLATFORM_HINT` is no longer supported; use `--ozone-platform=x11` to force XWayland.\r\n\r\n### Important Changes\r\n\r\n* perf: reduce blocking work when switching services by @OskarEichler in #2530\r\n* fix: avoid service webview clipping performance regression by @SpecialAro in #2544\r\n* perf: avoid layout and theme rebuilds on service switches by @OskarEichler in #2531\r\n\r\n### Other Changes\r\n\r\n* Fixes typo \"loose\" -> \"lose\" by @LeventCelik in #2534\r\n* add OskarEichler as a contributor for code by @allcontributors[bot] in #2545\r\n* perf: avoid repeated cache directory scans in Advanced settings by @OskarEichler in #2529\r\n* perf: skip redundant synchronous settings writes by @OskarEichler in #2528\r\n\r\n## Recipe Changes\r\n\r\n### Addition\r\n\r\n* add: Primal by @0xCmdrKeen in ferdium/ferdium-recipes#740\r\n* add: Photon by @0xCmdrKeen in ferdium/ferdium-recipes#745\r\n* add: Gather 2.0 by @tavaresgmg in ferdium/ferdium-recipes#741\r\n\r\n### Other changes\r\n\r\n* fix: improve Google Chat unread badge reliability by @anhvu-sg in ferdium/ferdium-recipes#735\r\n* fix: reduce high CPU usage on Instagram direct messages by @zquestz in ferdium/ferdium-recipes#742\r\n* feat: add unread badges for Bluesky notifications and chat by @nexxai in ferdium/ferdium-recipes#744\r\n\r\n## New Contributors\r\n\r\n* @LeventCelik made their first contribution in #2534\r\n* @OskarEichler made their first contribution in #2530\r\n\r\n**Full Changelog**: https://github.com/ferdium/ferdium-app/compare/v7.2.2...v7.2.3\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Ferdium-win-AutoSetup-7.2.3-x64.exe",
+        "size": 135558756,
+        "sha256": "ab15d3efcfc7703ac13d159c8a784ff73b22d0c83cd96fbcc33b5527719a9be3",
+        "official": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-win-AutoSetup-7.2.3-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 便携版",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Ferdium-win-Portable-7.2.3-x64.exe",
+        "size": 135311297,
+        "sha256": "973ddb9d3c9d55a430e01760db7bcaede6d4a5240056443bafc0429685067b24",
+        "official": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-win-Portable-7.2.3-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Ferdium-mac-7.2.3-arm64.dmg",
+        "size": 167567454,
+        "sha256": "478842403c103837b3ba3bae4b9b86df1fb4f8f1da41dc642440ac1fdd51b5b0",
+        "official": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-mac-7.2.3-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Ferdium-mac-7.2.3-x64.dmg",
+        "size": 171360981,
+        "sha256": "28f74b34109dada4b5db5549f5375803a07fec435c2fd6e1f690b4e3b72e8e4d",
+        "official": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-mac-7.2.3-x64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "Ferdium-linux-Portable-7.2.3-x86_64.AppImage",
+        "size": 173196736,
+        "sha256": "84775fd48a66ecf36457bec63ed7146f34314fe795075f75b9682e81109ee97b",
+        "official": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-linux-Portable-7.2.3-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
   }
 }
