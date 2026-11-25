@@ -14460,5 +14460,188 @@
       ]
     },
     "icon": "/static/icons/trollstore.png"
+  },
+  {
+    "slug": "super-productivity",
+    "name": "Super Productivity",
+    "abbr": "SP",
+    "category": "office",
+    "tags": [
+      "待办",
+      "时间追踪",
+      "番茄钟",
+      "Todoist 替代"
+    ],
+    "summary": "开源的待办清单、时间追踪与每日计划工具，可替代 Todoist、Microsoft To Do。",
+    "intro": "Super Productivity 是面向个人专注工作的待办 + 时间追踪 + 日程规划工具，离线优先、无需账号、不做追踪，数据默认只保存在本机，可选同步。",
+    "features": [
+      "子任务、项目、标签分类，支持看板与艾森豪威尔矩阵",
+      "计划器与日程时间线，可与日历事件并排查看",
+      "专注模式：番茄钟、Flowtime、倒计时，自动记录用时并提醒休息",
+      "导入 Jira、GitHub、GitLab、Gitea、Trello 等平台分配给你的任务",
+      "通过 WebDAV、Dropbox 或端到端加密的 SuperSync 多设备同步"
+    ],
+    "tips": [
+      "输入「Call Anna @tomorrow 3pm」这样的短语即可自动设置日期时间。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://super-productivity.com/",
+    "source": {
+      "type": "github",
+      "repo": "super-productivity/super-productivity",
+      "assets": [
+        {
+          "match": "^Super-Productivity-Setup-x64\\.exe$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Super-Productivity-Setup-arm64\\.exe$",
+          "label": "Windows ARM64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^superProductivity-universal\\.dmg$",
+          "label": "macOS · 通用 DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^superProductivity-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        },
+        {
+          "match": "\\.apk$",
+          "label": "Android · APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/super-productivity.png"
+  },
+  {
+    "slug": "librecad",
+    "name": "LibreCAD",
+    "abbr": "LC",
+    "category": "graphics",
+    "tags": [
+      "CAD",
+      "2D 制图",
+      "AutoCAD 替代"
+    ],
+    "summary": "开源免费的 2D CAD 制图软件，可替代 AutoCAD LT 做平面图纸。",
+    "intro": "LibreCAD 是基于 QCAD 社区版的 2D CAD 绘图工具，采用 Qt 跨平台框架，界面已翻译为 30 多种语言，原生使用 DXF 格式并可读取 DWG。",
+    "features": [
+      "专注 2D 工程制图，支持图层、图块、标注",
+      "原生读写 DXF，可打开 DWG 图纸",
+      "命令行转换：DXF/DWG 转 PDF、PNG、SVG",
+      "Windows、macOS、Linux 跨平台，30+ 语言界面"
+    ],
+    "tips": [
+      "只做 2D 制图；需要 3D 建模请用 FreeCAD 或 Blender。"
+    ],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://librecad.org/",
+    "source": {
+      "type": "github",
+      "repo": "LibreCAD/LibreCAD",
+      "assets": [
+        {
+          "match": "-win64-msvc\\.exe$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^LibreCAD-v[0-9.]+\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/librecad.png"
+  },
+  {
+    "slug": "ferdium",
+    "name": "Ferdium",
+    "abbr": "FD",
+    "category": "chat",
+    "tags": [
+      "消息聚合",
+      "多账号",
+      "Franz 替代"
+    ],
+    "summary": "把 WhatsApp、Telegram、Slack、Discord 等聊天应用聚合到一个窗口，开源版 Franz / Rambox。",
+    "intro": "Ferdium 是 Franz 的硬分叉（承接 Ferdi），把常用的网页聊天与办公应用合并进一个桌面程序，去掉了付费限制并加入更多功能。",
+    "features": [
+      "数百种服务一个窗口统一管理",
+      "同一服务可登录多个账号",
+      "工作区分组，按场景切换服务",
+      "可用 custom.css 自定义界面",
+      "支持迁移 Ferdi 旧配置"
+    ],
+    "tips": [
+      "Windows 便携版解压即用，配置会写入 %APPDATA%\\Ferdium。"
+    ],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://ferdium.org/",
+    "source": {
+      "type": "github",
+      "repo": "ferdium/ferdium-app",
+      "assets": [
+        {
+          "match": "^Ferdium-win-AutoSetup-[0-9.]+-x64\\.exe$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Ferdium-win-Portable-[0-9.]+-x64\\.exe$",
+          "label": "Windows x64 · 便携版",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^Ferdium-mac-[0-9.]+-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^Ferdium-mac-[0-9.]+-x64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/ferdium.png"
   }
 ]
