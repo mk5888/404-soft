@@ -8346,5 +8346,165 @@
       }
     ],
     "mirrored": false
+  },
+  "affine": {
+    "version": "0.27.4",
+    "released": "2026-08-18",
+    "verified": "2026-11-26",
+    "release_url": "https://github.com/toeverything/AFFiNE/releases/tag/v0.27.4",
+    "changelog": "<img width=\"960\" height=\"504\" alt=\"1\" src=\"https://github.com/user-attachments/assets/77a95b3f-c04f-4c1a-85fb-a6d1eb9de3c0\" />\r\n\r\n## What's new\r\n\r\n### Web & Editor\r\n\r\n- Improve byok model editing\r\n- Fix code block line number trigger\r\n- Fix journal can see trashed docs\r\n\r\n### Native Client\r\n\r\n- Improve OnoNote importor\r\n- Mac client can hide the tray icon after the window is closed\r\n- Fix Android client keyboard compatibility\r\n\r\n### Backend\r\n\r\n- Add support for GPT 5.6/Gemini 3.7\r\n- Improve stability for long records\r\n- Fix high memory usage during server-side GC\r\n\r\n## Breaking change\r\n\r\nStarting from client version 0.27, only server at version 0.27 or higher are supported to connect and sync.\r\n\r\nStarting from server version 0.27, only clients at version 0.26 or higher are supported to connect and sync.\r\n\r\nStarting from server version 0.27, environment variables are no longer the server’s preferred source for reading configuration, and some environment variables are no longer available. Please refer to https://docs.affine.pro/self-host-affine/install/configuration to migrate the configuration to `config.json`.\r\n\r\nThe BYOK feature is in an experimental stage and may need to be reconfigured when upgrading versions.",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "affine-0.27.4-stable-windows-x64.exe",
+        "size": 221059480,
+        "sha256": "b9719c96a92062abe4eddf4340a0f9c68997754d338f6c713b33af631f23983d",
+        "official": "https://github.com/toeverything/AFFiNE/releases/download/v0.27.4/affine-0.27.4-stable-windows-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "affine-0.27.4-stable-macos-arm64.dmg",
+        "size": 158774537,
+        "sha256": "4bbb5def9e377f513be0fa05f1cc29ec2738e2d5432029df3f02c91f5ffadfea",
+        "official": "https://github.com/toeverything/AFFiNE/releases/download/v0.27.4/affine-0.27.4-stable-macos-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "affine-0.27.4-stable-macos-x64.dmg",
+        "size": 174014242,
+        "sha256": "575f8e78a594adc15232d6450a9dbeab731961ed1b6be2c92d32d1cd10b7547c",
+        "official": "https://github.com/toeverything/AFFiNE/releases/download/v0.27.4/affine-0.27.4-stable-macos-x64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "affine-0.27.4-stable-linux-x64.appimage",
+        "size": 191867384,
+        "sha256": "102ff093ea3af7067893e76ae85b8a5d5818aa92c8785d399312bd8f468f5cac",
+        "official": "https://github.com/toeverything/AFFiNE/releases/download/v0.27.4/affine-0.27.4-stable-linux-x64.appimage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "kando": {
+    "version": "3.0.1",
+    "released": "2026-10-25",
+    "verified": "2026-11-26",
+    "release_url": "https://github.com/kando-menu/kando/releases/tag/v3.0.1",
+    "changelog": "This release fixes a couple of bugs and improves overall stability across all platforms.\r\n\r\n- [▶️ 3.0 Release Video on YouTube](https://www.youtube.com/watch?v=PhUnN2cx5sI)\r\n- [💬 Join our Discord server](https://discord.gg/hZwbVSDkhy)\r\n- [📝 Read the changelog](https://github.com/kando-menu/kando/blob/main/docs/changelog.md)\r\n\r\nA special shout-out to all the ❤️ [sponsors](https://schneegans.github.io/sponsors/), translators, @hippi345, @presianbg, @rome-xi, @skanpaul, @Tailszefox, and @wl-chuang for their contributions to this version!\r\n\r\n🌸 Have Fun! 🌸\r\n\r\n---\r\n\r\n### 🪟 Windows Downloads\r\n\r\n| Architecture | Installer                                                                                                               | ZIP Package                                                                                                             |\r\n| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |\r\n| x64          | [Kando-3.0.1.Setup-x64.exe](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1.Setup-x64.exe)     | [Kando-win32-x64-3.0.1.zip](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-win32-x64-3.0.1.zip)     |\r\n| arm64        | [Kando-3.0.1.Setup-arm64.exe](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1.Setup-arm64.exe) | [Kando-win32-arm64-3.0.1.zip](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-win32-arm64-3.0.1.zip) |\r\n\r\n---\r\n\r\n### 🍏 macOS Downloads\r\n\r\n| Architecture | DMG Installer                                                                                               | ZIP Package                                                                                                               |\r\n| ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |\r\n| x64          | [Kando-3.0.1-x64.dmg](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1-x64.dmg)     | [Kando-darwin-x64-3.0.1.zip](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-darwin-x64-3.0.1.zip)     |\r\n| arm64        | [Kando-3.0.1-arm64.dmg](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1-arm64.dmg) | [Kando-darwin-arm64-3.0.1.zip](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-darwin-arm64-3.0.1.zip) |\r\n\r\n---\r\n\r\n### 🐧 Linux Downloads\r\n\r\n| Architecture | AppImage                                                                                                                  | ZIP Package                                                                                                             | RPM Package                                                                                                       | DEB Package                                                                                                 |\r\n| ------------ | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |\r\n| x64          | [Kando-3.0.1-x86_64.AppImage](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1-x86_64.AppImage)   | [Kando-linux-x64-3.0.1.zip](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-linux-x64-3.0.1.zip)     | [kando-3.0.1-1.x86_64.rpm](https://github.com/kando-menu/kando/releases/download/v3.0.1/kando-3.0.1-1.x86_64.rpm) | [kando_3.0.1_amd64.deb](https://github.com/kando-menu/kando/releases/download/v3.0.1/kando_3.0.1_amd64.deb) |\r\n| arm64        | [Kando-3.0.1-aarch64.AppImage](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1-aarch64.AppImage) | [Kando-linux-arm64-3.0.1.zip](https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-linux-arm64-3.0.1.zip) | [kando-3.0.1-1.arm64.rpm](https://github.com/kando-menu/kando/releases/download/v3.0.1/kando-3.0.1-1.arm64.rpm)   | [kando_3.0.1_arm64.deb](https://github.com/kando-menu/kando/releases/download/v3.0.1/kando_3.0.1_arm64.deb) |\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Kando-3.0.1.Setup-x64.exe",
+        "size": 179215160,
+        "sha256": "a486509456ff2325ab2f473e3a74f552d352ebba0eed6c76c06aa79521c764bf",
+        "official": "https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1.Setup-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 便携版",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Kando-win32-x64-3.0.1.zip",
+        "size": 188045333,
+        "sha256": "395b46c1a06453df754041197e8fd03a8fe926d9fcfad85dcaf0b738571bea23",
+        "official": "https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-win32-x64-3.0.1.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Kando-3.0.1-arm64.dmg",
+        "size": 154825532,
+        "sha256": "da33fde36a63766e1d646c5ebfaaf62865dcb764b835c0c38873d18c45d642c2",
+        "official": "https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Kando-3.0.1-x64.dmg",
+        "size": 160813071,
+        "sha256": "b6fda2860691752e670b088000a5f5e9c6878ea6f6d486089ebbf42dddfba66c",
+        "official": "https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1-x64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "Kando-3.0.1-x86_64.AppImage",
+        "size": 148283736,
+        "sha256": "bbd322eda95543e41f27d05dac838e7a46d4de190e501668ce37edda2185169a",
+        "official": "https://github.com/kando-menu/kando/releases/download/v3.0.1/Kando-3.0.1-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "mattermost": {
+    "version": "6.4.0",
+    "released": "2026-11-16",
+    "verified": "2026-11-26",
+    "release_url": "https://github.com/mattermost/desktop/releases/tag/v6.4.0",
+    "changelog": "### Mattermost Desktop v6.4.0 has been cut!\r\n\r\nRelease notes can be found here: https://docs.mattermost.com/install/desktop-app-changelog.html\r\n\r\nThe download links can be found below.\r\n\r\n#### Windows - installer files\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-win-x64.msi\r\n  - SHA-256 Checksum: `6e08729149e88091fa79bf29b41ba550f2727e89d6d4e7bc99e2ddc275d9b98b`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-win-arm64.msi\r\n  - SHA-256 Checksum: `9dfda9f7a1c8a91b29fb0d7996f55720d1f9b4344dbfcb92efc70aa4fde138da`\r\n\r\n#### Windows - zip files\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-win-x64.zip\r\n  - SHA-256 Checksum: `78e023936580317b0f13548b1db626da2595b366258533224ce035fa8fb8df46`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-win-arm64.zip\r\n  - SHA-256 Checksum: `a55436d6f8fcaf61940840770a53949d003572c6207d11eb4239b94a0d0dca79`\r\n\r\n#### Mac\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-mac-universal.dmg\r\n  - SHA-256 Checksum: `3ac73e8e9e0783594daebce56a0827f0aabc2ac71edddf2169d51112a4b06d9f`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-mac-x64.dmg\r\n  - SHA-256 Checksum: `1e967a09d9f0361ea5c4c2b5641fa57a5308790cab4ae6944e4bff8421b7f070`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-mac-arm64.dmg\r\n  - SHA-256 Checksum: `7f28fce87c63ec869f7f5d0cf5da7a08acae17e079a878b75a1284ea92af2df0`\r\n\r\n#### Linux\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-arm64.tar.gz\r\n  - SHA-256 Checksum: `518f210fd848326fdf88a190ebf01ca7bea5c1db96810fed557915f71ecd7ff5`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-x64.tar.gz\r\n  - SHA-256 Checksum: `f5f3b58b0a829624b13d1303b868d11f009a26ef7fb9b35c383942f9bb99d6c5`\r\n\r\n#### Linux (Unofficial) - deb files\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop_6.4.0-1_arm64.deb\r\n  - SHA-256 Checksum: `72bcade7e405848d5ca5ca29d6a77ed60ba4ff207e9447d14a48e4e3fa7a3c3f`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop_6.4.0-1_amd64.deb\r\n  - SHA-256 Checksum: `8724b25e13563bc6d952e125ded2a65d809818199627ebb5ef4b1daf83ab5b80`\r\n\r\n#### Linux (Unofficial) - rpm files (beta)\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-aarch64.rpm\r\n  - SHA-256 Checksum: `66ab71f3e7975e3dec4e5e0573a2ebb9d5bda8351ccc1ea136f202fb345aad7c`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-x86_64.rpm\r\n  - SHA-256 Checksum: `81a7a3908521bc0ddb3b946c4394b216c9fd6fbc7ead0a4e21c7a488ddfec2ea`\r\n\r\n#### Linux (Unofficial) - AppImage files\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-arm64.AppImage\r\n  - SHA-256 Checksum: `4e304dbd3c0297e225c95885241b5c1239eaaf5513c1067605ff3257ffff71f9`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-x86_64.AppImage\r\n  - SHA-256 Checksum: `398d98677b0f5d94c65394a07ea5c8f74436ce2058a97da6cdeb9a0b85ff882c`\r\n\r\n#### Linux (Unofficial) - flatpak files (beta)\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-aarch64.flatpak\r\n  - SHA-256 Checksum: `eb7e917664c955288d7b606facd88f17daef49b43bade89ce7207a1c5782b5a9`\r\n- https://releases.mattermost.com/desktop/6.4.0/mattermost-desktop-6.4.0-linux-x86_64.flatpak\r\n  - SHA-256 Checksum: `a861363bb592958ad059fae508c3a2133324892193dbe68d8dc41735e8b362ce`\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "mattermost-desktop-6.4.0-win-x64.msi",
+        "size": 132722688,
+        "sha256": "6e08729149e88091fa79bf29b41ba550f2727e89d6d4e7bc99e2ddc275d9b98b",
+        "official": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-win-x64.msi",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 便携版",
+        "platform": "Windows",
+        "portable": true,
+        "file": "mattermost-desktop-6.4.0-win-x64.zip",
+        "size": 159402597,
+        "sha256": "78e023936580317b0f13548b1db626da2595b366258533224ce035fa8fb8df46",
+        "official": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-win-x64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS · 通用 DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "mattermost-desktop-6.4.0-mac-universal.dmg",
+        "size": 231787569,
+        "sha256": "3ac73e8e9e0783594daebce56a0827f0aabc2ac71edddf2169d51112a4b06d9f",
+        "official": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-mac-universal.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "mattermost-desktop-6.4.0-linux-x86_64.AppImage",
+        "size": 132739769,
+        "sha256": "398d98677b0f5d94c65394a07ea5c8f74436ce2058a97da6cdeb9a0b85ff882c",
+        "official": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-linux-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
   }
 }
