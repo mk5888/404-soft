@@ -14643,5 +14643,183 @@
       ]
     },
     "icon": "/static/icons/ferdium.png"
+  },
+  {
+    "slug": "affine",
+    "name": "AFFiNE",
+    "abbr": "AF",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "知识库",
+      "白板",
+      "Notion 替代"
+    ],
+    "summary": "开源的 Notion + Miro 二合一知识库，文档、白板、数据库合在一起，本地优先。",
+    "intro": "AFFiNE 是一个隐私优先、本地优先的一体化工作空间，把文档、无边界白板和数据表格融合在同一个画布里，可作为 Notion、Miro 的开源替代，社区版采用 MIT 许可。",
+    "features": [
+      "文档模式与白板模式一键切换，同一内容两种视图",
+      "基于块的编辑，支持 Markdown、表格、看板",
+      "数据默认保存在本机，可选云同步或自建服务器",
+      "内置 AI 助手辅助写作与整理（可选）",
+      "Windows、macOS、Linux 桌面版及网页版"
+    ],
+    "tips": [
+      "桌面版数据存放在本地，换电脑前记得先导出或开启同步。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://affine.pro/",
+    "source": {
+      "type": "github",
+      "repo": "toeverything/AFFiNE",
+      "assets": [
+        {
+          "match": "-stable-windows-x64\\.exe$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "-stable-macos-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-stable-macos-x64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-stable-linux-x64\\.appimage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/affine.png"
+  },
+  {
+    "slug": "kando",
+    "name": "Kando",
+    "abbr": "KD",
+    "category": "tools",
+    "tags": [
+      "饼状菜单",
+      "快捷启动",
+      "效率"
+    ],
+    "summary": "跨平台的开源饼状菜单，用手势快速启动程序、模拟按键，提升操作效率。",
+    "intro": "Kando 是一个好看又好用的跨平台饼状菜单（Pie Menu），按下快捷键在鼠标处弹出环形菜单，可用来启动应用、打开链接、模拟快捷键或运行命令，菜单可嵌套并支持手势盲操。",
+    "features": [
+      "环形菜单在光标处弹出，支持多级嵌套",
+      "可启动应用、打开文件与链接、模拟热键、执行命令",
+      "支持鼠标、触控笔、键盘和手柄操作",
+      "内置菜单编辑器与多种菜单主题",
+      "Windows、macOS、Linux 全平台"
+    ],
+    "tips": [
+      "熟练后可按住快捷键快速划出手势，无需等菜单完全展开。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://kando.menu/",
+    "source": {
+      "type": "github",
+      "repo": "kando-menu/kando",
+      "assets": [
+        {
+          "match": "^Kando-[0-9.]+\\.Setup-x64\\.exe$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Kando-win32-x64-[0-9.]+\\.zip$",
+          "label": "Windows x64 · 便携版",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^Kando-[0-9.]+-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^Kando-[0-9.]+-x64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/kando.png"
+  },
+  {
+    "slug": "mattermost",
+    "name": "Mattermost",
+    "abbr": "MM",
+    "category": "chat",
+    "tags": [
+      "团队协作",
+      "Slack 替代",
+      "自建"
+    ],
+    "summary": "开源可自建的团队协作与即时通讯平台桌面端，可替代 Slack。",
+    "intro": "Mattermost 桌面应用用于连接你所在团队的 Mattermost 服务器，提供频道、私信、文件共享与集成，适合需要数据自主可控的团队，可替代 Slack、Teams。",
+    "features": [
+      "频道、私信、线程讨论与文件共享",
+      "可同时连接多个 Mattermost 服务器",
+      "桌面通知、未读提醒和托盘图标",
+      "服务端可私有化部署，数据自主可控",
+      "Windows、macOS、Linux 桌面端"
+    ],
+    "tips": [
+      "桌面端只是客户端，需要有可访问的 Mattermost 服务器地址才能登录。"
+    ],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://mattermost.com/",
+    "source": {
+      "type": "github",
+      "repo": "mattermost/desktop",
+      "assets": [
+        {
+          "match": "-win-x64\\.msi$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "-win-x64\\.zip$",
+          "label": "Windows x64 · 便携版",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "-mac-universal\\.dmg$",
+          "label": "macOS · 通用 DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-linux-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/mattermost.png"
   }
 ]
