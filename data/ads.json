@@ -1,8 +1,16 @@
 {
   "home-top": null,
   "feed": null,
-  "sidebar": null,
+  "sidebar": {
+    "type": "image",
+    "href": "https://my.racknerd.com/aff.php?aff=4338",
+    "img": "https://racknerd.com/banners/300x250.gif",
+    "alt": "RackNerd VPS"
+  },
   "detail-mid": null,
-  "detail-bottom": null,
+  "detail-bottom": {
+    "type": "html",
+    "html": "<a href=\"https://my.racknerd.com/aff.php?aff=4338\" target=\"_blank\" rel=\"sponsored noopener\" style=\"display:block;line-height:0\"><picture><source media=\"(max-width:640px)\" srcset=\"https://racknerd.com/banners/320x100.gif\"><img src=\"https://racknerd.com/banners/728x90.gif\" width=\"728\" height=\"90\" alt=\"RackNerd VPS\" loading=\"lazy\" style=\"max-width:100%;height:auto;border-radius:6px\"></picture></a>"
+  },
   "footer": null
 }
