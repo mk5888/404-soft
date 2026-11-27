@@ -201,7 +201,23 @@ def page_home(items, releases, cats):
     {icon(s, 'lg')}
     <div><span class="badge">{"站长推荐" if s.get("featured") else "最新更新"}</span><h2>{e(s['name'])} {e(releases.get(s['slug'], {}).get('version', ''))}</h2><p>{e(s['summary'])}</p></div>
   </a>''' for n, s in enumerate(slides))
-    dots = "".join(f'<button class="dot{" on" if n == 0 else ""}" aria-label="第 {n + 1} 项"></button>' for n in range(len(slides))) if len(slides) > 1 else ""
+    nslides = len(slides)
+    try:
+        fa = json.load(open(os.path.join(ROOT, "data", "ads.json"), encoding="utf-8")).get("featured")
+    except Exception:
+        fa = None
+    if fa and fa.get("href"):
+        ad_slide = f'''<a class="slide slide-ad" href="{e(fa['href'])}" target="_blank" rel="sponsored noopener">
+    <img class="icon lg" src="{url(fa['icon'])}" alt="{e(fa.get('name', ''))}" loading="lazy">
+    <div><span class="badge">广告</span><h2>{e(fa['title'])}</h2><p>{e(fa.get('desc', ''))}</p></div>
+  </a>'''
+        parts = slide_html.split('</a>')[:-1]
+        parts = [p + '</a>' for p in parts]
+        pos = min(max(int(fa.get("pos", 2)) - 1, 1), len(parts))
+        parts.insert(pos, ad_slide)
+        slide_html = "".join(parts)
+        nslides += 1
+    dots = "".join(f'<button class="dot{" on" if n == 0 else ""}" aria-label="第 {n + 1} 项"></button>' for n in range(nslides)) if nslides > 1 else ""
     today = datetime.date.today().isoformat()
     today_n = sum(1 for i in items if releases.get(i["slug"], {}).get("released") == today)
     chips = '<button class="chip on" data-plat="">全部</button>' + "".join(
