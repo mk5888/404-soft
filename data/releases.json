@@ -8496,5 +8496,155 @@
       }
     ],
     "mirrored": false
+  },
+  "standard-notes": {
+    "version": "3.203.0",
+    "released": "2026-11-02",
+    "verified": "2026-11-27",
+    "release_url": "https://github.com/standardnotes/app/releases/tag/%40standardnotes/desktop%403.203.0",
+    "changelog": "## Web Changes\r\n### Features\r\n\r\n*  Introduces localization with support for multiple languages ([#3073](https://github.com/standardnotes/app/issues/3073)) ([b2f812b](https://github.com/standardnotes/app/commit/b2f812bcac226d12c0217d6b92938e60ecc3f392))\r\n\r\n## Desktop Changes\r\n*  Version bump only for package @standardnotes/desktop",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "standard-notes-3.203.0-win-x64.exe",
+        "size": 123761616,
+        "sha256": "2859c9bb9027c6800bd3c882770ef2fb1a172310481c4e9bc11d0d94f3ddc142",
+        "official": "https://github.com/standardnotes/app/releases/download/%40standardnotes/desktop%403.203.0/standard-notes-3.203.0-win-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "standard-notes-3.203.0-mac-arm64.dmg",
+        "size": 160127566,
+        "sha256": "971c37bb0d49db78eeace2a4e4951721749ed4c5290a619c4816e111f8013cc8",
+        "official": "https://github.com/standardnotes/app/releases/download/%40standardnotes/desktop%403.203.0/standard-notes-3.203.0-mac-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "standard-notes-3.203.0-mac-x64.dmg",
+        "size": 166042550,
+        "sha256": "29a2b995505564450c64c72c8efd0ba823d7cf9a11287a6b752d6851c73b8e39",
+        "official": "https://github.com/standardnotes/app/releases/download/%40standardnotes/desktop%403.203.0/standard-notes-3.203.0-mac-x64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "standard-notes-3.203.0-linux-x86_64.AppImage",
+        "size": 167059156,
+        "sha256": "fca8dca9f2bcf870efdb29032f4bae13c83f12b730d82a90a390cb2be8759d4a",
+        "official": "https://github.com/standardnotes/app/releases/download/%40standardnotes/desktop%403.203.0/standard-notes-3.203.0-linux-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "zulip": {
+    "version": "5.14.3",
+    "released": "2026-11-25",
+    "verified": "2026-11-27",
+    "release_url": "https://github.com/zulip/zulip-desktop/releases/tag/v5.14.3",
+    "changelog": "**Enhancements**:\r\n\r\n- Updated translations, including a new translation for Croatian.\r\n\r\n**Dependencies**:\r\n\r\n- Upgraded all dependencies, including Electron 45.4.1.\r\n\r\n**Fixes**:\r\n\r\n- Install the AppArmor profile correctly in the Debian package.\r\n\r\n",
+    "downloads": [
+      {
+        "label": "Windows · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Zulip-Web-Setup-5.14.3.exe",
+        "size": 820736,
+        "sha256": "2e6aa87ae1a587e35c700dfbb6b0ad21bb0891ecf64e2635c2ba0878caf5ea72",
+        "official": "https://github.com/zulip/zulip-desktop/releases/download/v5.14.3/Zulip-Web-Setup-5.14.3.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Zulip-5.14.3-x64.msi",
+        "size": 128995328,
+        "sha256": "975955cbee2af945e8c4875c99dadddcf9ecc3d7a0a6a3d9ccdfe8c423cffbdc",
+        "official": "https://github.com/zulip/zulip-desktop/releases/download/v5.14.3/Zulip-5.14.3-x64.msi",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Zulip-5.14.3-arm64.dmg",
+        "size": 123486500,
+        "sha256": "ef1cd8427f54553f828ece1db8eca2acd4f28dc41a298e5aaf33a29db49343f4",
+        "official": "https://github.com/zulip/zulip-desktop/releases/download/v5.14.3/Zulip-5.14.3-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Zulip-5.14.3-x64.dmg",
+        "size": 130633062,
+        "sha256": "84a05ad0efeb764ca663d4759c413d1da0395ef3a11fd590c30405e0e71ad998",
+        "official": "https://github.com/zulip/zulip-desktop/releases/download/v5.14.3/Zulip-5.14.3-x64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "Zulip-5.14.3-x86_64.AppImage",
+        "size": 120529203,
+        "sha256": "efdc0ad74bf044f05146ec1f3e6fec19b7f6a0dc7b6f36acb8794332eee184b2",
+        "official": "https://github.com/zulip/zulip-desktop/releases/download/v5.14.3/Zulip-5.14.3-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "cinny": {
+    "version": "4.12.8",
+    "released": "2026-10-25",
+    "verified": "2026-11-27",
+    "release_url": "https://github.com/cinnyapp/cinny-desktop/releases/tag/v4.12.8",
+    "changelog": "## What's Changed\r\n* https://github.com/ajbura/cinny/releases/tag/v4.12.8\r\n\r\n\r\n**Full Changelog**: https://github.com/cinnyapp/cinny-desktop/compare/v4.12.7...v4.12.8",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装版",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Cinny_desktop-x86_64.msi",
+        "size": 22806528,
+        "sha256": "aaa9a2ad8193618f6d381eabcf54b580bd242b00c71075e6b8e8ae1f85350175",
+        "official": "https://github.com/cinnyapp/cinny-desktop/releases/download/v4.12.8/Cinny_desktop-x86_64.msi",
+        "mirrors": []
+      },
+      {
+        "label": "macOS · 通用 DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Cinny_desktop-universal.dmg",
+        "size": 44895079,
+        "sha256": "b869835b68555eedfb3ee1eed02283f3a456d24eecf1847f70814e72027e73b4",
+        "official": "https://github.com/cinnyapp/cinny-desktop/releases/download/v4.12.8/Cinny_desktop-universal.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "Linux x64 · AppImage",
+        "platform": "Linux",
+        "portable": true,
+        "file": "Cinny_desktop-x86_64.AppImage",
+        "size": 109806784,
+        "sha256": "3b979b122c23ac5189e289a62575810cdf75f5275b2054beaf381c01eac14413",
+        "official": "https://github.com/cinnyapp/cinny-desktop/releases/download/v4.12.8/Cinny_desktop-x86_64.AppImage",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
   }
 }
