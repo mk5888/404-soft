@@ -1,5 +1,13 @@
 {
   "home-top": null,
+  "featured": {
+    "pos": 2,
+    "href": "https://my.racknerd.com/aff.php?aff=4338",
+    "icon": "/static/icons/racknerd.png",
+    "name": "RackNerd",
+    "title": "RackNerd 美国 KVM VPS",
+    "desc": "1核1G 年付 $15.98 起，续费同价，适合建站、跑 Docker 与个人服务。"
+  },
   "feed": null,
   "sidebar": {
     "type": "image",
