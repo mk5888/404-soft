@@ -14821,5 +14821,178 @@
       ]
     },
     "icon": "/static/icons/mattermost.png"
+  },
+  {
+    "slug": "standard-notes",
+    "name": "Standard Notes",
+    "abbr": "SN",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "端到端加密",
+      "隐私",
+      "Evernote 替代"
+    ],
+    "summary": "开源的端到端加密笔记应用，注重隐私与长期可用，可替代 Evernote。",
+    "intro": "Standard Notes 是一款简洁、端到端加密的开源笔记应用，笔记在离开设备前即被加密，服务器无法读取内容，客户端以 AGPL-3.0 开源，可作为 Evernote 等云笔记的隐私替代。",
+    "features": [
+      "笔记端到端加密，服务端无法读取",
+      "多设备同步，也支持离线使用",
+      "界面简洁，专注写作与整理",
+      "可导出为纯文本等通用格式",
+      "Windows、macOS、Linux 桌面版及网页、手机版"
+    ],
+    "tips": [
+      "请务必牢记账号密码，端到端加密下忘记密码将无法找回笔记。"
+    ],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://standardnotes.com/",
+    "source": {
+      "type": "github",
+      "repo": "standardnotes/app",
+      "assets": [
+        {
+          "match": "-win-x64\\.exe$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "-mac-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-mac-x64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-linux-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/standard-notes.png"
+  },
+  {
+    "slug": "zulip",
+    "name": "Zulip",
+    "abbr": "ZL",
+    "category": "chat",
+    "tags": [
+      "团队协作",
+      "Slack 替代",
+      "话题线程"
+    ],
+    "summary": "开源团队聊天桌面端，以话题线程组织讨论，可替代 Slack。",
+    "intro": "Zulip 是开源的团队即时通讯平台，独特的“频道＋话题”结构让每场讨论各自成线，异步沟通更清晰。桌面应用可连接多个 Zulip 组织，采用 Apache-2.0 许可。",
+    "features": [
+      "频道加话题的线程模型，消息不易被淹没",
+      "可同时登录多个 Zulip 组织",
+      "桌面通知、未读徽标与托盘图标",
+      "服务端可自建，数据自主可控",
+      "Windows、macOS、Linux 桌面端"
+    ],
+    "tips": [
+      "桌面端需要一个可访问的 Zulip 组织地址才能登录，可使用官方云服务或自建。"
+    ],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://zulip.com/apps/",
+    "source": {
+      "type": "github",
+      "repo": "zulip/zulip-desktop",
+      "assets": [
+        {
+          "match": "^Zulip-Web-Setup-[0-9.]+\\.exe$",
+          "label": "Windows · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Zulip-[0-9.]+-x64\\.msi$",
+          "label": "Windows x64 · MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Zulip-[0-9.]+-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^Zulip-[0-9.]+-x64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/zulip.png"
+  },
+  {
+    "slug": "cinny",
+    "name": "Cinny",
+    "abbr": "CN",
+    "category": "chat",
+    "tags": [
+      "Matrix",
+      "去中心化",
+      "聊天",
+      "Element 替代"
+    ],
+    "summary": "简洁好看的 Matrix 协议客户端，去中心化聊天，可替代 Element。",
+    "intro": "Cinny 是一款注重简洁与易用的 Matrix 客户端，界面类似常见的团队聊天软件，可登录任意 Matrix 服务器，采用 AGPL-3.0 开源，桌面版基于 Tauri 构建。",
+    "features": [
+      "兼容任意 Matrix 服务器与账号",
+      "频道空间、私信、线程和表情反应",
+      "界面简洁，支持深浅色主题",
+      "支持端到端加密房间",
+      "Windows、macOS、Linux 桌面版"
+    ],
+    "tips": [
+      "首次登录端到端加密房间时，需用另一设备验证或输入恢复密钥才能读取历史消息。"
+    ],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://cinny.in/",
+    "source": {
+      "type": "github",
+      "repo": "cinnyapp/cinny-desktop",
+      "assets": [
+        {
+          "match": "^Cinny_desktop-x86_64\\.msi$",
+          "label": "Windows x64 · 安装版",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Cinny_desktop-universal\\.dmg$",
+          "label": "macOS · 通用 DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^Cinny_desktop-x86_64\\.AppImage$",
+          "label": "Linux x64 · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/cinny.png"
   }
 ]
