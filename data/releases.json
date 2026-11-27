@@ -3187,30 +3187,30 @@
     "mirrored": false
   },
   "ungoogled-chromium": {
-    "version": "158.0.8127.36-1.1",
-    "released": "2026-11-22",
+    "version": "158.0.8127.88-1.1",
+    "released": "2026-11-27",
     "verified": "2026-11-27",
-    "release_url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/tag/158.0.8127.36-1.1",
+    "release_url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/tag/158.0.8127.88-1.1",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "ungoogled-chromium_158.0.8127.36-1.1_windows_x64.zip",
-        "size": 204306715,
-        "sha256": "bc78b9590881f8ca99aca29288d1b347ffdd689ca8a57384bb0bc113ef687b6b",
-        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/158.0.8127.36-1.1/ungoogled-chromium_158.0.8127.36-1.1_windows_x64.zip",
+        "file": "ungoogled-chromium_158.0.8127.88-1.1_windows_x64.zip",
+        "size": 204309857,
+        "sha256": "655e039901f3efe9e8b6308397ab9f528ae86617bce844125626d24b82494633",
+        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/158.0.8127.88-1.1/ungoogled-chromium_158.0.8127.88-1.1_windows_x64.zip",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "ungoogled-chromium_158.0.8127.36-1.1_installer_x64.exe",
-        "size": 132453376,
-        "sha256": "2485b37c68564c3c535358864d0526fc469f86309a58ff1a0a10dc1bec65932c",
-        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/158.0.8127.36-1.1/ungoogled-chromium_158.0.8127.36-1.1_installer_x64.exe",
+        "file": "ungoogled-chromium_158.0.8127.88-1.1_installer_x64.exe",
+        "size": 132439040,
+        "sha256": "dd4619ec383a9ee097b87f8c1d7deadcb44a0704b7e8e10bed10e1beac4d3c6a",
+        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/158.0.8127.88-1.1/ungoogled-chromium_158.0.8127.88-1.1_installer_x64.exe",
         "mirrors": []
       }
     ],
